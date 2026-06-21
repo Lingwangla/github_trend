@@ -109,13 +109,21 @@ python3 -m http.server 8000
 | `TREND_KEYWORDS`       | 否    | 空    | 覆盖默认主题关键词。配置后只使用该变量中的关键词。                        |
 | `TREND_EXTRA_KEYWORDS` | 否    | 空    | 在默认主题关键词基础上追加关键词。                                |
 
-关键词变量支持**用逗号、分号、换行、回车或 tab 分隔**，程序会统一转为小写并去重。
+关键词变量支持**用英文逗号、中文逗号、分号、中文分号、顿号、换行、回车或 tab 分隔**，程序会统一转为小写并去重。
 
 覆盖默认关键词示例：
 
 ```bash
 TREND_TOPIC_NAME=Database \
 TREND_KEYWORDS="database,postgres,mysql,redis,sqlite" \
+go run ./cmd/trending
+```
+
+中文关键词示例：
+
+```bash
+TREND_TOPIC_NAME=股票 \
+TREND_KEYWORDS="股票，基金，炒股，量化交易" \
 go run ./cmd/trending
 ```
 
@@ -173,4 +181,3 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/xxx
 
 - 每天 UTC 00:00 自动执行。
 - 在 GitHub Actions 页面手动触发 `workflow_dispatch`。
-

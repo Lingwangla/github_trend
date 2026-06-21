@@ -54,7 +54,7 @@ func parseTopicKeywords(value string) []string {
 	}
 
 	keywords := strings.FieldsFunc(value, func(r rune) bool {
-		return r == ',' || r == ';' || r == '\n' || r == '\r' || r == '\t'
+		return r == ',' || r == '，' || r == ';' || r == '；' || r == '、' || r == '\n' || r == '\r' || r == '\t'
 	})
 	return normalizeKeywords(keywords)
 }
