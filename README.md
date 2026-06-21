@@ -78,54 +78,32 @@ python3 -m http.server 8000
 
 然后访问 `http://localhost:8000/index.html`。
 
-## 部署
+## 部署到 GitHub Pages
 
-仓库内置 GitHub Actions 工作流：`.github/workflows/update.yml`。
+你可以直接fork当前仓库，本仓库已经内置部署工作流：`.github/workflows/update.yml`。使用当前仓库部署 GitHub Pages 只需要完成以下配置：
 
-触发方式：
+1. 进入仓库 `Settings -> Pages`，将 `Build and deployment -> Source` 设置为 `GitHub Actions`。
 
-- 每天 UTC 00:00 自动执行。
-- 在 GitHub Actions 页面手动触发 `workflow_dispatch`。
+   ![actions](./resource/img/actions.png)
+2. 进入 `Settings -> Actions -> General`，确认 Actions 已启用，并允许工作流读写仓库内容。
+3. 如需自定义榜单主题，在 `Settings -> Secrets and variables -> Actions -> Variables` 中配置 `GITHUB_TREND_TOPIC_NAME`、`GITHUB_TREND_KEYWORDS` 或 `GITHUB_TREND_EXTRA_KEYWORDS`。
+4. 如需部署后发送飞书通知，在 `Variables` 中配置 `FEISHU_NOTIFY_ENABLED=true` 和 `FEISHU_RECEIVE_ID_TYPE`，在 `Secrets` 中配置 `FEISHU_APP_ID`、`FEISHU_APP_SECRET`、`FEISHU_RECEIVE_ID`。
+5. 进入 `Actions -> Update GitHub Trending`，点击 `Run workflow` 手动触发一次部署。
 
-工作流流程：
+部署成功后，工作流会生成并提交 `TRENDING.md`、`index.html` 和 `history_daily_trending/`，然后发布到 GitHub Pages。之后仓库会在每天 UTC 00:00 自动更新一次。
 
-1. 拉取仓库代码。
-2. 安装 Go 1.22。
-3. 注入主题相关变量并执行 `go run ./cmd/trending`。
-4. 提交生成产物：`TRENDING.md`、`index.html`、`history_daily_trending/`。
-5. 上传仓库根目录作为 GitHub Pages artifact。
-6. 部署到 GitHub Pages。
-7. 部署成功后以通知模式再次执行程序，读取 `TRENDING.md` 并发送飞书通知。
-
-### GitHub Pages
-
-在仓库 `Settings -> Pages` 中，将部署来源设置为 `GitHub Actions`。
-
-工作流已声明 Pages 部署所需权限：
-
-```yaml
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-```
-
-### GitHub Actions 配置位置
-
-非敏感配置建议放在 `Settings -> Secrets and variables -> Actions -> Variables`。
-
-敏感配置建议放在 `Settings -> Secrets and variables -> Actions -> Secrets`。
+<br />
 
 ## 环境变量
 
 ### 榜单生成
 
-| 环境变量 | 是否必填 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| `GITHUB_TREND_USE_MOCK` | 否 | 空 | 值为 `1` 时使用内置 mock 数据，不请求 GitHub Trending。 |
-| `GITHUB_TREND_TOPIC_NAME` | 否 | `AI` | 榜单主题名称，会展示在 `TRENDING.md` 和 `index.html` 的筛选说明中。 |
-| `GITHUB_TREND_KEYWORDS` | 否 | 空 | 覆盖默认主题关键词。配置后只使用该变量中的关键词。 |
-| `GITHUB_TREND_EXTRA_KEYWORDS` | 否 | 空 | 在默认主题关键词基础上追加关键词。 |
+| 环境变量                          | 是否必填 | 默认值  | 说明                                               |
+| ----------------------------- | ---- | ---- | ------------------------------------------------ |
+| `GITHUB_TREND_USE_MOCK`       | 否    | 空    | 值为 `1` 时使用内置 mock 数据，不请求 GitHub Trending。        |
+| `GITHUB_TREND_TOPIC_NAME`     | 否    | `AI` | 榜单主题名称，会展示在 `TRENDING.md` 和 `index.html` 的筛选说明中。 |
+| `GITHUB_TREND_KEYWORDS`       | 否    | 空    | 覆盖默认主题关键词。配置后只使用该变量中的关键词。                        |
+| `GITHUB_TREND_EXTRA_KEYWORDS` | 否    | 空    | 在默认主题关键词基础上追加关键词。                                |
 
 关键词变量支持用逗号、分号、换行、回车或 tab 分隔，程序会统一转为小写并去重。
 
@@ -145,15 +123,15 @@ GITHUB_TREND_EXTRA_KEYWORDS="workflow,automation" go run ./cmd/trending
 
 ### 飞书通知
 
-| 环境变量 | 是否必填 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| `GITHUB_TREND_NOTIFY_ONLY` | 否 | 空 | 值为 `1` 时进入通知模式，只读取 `TRENDING.md` 并发送飞书通知，不重新抓取或生成页面。 |
-| `FEISHU_NOTIFY_ENABLED` | 否 | 空 | 值为 `true`、`1` 或 `yes` 时启用飞书通知。 |
-| `FEISHU_APP_ID` | 启用通知时必填 | 空 | 飞书自建应用 App ID。 |
-| `FEISHU_APP_SECRET` | 启用通知时必填 | 空 | 飞书自建应用 App Secret。 |
-| `FEISHU_RECEIVE_ID` | 启用通知时必填 | 空 | 消息接收者 ID。 |
-| `FEISHU_RECEIVE_ID_TYPE` | 否 | `email` | 接收者 ID 类型，例如 `email`、`open_id`、`user_id`、`chat_id`。 |
-| `FEISHU_PAGE_URL` | 否 | `https://lingwangla.github.io/github_trend/` | 飞书消息中的页面地址。GitHub Actions 中使用 Pages 部署步骤输出的 URL。 |
+| 环境变量                       | 是否必填    | 默认值                                          | 说明                                                   |
+| -------------------------- | ------- | -------------------------------------------- | ---------------------------------------------------- |
+| `GITHUB_TREND_NOTIFY_ONLY` | 否       | 空                                            | 值为 `1` 时进入通知模式，只读取 `TRENDING.md` 并发送飞书通知，不重新抓取或生成页面。 |
+| `FEISHU_NOTIFY_ENABLED`    | 否       | 空                                            | 值为 `true`、`1` 或 `yes` 时启用飞书通知。                       |
+| `FEISHU_APP_ID`            | 启用通知时必填 | 空                                            | 飞书自建应用 App ID。                                       |
+| `FEISHU_APP_SECRET`        | 启用通知时必填 | 空                                            | 飞书自建应用 App Secret。                                   |
+| `FEISHU_RECEIVE_ID`        | 启用通知时必填 | 空                                            | 消息接收者 ID。                                            |
+| `FEISHU_RECEIVE_ID_TYPE`   | 否       | `email`                                      | 接收者 ID 类型，例如 `email`、`open_id`、`user_id`、`chat_id`。  |
+| `FEISHU_PAGE_URL`          | 否       | `https://lingwangla.github.io/github_trend/` | 飞书消息中的页面地址。GitHub Actions 中使用 Pages 部署步骤输出的 URL。     |
 
 仅发送飞书通知示例：
 
@@ -199,8 +177,8 @@ FEISHU_RECEIVE_ID=user@example.com
 - 历史归档使用当前更新时间的前一天作为文件名，首次运行或不存在旧 `index.html` 时不会生成归档文件。
 - 飞书通知依赖自建应用权限、接收者 ID 类型和接收者 ID 配置，失败原因会输出到 Actions 日志。
 
-## 验证
+## 触发方式：
 
-```bash
-go test ./...
-```
+- 每天 UTC 00:00 自动执行。
+- 在 GitHub Actions 页面手动触发 `workflow_dispatch`。
+
