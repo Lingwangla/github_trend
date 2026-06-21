@@ -16,16 +16,16 @@ const historyDailyTrendingDir = "history_daily_trending"
 const topRepoLimit = 5
 
 // mockModeEnv 是开启本地 mock 数据模式的环境变量。
-const mockModeEnv = "GITHUB_TREND_USE_MOCK"
+const mockModeEnv = "TREND_USE_MOCK"
 
 // topicNameEnv 是热榜主题名称环境变量。
-const topicNameEnv = "GITHUB_TREND_TOPIC_NAME"
+const topicNameEnv = "TREND_TOPIC_NAME"
 
 // topicKeywordsEnv 是覆盖默认主题关键词的环境变量，多个关键词用逗号、分号或换行分隔。
-const topicKeywordsEnv = "GITHUB_TREND_KEYWORDS"
+const topicKeywordsEnv = "TREND_KEYWORDS"
 
 // topicExtraKeywordsEnv 是追加默认主题关键词的环境变量，多个关键词用逗号、分号或换行分隔。
-const topicExtraKeywordsEnv = "GITHUB_TREND_EXTRA_KEYWORDS"
+const topicExtraKeywordsEnv = "TREND_EXTRA_KEYWORDS"
 
 // defaultTopicName 是默认热榜主题名称。
 const defaultTopicName = "AI"

@@ -34,9 +34,9 @@ jobs:
 
       - name: Update Trending and Pages
         env:
-          GITHUB_TREND_TOPIC_NAME: ${{ vars.GITHUB_TREND_TOPIC_NAME }}
-          GITHUB_TREND_KEYWORDS: ${{ vars.GITHUB_TREND_KEYWORDS }}
-          GITHUB_TREND_EXTRA_KEYWORDS: ${{ vars.GITHUB_TREND_EXTRA_KEYWORDS }}
+          TREND_TOPIC_NAME: ${{ vars.TREND_TOPIC_NAME }}
+          TREND_KEYWORDS: ${{ vars.TREND_KEYWORDS }}
+          TREND_EXTRA_KEYWORDS: ${{ vars.TREND_EXTRA_KEYWORDS }}
         run: go run ./cmd/trending
 
       - name: Commit generated files
@@ -68,11 +68,6 @@ jobs:
 
       - name: Notify Feishu
         env:
-          GITHUB_TREND_NOTIFY_ONLY: "1"
-          FEISHU_NOTIFY_ENABLED: ${{ vars.FEISHU_NOTIFY_ENABLED }}
-          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
-          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
-          FEISHU_RECEIVE_ID: ${{ secrets.FEISHU_RECEIVE_ID }}
-          FEISHU_RECEIVE_ID_TYPE: ${{ vars.FEISHU_RECEIVE_ID_TYPE }}
-          FEISHU_PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          TREND_NOTIFY_ONLY: "1"
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: go run ./cmd/trending

@@ -7,56 +7,28 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"net/url"
 	"os"
 	"strings"
 	"time"
 )
 
 // notifyOnlyEnv 是仅发送飞书通知、不重新生成页面的环境变量。
-const notifyOnlyEnv = "GITHUB_TREND_NOTIFY_ONLY"
+const notifyOnlyEnv = "TREND_NOTIFY_ONLY"
 
-// feishuNotifyEnabledEnv 是开启飞书通知的环境变量。
-const feishuNotifyEnabledEnv = "FEISHU_NOTIFY_ENABLED"
+// feishuWebhookURLEnv 是飞书 Webhook 触发器地址环境变量。
+const feishuWebhookURLEnv = "FEISHU_WEBHOOK_URL"
 
-// feishuAppIDEnv 是飞书应用 App ID 环境变量。
-const feishuAppIDEnv = "FEISHU_APP_ID"
-
-// feishuAppSecretEnv 是飞书应用 App Secret 环境变量。
-const feishuAppSecretEnv = "FEISHU_APP_SECRET"
-
-// feishuReceiveIDEnv 是飞书消息接收者 ID 环境变量。
-const feishuReceiveIDEnv = "FEISHU_RECEIVE_ID"
-
-// feishuReceiveIDTypeEnv 是飞书消息接收者 ID 类型环境变量。
-const feishuReceiveIDTypeEnv = "FEISHU_RECEIVE_ID_TYPE"
-
-// feishuPageURLEnv 是飞书通知中的 GitHub Pages 地址环境变量。
-const feishuPageURLEnv = "FEISHU_PAGE_URL"
-
-// defaultFeishuReceiveIDType 是默认飞书消息接收者 ID 类型。
-const defaultFeishuReceiveIDType = "email"
+// githubRepositoryEnv 是 GitHub Actions 内置仓库名称环境变量。
+const githubRepositoryEnv = "GITHUB_REPOSITORY"
 
 // defaultPageURL 是默认 GitHub Pages 页面地址。
 const defaultPageURL = "https://lingwangla.github.io/github_trend/"
 
-// feishuTenantTokenResponse 表示飞书 tenant_access_token 接口响应。
-type feishuTenantTokenResponse struct {
-	Code              int    `json:"code"`
-	Msg               string `json:"msg"`
-	TenantAccessToken string `json:"tenant_access_token"`
-}
-
-// feishuMessageResponse 表示飞书发送消息接口响应。
-type feishuMessageResponse struct {
-	Code int    `json:"code"`
-	Msg  string `json:"msg"`
-}
-
 // notifyFeishuFromReadme 从 Trending Markdown 中提取摘要并发送飞书通知。
 func notifyFeishuFromReadme() error {
-	if !isFeishuNotificationEnabled() {
-		log.Println("feishu notification skipped: FEISHU_NOTIFY_ENABLED is not true")
+	webhookURL := strings.TrimSpace(os.Getenv(feishuWebhookURLEnv))
+	if webhookURL == "" {
+		log.Printf("feishu notification skipped: %s is empty", feishuWebhookURLEnv)
 		return nil
 	}
 
@@ -66,18 +38,12 @@ func notifyFeishuFromReadme() error {
 	}
 
 	message := buildFeishuMessage(extractReadmeTopRepos(string(content)))
-	if err := sendFeishuText(message); err != nil {
-		return fmt.Errorf("send feishu text: %w", err)
+	if err := sendFeishuWebhookText(webhookURL, message); err != nil {
+		return fmt.Errorf("send feishu webhook text: %w", err)
 	}
 
 	log.Println("feishu notification sent")
 	return nil
-}
-
-// isFeishuNotificationEnabled 判断是否开启飞书通知。
-func isFeishuNotificationEnabled() bool {
-	value := strings.ToLower(strings.TrimSpace(os.Getenv(feishuNotifyEnabledEnv)))
-	return value == "true" || value == "1" || value == "yes"
 }
 
 // extractReadmeTopRepos 从 Trending Markdown 中提取 Top 仓库标题。
@@ -118,7 +84,7 @@ func buildFeishuMessage(repos []string) string {
 	var builder strings.Builder
 	builder.WriteString("GitHub AI Daily Trending Top 5 已更新\n")
 	builder.WriteString("页面地址：")
-	builder.WriteString(getEnvDefault(feishuPageURLEnv, defaultPageURL))
+	builder.WriteString(currentPageURL())
 	builder.WriteString("\n")
 
 	if len(repos) > 0 {
@@ -131,83 +97,32 @@ func buildFeishuMessage(repos []string) string {
 	return strings.TrimSpace(builder.String())
 }
 
-// sendFeishuText 使用飞书开放平台发送文本消息。
-func sendFeishuText(text string) error {
-	appID := strings.TrimSpace(os.Getenv(feishuAppIDEnv))
-	appSecret := strings.TrimSpace(os.Getenv(feishuAppSecretEnv))
-	receiveID := strings.TrimSpace(os.Getenv(feishuReceiveIDEnv))
-	receiveIDType := getEnvDefault(feishuReceiveIDTypeEnv, defaultFeishuReceiveIDType)
-	if appID == "" || appSecret == "" || receiveID == "" {
-		return fmt.Errorf("missing required env: %s, %s or %s", feishuAppIDEnv, feishuAppSecretEnv, feishuReceiveIDEnv)
-	}
-
+// sendFeishuWebhookText 使用飞书 Webhook 触发器发送文本消息。
+func sendFeishuWebhookText(webhookURL string, text string) error {
 	client := &http.Client{Timeout: 15 * time.Second}
-	token, err := fetchFeishuTenantAccessToken(client, appID, appSecret)
-	if err != nil {
-		return fmt.Errorf("fetch tenant access token: %w", err)
+	body := map[string]any{
+		"msg_type": "text",
+		"content": map[string]string{
+			"text": text,
+		},
 	}
-
-	return sendFeishuMessage(client, token, receiveIDType, receiveID, text)
+	_, err := postJSON(client, webhookURL, body)
+	return err
 }
 
-// fetchFeishuTenantAccessToken 获取飞书 tenant_access_token。
-func fetchFeishuTenantAccessToken(client *http.Client, appID string, appSecret string) (string, error) {
-	body := map[string]string{
-		"app_id":     appID,
-		"app_secret": appSecret,
+// currentPageURL 返回当前 GitHub Pages 页面地址。
+func currentPageURL() string {
+	repository := strings.ToLower(strings.TrimSpace(os.Getenv(githubRepositoryEnv)))
+	parts := strings.Split(repository, "/")
+	if len(parts) != 2 || parts[0] == "" || parts[1] == "" {
+		return defaultPageURL
 	}
 
-	respBody, err := postJSON(client, "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal", "", body)
-	if err != nil {
-		return "", err
-	}
-
-	var tokenResp feishuTenantTokenResponse
-	if err := json.Unmarshal(respBody, &tokenResp); err != nil {
-		return "", fmt.Errorf("decode token response: %w", err)
-	}
-	if tokenResp.Code != 0 {
-		return "", fmt.Errorf("feishu token response code=%d msg=%s", tokenResp.Code, tokenResp.Msg)
-	}
-	if tokenResp.TenantAccessToken == "" {
-		return "", fmt.Errorf("empty tenant access token")
-	}
-
-	return tokenResp.TenantAccessToken, nil
-}
-
-// sendFeishuMessage 发送飞书文本消息。
-func sendFeishuMessage(client *http.Client, token string, receiveIDType string, receiveID string, text string) error {
-	content, err := json.Marshal(map[string]string{"text": text})
-	if err != nil {
-		return fmt.Errorf("marshal message content: %w", err)
-	}
-
-	requestURL := "https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=" + url.QueryEscape(receiveIDType)
-	body := map[string]string{
-		"receive_id": receiveID,
-		"msg_type":   "text",
-		"content":    string(content),
-	}
-
-	respBody, err := postJSON(client, requestURL, token, body)
-	if err != nil {
-		return err
-	}
-
-	var messageResp feishuMessageResponse
-	if err := json.Unmarshal(respBody, &messageResp); err != nil {
-		return fmt.Errorf("decode message response: %w", err)
-	}
-	if messageResp.Code != 0 {
-		return fmt.Errorf("feishu message response code=%d msg=%s", messageResp.Code, messageResp.Msg)
-	}
-
-	return nil
+	return fmt.Sprintf("https://%s.github.io/%s/", parts[0], parts[1])
 }
 
 // postJSON 发送 JSON POST 请求并返回响应体。
-func postJSON(client *http.Client, requestURL string, bearerToken string, body any) ([]byte, error) {
+func postJSON(client *http.Client, requestURL string, body any) ([]byte, error) {
 	payload, err := json.Marshal(body)
 	if err != nil {
 		return nil, fmt.Errorf("marshal request body: %w", err)
@@ -218,9 +133,6 @@ func postJSON(client *http.Client, requestURL string, bearerToken string, body a
 		return nil, fmt.Errorf("create request: %w", err)
 	}
 	req.Header.Set("Content-Type", "application/json; charset=utf-8")
-	if bearerToken != "" {
-		req.Header.Set("Authorization", "Bearer "+bearerToken)
-	}
 
 	resp, err := client.Do(req)
 	if err != nil {
@@ -237,14 +149,4 @@ func postJSON(client *http.Client, requestURL string, bearerToken string, body a
 	}
 
 	return respBody, nil
-}
-
-// getEnvDefault 获取环境变量，未配置时返回默认值。
-func getEnvDefault(key string, defaultValue string) string {
-	value := strings.TrimSpace(os.Getenv(key))
-	if value == "" {
-		return defaultValue
-	}
-
-	return value
 }
