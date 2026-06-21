@@ -60,3 +60,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify Feishu
+        env:
+          GITHUB_TREND_NOTIFY_ONLY: "1"
+          FEISHU_NOTIFY_ENABLED: ${{ vars.FEISHU_NOTIFY_ENABLED }}
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_RECEIVE_ID: ${{ secrets.FEISHU_RECEIVE_ID }}
+          FEISHU_RECEIVE_ID_TYPE: ${{ vars.FEISHU_RECEIVE_ID_TYPE }}
+          FEISHU_PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: go run ./cmd/trending
