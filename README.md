@@ -88,7 +88,11 @@ python3 -m http.server 8000
 2. 进入 `Settings -> Actions -> General`，确认 Actions 已启用，并允许工作流读写仓库内容。
 3. 如需自定义榜单主题，在 `Settings -> Secrets and variables -> Actions -> Repository Variables` 中配置 `TREND_TOPIC_NAME`、`TREND_KEYWORDS` 或 `TREND_EXTRA_KEYWORDS`。
 4. 如需部署后发送飞书通知，在飞书机器人助手中创建 Webhook 触发器，并在 `Secrets` 中配置 `FEISHU_WEBHOOK_URL`。
+   如何获取 `FEISHU_WEBHOOK_URL` 链接？参考 [飞书开放平台 Webhook 触发器](https://www.feishu.cn/hc/zh-CN/articles/807992406756-webhook-%E8%A7%A6%E5%8F%91%E5%99%A8)
+   <br />
 5. 进入 `Actions -> Update GitHub Trending`，点击 `Run workflow` 手动触发一次部署。
+
+   ![运行actions](./resource/img/run_action.jpeg)
 
 部署成功后，工作流会生成并提交 `TRENDING.md`、`index.html` 和 `history_daily_trending/`，然后发布到 GitHub Pages。之后仓库会在每天 UTC 00:00 自动更新一次。
 
@@ -123,10 +127,10 @@ TREND_EXTRA_KEYWORDS="workflow,automation" go run ./cmd/trending
 
 ### 飞书通知
 
-| 环境变量                 | 是否必填 | 默认值 | 说明                                                           |
-| -------------------- | ---- | --- | ------------------------------------------------------------ |
-| `TREND_NOTIFY_ONLY`  | 否    | 空   | 值为 `1` 时进入通知模式，只读取 `TRENDING.md` 并发送飞书通知，不重新抓取或生成页面。         |
-| `FEISHU_WEBHOOK_URL` | 否    | 空   | 飞书机器人助手 Webhook 触发器地址。配置后，GitHub Actions 部署完成会发送通知；未配置时自动跳过。如何获取 `FEISHU_WEBHOOK_URL` 链接？参考 [飞书开放平台 Webhook 触发器](https://www.feishu.cn/hc/zh-CN/articles/807992406756-webhook-%E8%A7%A6%E5%8F%91%E5%99%A8) |
+| 环境变量                 | 是否必填 | 默认值 | 说明                                                                                                                                                                                                         |
+| -------------------- | ---- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `TREND_NOTIFY_ONLY`  | 否    | 空   | 值为 `1` 时进入通知模式，只读取 `TRENDING.md` 并发送飞书通知，不重新抓取或生成页面。                                                                                                                                                       |
+| `FEISHU_WEBHOOK_URL` | 否    | 空   | 飞书机器人助手 Webhook 触发器地址。配置后，GitHub Actions 部署完成会发送通知；未配置时自动跳过。 |
 
 仅发送飞书通知示例：
 
