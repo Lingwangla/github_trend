@@ -31,8 +31,20 @@ const topRepoLimit = 5
 // mockModeEnv 是开启本地 mock 数据模式的环境变量。
 const mockModeEnv = "GITHUB_TREND_USE_MOCK"
 
-// aiKeywords 是用于筛选 AI 相关仓库的关键词。
-var aiKeywords = []string{
+// topicNameEnv 是热榜主题名称环境变量。
+const topicNameEnv = "GITHUB_TREND_TOPIC_NAME"
+
+// topicKeywordsEnv 是覆盖默认主题关键词的环境变量，多个关键词用逗号、分号或换行分隔。
+const topicKeywordsEnv = "GITHUB_TREND_KEYWORDS"
+
+// topicExtraKeywordsEnv 是追加默认主题关键词的环境变量，多个关键词用逗号、分号或换行分隔。
+const topicExtraKeywordsEnv = "GITHUB_TREND_EXTRA_KEYWORDS"
+
+// defaultTopicName 是默认热榜主题名称。
+const defaultTopicName = "AI"
+
+// defaultTopicKeywords 是用于筛选默认主题仓库的关键词。
+var defaultTopicKeywords = []string{
 	"ai",
 	"agent",
 	"agents",
@@ -430,7 +442,7 @@ func trimLongText(text string, limit int) string {
 	return string(runes[:limit]) + "..."
 }
 
-// isAIRelatedRepository 判断仓库是否与 AI、Agent、LLM、Skill 等主题相关。
+// isAIRelatedRepository 判断仓库是否与配置的主题关键词相关。
 func isAIRelatedRepository(repo repository) bool {
 	text := strings.ToLower(strings.Join([]string{
 		repo.Name,
@@ -438,7 +450,7 @@ func isAIRelatedRepository(repo repository) bool {
 	}, " "))
 	tokens := tokenize(text)
 
-	for _, keyword := range aiKeywords {
+	for _, keyword := range activeTopicKeywords() {
 		if isShortKeyword(keyword) && tokens[keyword] {
 			return true
 		}
@@ -448,6 +460,61 @@ func isAIRelatedRepository(repo repository) bool {
 	}
 
 	return false
+}
+
+// activeTopicName 返回当前热榜主题名称。
+func activeTopicName() string {
+	value := strings.TrimSpace(os.Getenv(topicNameEnv))
+	if value == "" {
+		return defaultTopicName
+	}
+
+	return value
+}
+
+// activeTopicKeywords 返回当前热榜主题关键词列表。
+func activeTopicKeywords() []string {
+	if keywords := parseTopicKeywords(os.Getenv(topicKeywordsEnv)); len(keywords) > 0 {
+		return keywords
+	}
+
+	keywords := append([]string{}, defaultTopicKeywords...)
+	keywords = append(keywords, parseTopicKeywords(os.Getenv(topicExtraKeywordsEnv))...)
+	return normalizeKeywords(keywords)
+}
+
+// parseTopicKeywords 解析环境变量中的主题关键词。
+func parseTopicKeywords(value string) []string {
+	if strings.TrimSpace(value) == "" {
+		return nil
+	}
+
+	keywords := strings.FieldsFunc(value, func(r rune) bool {
+		return r == ',' || r == ';' || r == '\n' || r == '\r' || r == '\t'
+	})
+	return normalizeKeywords(keywords)
+}
+
+// normalizeKeywords 归一化并去重关键词列表。
+func normalizeKeywords(keywords []string) []string {
+	seen := make(map[string]bool)
+	result := make([]string, 0, len(keywords))
+	for _, keyword := range keywords {
+		keyword = strings.ToLower(strings.TrimSpace(keyword))
+		if keyword == "" || seen[keyword] {
+			continue
+		}
+
+		seen[keyword] = true
+		result = append(result, keyword)
+	}
+
+	return result
+}
+
+// buildTopicFilterDescription 生成当前主题筛选说明。
+func buildTopicFilterDescription() string {
+	return fmt.Sprintf("筛选范围：仓库名称或描述包含 %s 相关关键词。关键词：%s。", activeTopicName(), strings.Join(activeTopicKeywords(), ", "))
 }
 
 // tokenize 将文本拆分为适合关键词精确匹配的 token 集合。
@@ -479,9 +546,10 @@ func normalizeRepoName(name string) string {
 func buildReadme(repos []repository, updatedAt time.Time) string {
 	var builder strings.Builder
 
-	builder.WriteString("# GitHub AI Daily Trending Top 5\n\n")
+	builder.WriteString(fmt.Sprintf("# GitHub %s Daily Trending Top 5\n\n", activeTopicName()))
 	builder.WriteString(fmt.Sprintf("更新时间：%s\n\n", updatedAt.Format(time.RFC3339)))
-	builder.WriteString("筛选范围：仓库名称或描述包含 AI、Agent、LLM、Skill 等相关关键词。\n\n")
+	builder.WriteString(buildTopicFilterDescription())
+	builder.WriteString("\n\n")
 	builder.WriteString("网页版本：由 GitHub Pages 自动发布。\n\n")
 
 	for i, repo := range repos {
@@ -551,7 +619,7 @@ func buildUseCases(repo repository) []string {
 		useCases = append(useCases, "适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。")
 	}
 	if len(useCases) == 1 {
-		useCases = append(useCases, "适合围绕 "+formatTopics(repo.Topics)+" 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 应用热点高度相关。")
+		useCases = append(useCases, "适合围绕 "+formatTopics(repo.Topics)+" 做技术调研、竞品分析或原型验证，因为仓库主题与当前 "+activeTopicName()+" 热点高度相关。")
 	}
 
 	return useCases
@@ -560,7 +628,7 @@ func buildUseCases(repo repository) []string {
 // buildArchitectureThoughts 生成仓库架构思想说明。
 func buildArchitectureThoughts(repo repository) []string {
 	thoughts := []string{
-		"它成为热榜的核心原因通常不是单点功能，而是把 LLM、工具、数据和工作流组织成更容易落地的工程结构。",
+		"它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。",
 	}
 	if repo.Stars != "" {
 		thoughts = append(thoughts, "当前 Stars 为 "+repo.Stars+"，说明它不只是概念验证，还积累了可观的社区验证和传播势能。")
@@ -571,7 +639,7 @@ func buildArchitectureThoughts(repo repository) []string {
 	if repo.Language != "" {
 		thoughts = append(thoughts, "使用 "+repo.Language+" 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。")
 	}
-	thoughts = append(thoughts, "它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。")
+	thoughts = append(thoughts, "它的稀缺性在于把热门 "+activeTopicName()+" 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。")
 
 	return thoughts
 }
@@ -691,7 +759,9 @@ func buildIndexHTML(repos []repository, updatedAt time.Time) string {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GitHub AI Daily Trending Top 5</title>
+  <title>GitHub `)
+	builder.WriteString(html.EscapeString(activeTopicName()))
+	builder.WriteString(` Daily Trending Top 5</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -834,11 +904,15 @@ func buildIndexHTML(repos []repository, updatedAt time.Time) string {
 <body>
   <main>
     <header>
-      <h1>GitHub AI Daily Trending Top 5</h1>
+      <h1>GitHub `)
+	builder.WriteString(html.EscapeString(activeTopicName()))
+	builder.WriteString(` Daily Trending Top 5</h1>
       <p class="updated">更新时间：`)
 	builder.WriteString(html.EscapeString(updatedAt.Format(time.RFC3339)))
 	builder.WriteString(`</p>
-      <p class="updated">筛选范围：仓库名称或描述包含 AI、Agent、LLM、Skill 等相关关键词。</p>
+      <p class="updated">`)
+	builder.WriteString(html.EscapeString(buildTopicFilterDescription()))
+	builder.WriteString(`</p>
     </header>
     <ol class="list">
 `)

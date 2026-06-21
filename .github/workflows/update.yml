@@ -33,6 +33,10 @@ jobs:
           cache: true
 
       - name: Update README and Pages
+        env:
+          GITHUB_TREND_TOPIC_NAME: ${{ vars.GITHUB_TREND_TOPIC_NAME }}
+          GITHUB_TREND_KEYWORDS: ${{ vars.GITHUB_TREND_KEYWORDS }}
+          GITHUB_TREND_EXTRA_KEYWORDS: ${{ vars.GITHUB_TREND_EXTRA_KEYWORDS }}
         run: go run ./cmd/trending
 
       - name: Commit generated files

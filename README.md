@@ -1,15 +1,15 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-06-21T07:00:06Z
+更新时间：2026-06-21T07:15:07Z
 
-筛选范围：仓库名称或描述包含 AI、Agent、LLM、Skill 等相关关键词。
+筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
 ## 1. [palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro)
 
 - 语言：Swift
-- Stars：3,768
+- Stars：3,789
 - 主题：ai-video, claude, macos, mcp, seedance2, swift, video-editor
 - Star 趋势：
 
@@ -20,8 +20,8 @@
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
 - 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把 LLM、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 3,768，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 3,789，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ai-video, claude, macos, mcp, seedance2, swift, video-editor 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Swift 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -49,7 +49,7 @@ flowchart LR
 ## 2. [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
 
 - 语言：Python
-- Stars：7,278
+- Stars：7,290
 - 主题：agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production
 - Star 趋势：
 
@@ -61,8 +61,8 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把 LLM、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 7,278，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 7,290，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -87,7 +87,7 @@ flowchart LR
 ## 3. [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)
 
 - 语言：C
-- Stars：9,591
+- Stars：9,603
 - 主题：aider, ast, claude-code, code-analysis, code-intelligence, codex, cursor, cypher, developer-tools, gemini-cli, graph-visualization, kilocode, knowledge-graph, mcp, mcp-server, model-context-protocol, opencode, sqlite, tree-sitter, windsurf
 - Star 趋势：
 
@@ -99,8 +99,8 @@ flowchart LR
   - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
   - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
 - 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把 LLM、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 9,591，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 9,603，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 aider, ast, claude-code, code-analysis, code-intelligence, codex, cursor, cypher, developer-tools, gemini-cli, graph-visualization, kilocode, knowledge-graph, mcp, mcp-server, model-context-protocol, opencode, sqlite, tree-sitter, windsurf 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 C 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -128,7 +128,7 @@ flowchart LR
 ## 4. [twentyhq/twenty](https://github.com/twentyhq/twenty)
 
 - 语言：TypeScript
-- Stars：50,939
+- Stars：50,942
 - 主题：crm, crm-system, customer, good-first-issue, graphql, hacktoberfest, javascript, marketing, monorepo, nestjs, open-source, postgresql, react, reactjs, sales, typescript, web
 - Star 趋势：
 
@@ -137,10 +137,10 @@ flowchart LR
 - 作用 / 解决的问题：The open alternative to Salesforce, designed for AI.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 crm, crm-system, customer, good-first-issue, graphql, hacktoberfest, javascript, marketing, monorepo, nestjs, open-source, postgresql, react, reactjs, sales, typescript, web 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 应用热点高度相关。
+  - 适合围绕 crm, crm-system, customer, good-first-issue, graphql, hacktoberfest, javascript, marketing, monorepo, nestjs, open-source, postgresql, react, reactjs, sales, typescript, web 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
 - 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把 LLM、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 50,939，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 50,942，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 crm, crm-system, customer, good-first-issue, graphql, hacktoberfest, javascript, marketing, monorepo, nestjs, open-source, postgresql, react, reactjs, sales, typescript, web 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -167,7 +167,7 @@ flowchart LR
 ## 5. [chopratejas/headroom](https://github.com/chopratejas/headroom)
 
 - 语言：Python
-- Stars：42,358
+- Stars：42,390
 - 主题：agent, ai, anthropic, claude-code, compression, context-engineering, context-window, cursor, fastapi, langchain, llm, mcp, openai, prompt-engineering, proxy, python, rag, token-optimization, tokens, typescript
 - Star 趋势：
 
@@ -180,8 +180,8 @@ flowchart LR
   - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把 LLM、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 42,358，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 42,390，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 agent, ai, anthropic, claude-code, compression, context-engineering, context-window, cursor, fastapi, langchain, llm, mcp, openai, prompt-engineering, proxy, python, rag, token-optimization, tokens, typescript 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
