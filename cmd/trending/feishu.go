@@ -53,16 +53,16 @@ type feishuMessageResponse struct {
 	Msg  string `json:"msg"`
 }
 
-// notifyFeishuFromReadme 从 README 中提取摘要并发送飞书通知。
+// notifyFeishuFromReadme 从 Trending Markdown 中提取摘要并发送飞书通知。
 func notifyFeishuFromReadme() error {
 	if !isFeishuNotificationEnabled() {
 		log.Println("feishu notification skipped: FEISHU_NOTIFY_ENABLED is not true")
 		return nil
 	}
 
-	content, err := os.ReadFile(readmePath)
+	content, err := os.ReadFile(trendingMarkdownPath)
 	if err != nil {
-		return fmt.Errorf("read README: %w", err)
+		return fmt.Errorf("read trending markdown: %w", err)
 	}
 
 	message := buildFeishuMessage(extractReadmeTopRepos(string(content)))
@@ -80,7 +80,7 @@ func isFeishuNotificationEnabled() bool {
 	return value == "true" || value == "1" || value == "yes"
 }
 
-// extractReadmeTopRepos 从 README 中提取 Top 仓库标题。
+// extractReadmeTopRepos 从 Trending Markdown 中提取 Top 仓库标题。
 func extractReadmeTopRepos(content string) []string {
 	repos := make([]string, 0, topRepoLimit)
 	for _, line := range strings.Split(content, "\n") {

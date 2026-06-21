@@ -1,208 +1,206 @@
-# GitHub AI Daily Trending Top 5
+# GitHub Trend Pages
 
-更新时间：2026-06-21T07:15:07Z
+GitHub Trend Pages 是一个用 Go 编写的 GitHub Daily Trending 静态榜单生成器。它会抓取 GitHub 每日 Trending 页面，根据可配置的主题关键词筛选 Top 5 仓库，补充仓库 topics 和 README 摘要，并生成 GitHub Pages 可直接发布的静态页面。
 
-筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
+当前默认主题是 AI，默认关键词覆盖 AI、Agent、LLM、MCP、RAG、Embedding、Transformer、Prompt 等方向。主题名称和关键词都可以通过环境变量定制。
 
-网页版本：由 GitHub Pages 自动发布。
+## 功能
 
-## 1. [palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro)
+- 抓取 GitHub Daily Trending。
+- 按主题关键词筛选目标仓库。
+- 通过 GitHub API 补充仓库 topics 和 README 摘要。
+- 生成 `TRENDING.md` Markdown 榜单。
+- 生成 `index.html` GitHub Pages 首页。
+- 更新首页前将旧 `index.html` 归档到 `history_daily_trending/`。
+- 支持 GitHub Actions 定时更新、提交产物并部署 GitHub Pages。
+- 支持部署完成后发送飞书文本通知。
+- 支持 mock 数据模式，便于本地预览页面效果。
 
-- 语言：Swift
-- Stars：3,789
-- 主题：ai-video, claude, macos, mcp, seedance2, swift, video-editor
-- Star 趋势：
+## 技术栈
 
-![palmier-io/palmier-pro Star History](https://api.star-history.com/svg?repos=palmier-io%2Fpalmier-pro&type=Date)
+- Go 1.22
+- goquery
+- GitHub Actions
+- GitHub Pages
+- 飞书开放平台消息 API
 
-- 作用 / 解决的问题：macOS video editor built for AI
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 3,789，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai-video, claude, macos, mcp, seedance2, swift, video-editor 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Swift 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Palmier Pro is an open source video editor for Mac. You and your agent can generate and edit videos together inside the timeline.
-  - We built Palmier Pro from scratch with Swift. The north star is Premiere Pro, with our take on integrating AI into the workflow.
-  - Generate videos and images with SOTA models like Seedance, Kling, Nano Banana Pro inside the timeline editor.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+## 目录结构
 
-```mermaid
-flowchart LR
-    User[用户 / AI 编程助手] --> Client[Agent Client]
-    Client --> Protocol[MCP 协议层]
-    Protocol --> Server[palmier-io/palmier-pro]
-    Server --> Tools[工具接口 / Skills]
-    Server --> Index[代码索引 / 知识图谱]
-    Server --> Data[文件系统 / API / 数据源]
-    Tools --> Result[结构化结果]
-    Index --> Result
-    Data --> Result
-    Result --> Client
-    Client --> Answer[生成回答 / 执行动作]
+```text
+.
+├── .github/workflows/update.yml   # 定时更新、提交生成产物、部署 Pages、发送飞书通知
+├── cmd/trending/main.go           # 抓取、筛选、页面生成、历史归档主流程
+├── cmd/trending/feishu.go         # 飞书通知逻辑
+├── history_daily_trending/        # 历史首页归档目录，文件名格式为 YYYY-MM-DD.index
+├── go.mod                         # Go module 和依赖声明
+├── go.sum                         # Go 依赖锁定文件
+├── README.md                      # 当前项目说明文档
+├── TRENDING.md                    # 自动生成的 Trending Markdown 榜单
+└── index.html                     # 自动生成的 GitHub Pages 首页
 ```
 
-## 2. [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
+## 本地运行
 
-- 语言：Python
-- Stars：7,290
-- 主题：agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production
-- Star 趋势：
+环境要求：
 
-![calesthio/OpenMontage Star History](https://api.star-history.com/svg?repos=calesthio%2FOpenMontage&type=Date)
+- Go 1.22 或更高版本
+- 可以访问 `github.com` 和 `api.github.com`
 
-- 作用 / 解决的问题：World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 7,290，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition.
-  - Important distinction: OpenMontage can make image-based videos, but it can also make a real video video for free/open-source workflows: the agent builds a corpus from free stock footage and open archives, retrieves actual motion clips, edits them into a timeli...
-  - "SIGNAL FROM TOMORROW" — a cinematic sci-fi trailer fully produced through OpenMontage: concept, script, scene plan, Veo-generated motion clips, soundtrack, and Remotion composition.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+安装依赖：
 
-```mermaid
-flowchart LR
-    User[用户任务] --> Planner[Agent 任务规划]
-    Planner --> Registry[Skill 注册表]
-    Registry --> Select[能力匹配 / 权限校验]
-    Select --> Skill[可复用 Skill]
-    Skill --> Tool[工具 / API / Prompt]
-    Tool --> Observation[执行结果]
-    Observation --> Planner
-    Planner --> Output[最终交付]
+```bash
+go mod download
 ```
 
-## 3. [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)
+抓取真实 GitHub Trending 并生成产物：
 
-- 语言：C
-- Stars：9,603
-- 主题：aider, ast, claude-code, code-analysis, code-intelligence, codex, cursor, cypher, developer-tools, gemini-cli, graph-visualization, kilocode, knowledge-graph, mcp, mcp-server, model-context-protocol, opencode, sqlite, tree-sitter, windsurf
-- Star 趋势：
-
-![DeusData/codebase-memory-mcp Star History](https://api.star-history.com/svg?repos=DeusData%2Fcodebase-memory-mcp&type=Date)
-
-- 作用 / 解决的问题：High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
-  - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 9,603，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 aider, ast, claude-code, code-analysis, code-intelligence, codex, cursor, cypher, developer-tools, gemini-cli, graph-visualization, kilocode, knowledge-graph, mcp, mcp-server, model-context-protocol, opencode, sqlite, tree-sitter, windsurf 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 C 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for m...
-  - Extreme indexing speed — Linux kernel (28M LOC, 75K files) in 3 minutes. RAM-first pipeline: LZ4 compression, in-memory SQLite, fused Aho-Corasick pattern matching. Memory released after indexing.
-  - Plug and play — single static binary for macOS (arm64/amd64), Linux (arm64/amd64), and Windows (amd64). No Docker, no runtime dependencies, no API keys. Download → install → restart agent → done.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户 / AI 编程助手] --> Client[Agent Client]
-    Client --> Protocol[MCP 协议层]
-    Protocol --> Server[DeusData/codebase-memory-mcp]
-    Server --> Tools[工具接口 / Skills]
-    Server --> Index[代码索引 / 知识图谱]
-    Server --> Data[文件系统 / API / 数据源]
-    Tools --> Result[结构化结果]
-    Index --> Result
-    Data --> Result
-    Result --> Client
-    Client --> Answer[生成回答 / 执行动作]
+```bash
+go run ./cmd/trending
 ```
 
-## 4. [twentyhq/twenty](https://github.com/twentyhq/twenty)
+运行后会更新：
 
-- 语言：TypeScript
-- Stars：50,942
-- 主题：crm, crm-system, customer, good-first-issue, graphql, hacktoberfest, javascript, marketing, monorepo, nestjs, open-source, postgresql, react, reactjs, sales, typescript, web
-- Star 趋势：
+- `TRENDING.md`
+- `index.html`
+- `history_daily_trending/YYYY-MM-DD.index`，仅当运行前已有 `index.html` 时生成
 
-![twentyhq/twenty Star History](https://api.star-history.com/svg?repos=twentyhq%2Ftwenty&type=Date)
+使用 mock 数据本地预览：
 
-- 作用 / 解决的问题：The open alternative to Salesforce, designed for AI.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 crm, crm-system, customer, good-first-issue, graphql, hacktoberfest, javascript, marketing, monorepo, nestjs, open-source, postgresql, react, reactjs, sales, typescript, web 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 50,942，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 crm, crm-system, customer, good-first-issue, graphql, hacktoberfest, javascript, marketing, monorepo, nestjs, open-source, postgresql, react, reactjs, sales, typescript, web 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.
-  - Twenty gives you the building blocks of a modern CRM (objects, views, workflows, and agents) and lets you extend them as code. Here's a tour of what's in the box.
-  - Thanks to these amazing services that we use and recommend for code review (Greptile), catching bugs (Sentry) and translating (Crowdin).
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
+```bash
+GITHUB_TREND_USE_MOCK=1 go run ./cmd/trending
 ```
 
-## 5. [chopratejas/headroom](https://github.com/chopratejas/headroom)
+本地预览 GitHub Pages 首页：
 
-- 语言：Python
-- Stars：42,390
-- 主题：agent, ai, anthropic, claude-code, compression, context-engineering, context-window, cursor, fastapi, langchain, llm, mcp, openai, prompt-engineering, proxy, python, rag, token-optimization, tokens, typescript
-- Star 趋势：
-
-![chopratejas/headroom Star History](https://api.star-history.com/svg?repos=chopratejas%2Fheadroom&type=Date)
-
-- 作用 / 解决的问题：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
-  - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 42,390，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agent, ai, anthropic, claude-code, compression, context-engineering, context-window, cursor, fastapi, langchain, llm, mcp, openai, prompt-engineering, proxy, python, rag, token-optimization, tokens, typescript 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Headroom compresses everything your AI agent reads — tool outputs, logs, RAG chunks, files, and conversation history — before it reaches the LLM. Same answers, fraction of the tokens.
-  - Library — compress(messages) in Python or TypeScript, inline in any app
-  - Proxy — headroom proxy --port 8787, zero code changes, any language
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户 / AI 编程助手] --> Client[Agent Client]
-    Client --> Protocol[MCP 协议层]
-    Protocol --> Server[chopratejas/headroom]
-    Server --> Tools[工具接口 / Skills]
-    Server --> Index[代码索引 / 知识图谱]
-    Server --> Data[文件系统 / API / 数据源]
-    Tools --> Result[结构化结果]
-    Index --> Result
-    Data --> Result
-    Result --> Client
-    Client --> Answer[生成回答 / 执行动作]
+```bash
+python3 -m http.server 8000
 ```
 
+然后访问 `http://localhost:8000/index.html`。
+
+## 部署
+
+仓库内置 GitHub Actions 工作流：`.github/workflows/update.yml`。
+
+触发方式：
+
+- 每天 UTC 00:00 自动执行。
+- 在 GitHub Actions 页面手动触发 `workflow_dispatch`。
+
+工作流流程：
+
+1. 拉取仓库代码。
+2. 安装 Go 1.22。
+3. 注入主题相关变量并执行 `go run ./cmd/trending`。
+4. 提交生成产物：`TRENDING.md`、`index.html`、`history_daily_trending/`。
+5. 上传仓库根目录作为 GitHub Pages artifact。
+6. 部署到 GitHub Pages。
+7. 部署成功后以通知模式再次执行程序，读取 `TRENDING.md` 并发送飞书通知。
+
+### GitHub Pages
+
+在仓库 `Settings -> Pages` 中，将部署来源设置为 `GitHub Actions`。
+
+工作流已声明 Pages 部署所需权限：
+
+```yaml
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+```
+
+### GitHub Actions 配置位置
+
+非敏感配置建议放在 `Settings -> Secrets and variables -> Actions -> Variables`。
+
+敏感配置建议放在 `Settings -> Secrets and variables -> Actions -> Secrets`。
+
+## 环境变量
+
+### 榜单生成
+
+| 环境变量 | 是否必填 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `GITHUB_TREND_USE_MOCK` | 否 | 空 | 值为 `1` 时使用内置 mock 数据，不请求 GitHub Trending。 |
+| `GITHUB_TREND_TOPIC_NAME` | 否 | `AI` | 榜单主题名称，会展示在 `TRENDING.md` 和 `index.html` 的筛选说明中。 |
+| `GITHUB_TREND_KEYWORDS` | 否 | 空 | 覆盖默认主题关键词。配置后只使用该变量中的关键词。 |
+| `GITHUB_TREND_EXTRA_KEYWORDS` | 否 | 空 | 在默认主题关键词基础上追加关键词。 |
+
+关键词变量支持用逗号、分号、换行、回车或 tab 分隔，程序会统一转为小写并去重。
+
+覆盖默认关键词示例：
+
+```bash
+GITHUB_TREND_TOPIC_NAME=Database \
+GITHUB_TREND_KEYWORDS="database,postgres,mysql,redis,sqlite" \
+go run ./cmd/trending
+```
+
+追加默认关键词示例：
+
+```bash
+GITHUB_TREND_EXTRA_KEYWORDS="workflow,automation" go run ./cmd/trending
+```
+
+### 飞书通知
+
+| 环境变量 | 是否必填 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `GITHUB_TREND_NOTIFY_ONLY` | 否 | 空 | 值为 `1` 时进入通知模式，只读取 `TRENDING.md` 并发送飞书通知，不重新抓取或生成页面。 |
+| `FEISHU_NOTIFY_ENABLED` | 否 | 空 | 值为 `true`、`1` 或 `yes` 时启用飞书通知。 |
+| `FEISHU_APP_ID` | 启用通知时必填 | 空 | 飞书自建应用 App ID。 |
+| `FEISHU_APP_SECRET` | 启用通知时必填 | 空 | 飞书自建应用 App Secret。 |
+| `FEISHU_RECEIVE_ID` | 启用通知时必填 | 空 | 消息接收者 ID。 |
+| `FEISHU_RECEIVE_ID_TYPE` | 否 | `email` | 接收者 ID 类型，例如 `email`、`open_id`、`user_id`、`chat_id`。 |
+| `FEISHU_PAGE_URL` | 否 | `https://lingwangla.github.io/github_trend/` | 飞书消息中的页面地址。GitHub Actions 中使用 Pages 部署步骤输出的 URL。 |
+
+仅发送飞书通知示例：
+
+```bash
+GITHUB_TREND_NOTIFY_ONLY=1 \
+FEISHU_NOTIFY_ENABLED=true \
+FEISHU_APP_ID=cli_xxx \
+FEISHU_APP_SECRET=xxx \
+FEISHU_RECEIVE_ID=user@example.com \
+go run ./cmd/trending
+```
+
+## Actions 配置示例
+
+Variables：
+
+```text
+GITHUB_TREND_TOPIC_NAME=AI
+GITHUB_TREND_EXTRA_KEYWORDS=workflow,automation
+FEISHU_NOTIFY_ENABLED=true
+FEISHU_RECEIVE_ID_TYPE=email
+```
+
+Secrets：
+
+```text
+FEISHU_APP_ID=cli_xxx
+FEISHU_APP_SECRET=xxx
+FEISHU_RECEIVE_ID=user@example.com
+```
+
+## 产物说明
+
+- `README.md` 是项目说明文档，不会被生成器覆盖。
+- `TRENDING.md` 是每日 Trending Markdown 榜单。
+- `index.html` 是当前 GitHub Pages 首页。
+- `history_daily_trending/YYYY-MM-DD.index` 是运行时归档的上一版首页。
+
+## 注意事项
+
+- 当前 GitHub API 请求未配置 token，频繁运行可能触发 GitHub 未认证请求限流。
+- GitHub Trending 页面结构变化时，`cmd/trending/main.go` 中的解析选择器可能需要同步调整。
+- 历史归档使用当前更新时间的前一天作为文件名，首次运行或不存在旧 `index.html` 时不会生成归档文件。
+- 飞书通知依赖自建应用权限、接收者 ID 类型和接收者 ID 配置，失败原因会输出到 Actions 日志。
+
+## 验证
+
+```bash
+go test ./...
+```

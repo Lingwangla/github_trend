@@ -32,7 +32,7 @@ jobs:
           go-version: "1.22"
           cache: true
 
-      - name: Update README and Pages
+      - name: Update Trending and Pages
         env:
           GITHUB_TREND_TOPIC_NAME: ${{ vars.GITHUB_TREND_TOPIC_NAME }}
           GITHUB_TREND_KEYWORDS: ${{ vars.GITHUB_TREND_KEYWORDS }}
@@ -44,12 +44,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet; then
+          git add TRENDING.md index.html history_daily_trending
+
+          if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
 
-          git add README.md index.html
           git commit -m "chore: update github trending"
           git push
 
