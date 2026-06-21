@@ -1,6 +1,6 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-06-21T10:47:32Z
+更新时间：2026-06-21T11:44:22Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 

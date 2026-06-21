@@ -8,6 +8,12 @@ import (
 
 // isAIRelatedRepository 判断仓库是否与配置的主题关键词相关。
 func isAIRelatedRepository(repo repository) bool {
+	_, ok := matchTopicKeyword(repo)
+	return ok
+}
+
+// matchTopicKeyword 返回命中仓库的主题关键词。
+func matchTopicKeyword(repo repository) (string, bool) {
 	text := strings.ToLower(strings.Join([]string{
 		repo.Name,
 		repo.Description,
@@ -16,14 +22,14 @@ func isAIRelatedRepository(repo repository) bool {
 
 	for _, keyword := range activeTopicKeywords() {
 		if isShortKeyword(keyword) && tokens[keyword] {
-			return true
+			return keyword, true
 		}
 		if !isShortKeyword(keyword) && strings.Contains(text, keyword) {
-			return true
+			return keyword, true
 		}
 	}
 
-	return false
+	return "", false
 }
 
 // activeTopicName 返回当前热榜主题名称。

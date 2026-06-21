@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"strings"
 	"time"
@@ -9,6 +10,7 @@ import (
 
 // writeTrendingMarkdown 将热榜仓库列表写入 Trending Markdown 文件。
 func writeTrendingMarkdown(repos []repository, updatedAt time.Time) error {
+	log.Printf("writing trending markdown: path=%s repos=%d updated_at=%s", trendingMarkdownPath, len(repos), updatedAt.Format(time.RFC3339))
 	if err := os.WriteFile(trendingMarkdownPath, []byte(buildReadme(repos, updatedAt)), 0644); err != nil {
 		return fmt.Errorf("write trending markdown: %w", err)
 	}

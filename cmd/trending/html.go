@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"html"
+	"log"
 	"net/url"
 	"os"
 	"strings"
@@ -11,6 +12,7 @@ import (
 
 // writeIndexHTML 将热榜仓库列表写入 GitHub Pages 首页 HTML。
 func writeIndexHTML(repos []repository, updatedAt time.Time) error {
+	log.Printf("writing index HTML: path=%s repos=%d updated_at=%s", indexPath, len(repos), updatedAt.Format(time.RFC3339))
 	if err := os.WriteFile(indexPath, []byte(buildIndexHTML(repos, updatedAt)), 0644); err != nil {
 		return fmt.Errorf("write index HTML: %w", err)
 	}

@@ -39,7 +39,9 @@ type githubReadmeResponse struct {
 // loadRepositories 根据运行模式加载仓库数据。
 func loadRepositories() ([]repository, error) {
 	if os.Getenv(mockModeEnv) == "1" {
-		return mockRepositories(), nil
+		repos := mockRepositories()
+		log.Printf("using mock repositories: count=%d", len(repos))
+		return repos, nil
 	}
 
 	return fetchTrending()
@@ -47,6 +49,8 @@ func loadRepositories() ([]repository, error) {
 
 // fetchTrending 抓取 GitHub Trending 页面并解析仓库列表。
 func fetchTrending() ([]repository, error) {
+	log.Printf("fetching GitHub Trending: url=%s", trendingURL)
+
 	req, err := http.NewRequest(http.MethodGet, trendingURL, nil)
 	if err != nil {
 		return nil, fmt.Errorf("create request: %w", err)
@@ -61,6 +65,7 @@ func fetchTrending() ([]repository, error) {
 	}
 	defer resp.Body.Close()
 
+	log.Printf("GitHub Trending response received: status=%d", resp.StatusCode)
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("unexpected status code: %d", resp.StatusCode)
 	}
@@ -71,10 +76,17 @@ func fetchTrending() ([]repository, error) {
 	}
 
 	repos := make([]repository, 0, topRepoLimit)
+	totalCandidates := 0
+	invalidCandidates := 0
+	filteredCandidates := 0
+	filteredSamples := make([]string, 0, 5)
+	matchedNames := make([]string, 0, topRepoLimit)
 	doc.Find("article.Box-row").EachWithBreak(func(_ int, s *goquery.Selection) bool {
+		totalCandidates++
 		name := normalizeRepoName(s.Find("h2 a").Text())
 		href, _ := s.Find("h2 a").Attr("href")
 		if name == "" || href == "" {
+			invalidCandidates++
 			return true
 		}
 
@@ -85,17 +97,36 @@ func fetchTrending() ([]repository, error) {
 			Language:    strings.TrimSpace(s.Find("[itemprop='programmingLanguage']").Text()),
 			Stars:       strings.TrimSpace(s.Find("a.Link--muted").First().Text()),
 		}
-		if !isAIRelatedRepository(repo) {
+		matchedKeyword, ok := matchTopicKeyword(repo)
+		if !ok {
+			filteredCandidates++
+			if len(filteredSamples) < 5 {
+				filteredSamples = append(filteredSamples, fmt.Sprintf("%s desc=%q", repo.Name, trimLongText(repo.Description, 100)))
+			}
 			return true
 		}
+		log.Printf("matched trending repository: repo=%s keyword=%q language=%q stars=%q", repo.Name, matchedKeyword, repo.Language, repo.Stars)
 
 		if err := enrichRepository(client, &repo); err != nil {
 			log.Printf("enrich %s failed: %v", repo.Name, err)
 		}
 
 		repos = append(repos, repo)
+		matchedNames = append(matchedNames, repo.Name)
 		return len(repos) < topRepoLimit
 	})
+
+	log.Printf(
+		"GitHub Trending parsed: candidates=%d invalid=%d filtered=%d matched=%d matched_repos=%q",
+		totalCandidates,
+		invalidCandidates,
+		filteredCandidates,
+		len(repos),
+		matchedNames,
+	)
+	if len(filteredSamples) > 0 {
+		log.Printf("filtered repository samples: %q", filteredSamples)
+	}
 
 	return repos, nil
 }
