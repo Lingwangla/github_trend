@@ -147,18 +147,62 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-06-25T02:50:58Z</p>
+      <p class="updated">更新时间：2026-06-26T02:56:11Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#1</span>
+          <a href="https://github.com/google-labs-code/design.md" target="_blank" rel="noopener noreferrer">google-labs-code/design.md</a>
+        </div>
+        <div class="meta">
+          <span>语言：TypeScript</span>
+          <span>Stars：19,486</span>
+        </div>
+        <div class="topics"><span class="topic">未公开 topics</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=google-labs-code%2Fdesign.md&amp;type=Date" alt="google-labs-code/design.md Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 19,486，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.</li><li>A DESIGN.md file combines machine-readable design tokens (YAML front matter) with human-readable design rationale (markdown prose). Tokens give agents exact values. Prose tells them *why* those values exist and how to apply them.</li><li>Architectural Minimalism meets Journalistic Gravitas. The UI evokes a</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#2</span>
           <a href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener noreferrer">calesthio/OpenMontage</a>
         </div>
         <div class="meta">
           <span>语言：Python</span>
-          <span>Stars：19,752</span>
+          <span>Stars：22,272</span>
         </div>
         <div class="topics"><span class="topic">agent</span><span class="topic">agentic-ai</span><span class="topic">ai</span><span class="topic">claude</span><span class="topic">copilot</span><span class="topic">cursor</span><span class="topic">elevenlabs</span><span class="topic">ffmpeg</span><span class="topic">flux</span><span class="topic">image-generation</span><span class="topic">open-source</span><span class="topic">openai</span><span class="topic">python</span><span class="topic">remotion</span><span class="topic">stable-diffusion</span><span class="topic">text-to-speech</span><span class="topic">text-to-video</span><span class="topic">video-generation</span><span class="topic">video-production</span></div>
         <section class="section">
@@ -177,7 +221,7 @@
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 19,752，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 22,272，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -197,91 +241,48 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#2</span>
-          <a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" rel="noopener noreferrer">ZhuLinsen/daily_stock_analysis</a>
-        </div>
-        <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：48,668</span>
-        </div>
-        <div class="topics"><span class="topic">a-stock</span><span class="topic">ai-agent</span><span class="topic">aigc</span><span class="topic">llm</span><span class="topic">quant</span><span class="topic">quantitative-finance</span><span class="topic">quantitative-trading</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=ZhuLinsen%2Fdaily_stock_analysis&amp;type=Date" alt="ZhuLinsen/daily_stock_analysis Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 a-stock, ai-agent, aigc, llm, quant, quantitative-finance, quantitative-trading 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 48,668，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 a-stock, ai-agent, aigc, llm, quant, quantitative-finance, quantitative-trading 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱</li><li>[产品预览](#-产品预览) · [功能特性](#-功能特性) · [快速开始](#-快速开始) · [推送效果](#-推送效果) · [文档中心](docs/INDEX.md) · [完整指南](docs/full-guide.md)</li><li>简体中文 | [English](docs/README_EN.md) | [繁體中文](docs/README_CHT.md)</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户需求] --&gt; Interface[应用入口]
-    Interface --&gt; Orchestrator[AI 编排层]
-    Orchestrator --&gt; Model[LLM / 模型能力]
-    Orchestrator --&gt; Data[领域数据 / 上下文]
-    Orchestrator --&gt; Tools[工具与自动化流程]
-    Model --&gt; Result[候选结果]
-    Data --&gt; Result
-    Tools --&gt; Result
-    Result --&gt; Review[校验 / 观测 / 反馈]
-    Review --&gt; Output[可交付结果]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
           <span class="rank">#3</span>
-          <a href="https://github.com/interviewstreet/hiring-agent" target="_blank" rel="noopener noreferrer">interviewstreet/hiring-agent</a>
+          <a href="https://github.com/xbtlin/ai-berkshire" target="_blank" rel="noopener noreferrer">xbtlin/ai-berkshire</a>
         </div>
         <div class="meta">
           <span>语言：Python</span>
-          <span>Stars：2,279</span>
+          <span>Stars：2,103</span>
         </div>
-        <div class="topics"><span class="topic">未公开 topics</span></div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">ai-agent</span><span class="topic">anthropic</span><span class="topic">berkshire-hathaway</span><span class="topic">charlie-munger</span><span class="topic">china-stock</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">financial-analysis</span><span class="topic">fintech</span><span class="topic">fundamental-analysis</span><span class="topic">investment</span><span class="topic">investment-research</span><span class="topic">llm</span><span class="topic">mcp</span><span class="topic">portfolio-management</span><span class="topic">stock-analysis</span><span class="topic">stock-market</span><span class="topic">value-investing</span><span class="topic">warren-buffett</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=interviewstreet%2Fhiring-agent&amp;type=Date" alt="interviewstreet/hiring-agent Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=xbtlin%2Fai-berkshire&amp;type=Date" alt="xbtlin/ai-berkshire Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>AI agent to evaluate and score resumes.</p>
+          <p>AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters&#39; methodologies + multi-agent adversarial analysis.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 2,279，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 2,103，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger, china-stock, claude, claude-code, financial-analysis, fintech, fundamental-analysis, investment, investment-research, llm, mcp, portfolio-management, stock-analysis, stock-market, value-investing, warren-buffett 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>Hiring Agent parses a resume PDF to Markdown, extracts sectioned JSON using a local or hosted LLM, augments the data with GitHub profile and repository signals, then produces an objective evaluation with category scores, evidence, bonus points, and deductions....</li><li>1. pymupdf_rag.py converts PDF pages to Markdown-like text.</li><li>2. pdf.py calls the LLM per section using Jinja templates under prompts/templates.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>AI Berkshire - AI 时代的价值投资研究框架</li><li>&#34;Price is what you pay, value is what you get.&#34; — Warren Buffett</li><li>用 AI 重新定义投资研究的深度与效率。</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户目标] --&gt; Planner[任务规划 Agent]
-    Planner --&gt; Memory[上下文记忆]
-    Planner --&gt; Tools[工具调用层]
-    Tools --&gt; APIs[外部 API / 本地工具]
-    APIs --&gt; Observation[观察结果]
-    Observation --&gt; Critic[反思 / 评估]
-    Critic --&gt; Planner
-    Planner --&gt; Deliverable[最终结果]
+    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
+    Client --&gt; Protocol[MCP 协议层]
+    Protocol --&gt; Server[xbtlin/ai-berkshire]
+    Server --&gt; Tools[工具接口 / Skills]
+    Server --&gt; Index[代码索引 / 知识图谱]
+    Server --&gt; Data[文件系统 / API / 数据源]
+    Tools --&gt; Result[结构化结果]
+    Index --&gt; Result
+    Data --&gt; Result
+    Result --&gt; Client
+    Client --&gt; Answer[生成回答 / 执行动作]
           </div>
         </section>
       </li>
@@ -292,7 +293,7 @@ flowchart LR
         </div>
         <div class="meta">
           <span>语言：TypeScript</span>
-          <span>Stars：19,419</span>
+          <span>Stars：20,558</span>
         </div>
         <div class="topics"><span class="topic">ai</span><span class="topic">ai-agents</span><span class="topic">ai-tools</span><span class="topic">automation</span><span class="topic">boilerplate</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">clone</span><span class="topic">developer-tools</span><span class="topic">nextjs</span><span class="topic">react</span><span class="topic">reverse-engineering</span><span class="topic">shadcn-ui</span><span class="topic">skills</span><span class="topic">tailwindcss</span><span class="topic">template</span><span class="topic">typescript</span><span class="topic">web-scraping</span><span class="topic">website-clone</span></div>
         <section class="section">
@@ -311,7 +312,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 19,419，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agents, ai-tools, automation, boilerplate, claude, claude-code, clone, developer-tools, nextjs, react, reverse-engineering, shadcn-ui, skills, tailwindcss, template, typescript, web-scraping, website-clone 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 20,558，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agents, ai-tools, automation, boilerplate, claude, claude-code, clone, developer-tools, nextjs, react, reverse-engineering, shadcn-ui, skills, tailwindcss, template, typescript, web-scraping, website-clone 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -332,44 +333,46 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#5</span>
-          <a href="https://github.com/revfactory/harness" target="_blank" rel="noopener noreferrer">revfactory/harness</a>
+          <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener noreferrer">garrytan/gstack</a>
         </div>
         <div class="meta">
-          <span>语言：HTML</span>
-          <span>Stars：7,777</span>
+          <span>语言：TypeScript</span>
+          <span>Stars：115,888</span>
         </div>
-        <div class="topics"><span class="topic">claude-code</span><span class="topic">claude-code-plugin</span><span class="topic">harness</span><span class="topic">harness-engineering</span></div>
+        <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=revfactory%2Fharness&amp;type=Date" alt="revfactory/harness Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=garrytan%2Fgstack&amp;type=Date" alt="garrytan/gstack Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.</p>
+          <p>Use Garry Tan&#39;s exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 7,777，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 claude-code, claude-code-plugin, harness, harness-engineering 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 HTML 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 115,888，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>Harness — The Team-Architecture Factory for Claude Code</li><li>English | [한국어](README_KO.md) | [日本語](README_JA.md)</li><li>Harness is a team-architecture factory for Claude Code. Say &#34;build a harness for this project&#34; (English) or &#34;하네스 구성해줘&#34; (한국어) or &#34;ハーネスを構成して&#34; (日本語), and the plugin turns your domain description into an agent team and the skills they use — picked from six pre-def...</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>gstack is my answer. I&#39;ve been building products for twenty years, and right now I&#39;m shipping more products than I ever have. In the last 60 days: 3 production services, 40+ shipped features, part-time, while running YC full-time. On logical code change — not ...</li><li>The LOC critics aren&#39;t wrong that raw line counts inflate with AI. They are wrong that normalized-for-inflation, I&#39;m less productive. I&#39;m more productive, by a lot. Full methodology, caveats, and reproduction script: [On the LOC Controversy](docs/ON_THE_LOC_CO...</li><li>2013 — when I built Bookface at YC (772 contributions):</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户任务] --&gt; Planner[Agent 任务规划]
-    Planner --&gt; Registry[Skill 注册表]
-    Registry --&gt; Select[能力匹配 / 权限校验]
-    Select --&gt; Skill[可复用 Skill]
-    Skill --&gt; Tool[工具 / API / Prompt]
-    Tool --&gt; Observation[执行结果]
-    Observation --&gt; Planner
-    Planner --&gt; Output[最终交付]
+    User[用户需求] --&gt; Interface[应用入口]
+    Interface --&gt; Orchestrator[AI 编排层]
+    Orchestrator --&gt; Model[LLM / 模型能力]
+    Orchestrator --&gt; Data[领域数据 / 上下文]
+    Orchestrator --&gt; Tools[工具与自动化流程]
+    Model --&gt; Result[候选结果]
+    Data --&gt; Result
+    Tools --&gt; Result
+    Result --&gt; Review[校验 / 观测 / 反馈]
+    Review --&gt; Output[可交付结果]
           </div>
         </section>
       </li>
