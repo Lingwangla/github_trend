@@ -1,136 +1,28 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-06-27T02:46:10Z
+更新时间：2026-06-28T03:25:45Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
-## 1. [google-labs-code/design.md](https://github.com/google-labs-code/design.md)
-
-- 语言：TypeScript
-- Stars：21,361
-- 主题：未在 GitHub API 中公开 topics
-- Star 趋势：
-
-![google-labs-code/design.md Star History](https://api.star-history.com/svg?repos=google-labs-code%2Fdesign.md&type=Date)
-
-- 作用 / 解决的问题：A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 21,361，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
-  - A DESIGN.md file combines machine-readable design tokens (YAML front matter) with human-readable design rationale (markdown prose). Tokens give agents exact values. Prose tells them *why* those values exist and how to apply them.
-  - Architectural Minimalism meets Journalistic Gravitas. The UI evokes a
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户目标] --> Planner[任务规划 Agent]
-    Planner --> Memory[上下文记忆]
-    Planner --> Tools[工具调用层]
-    Tools --> APIs[外部 API / 本地工具]
-    APIs --> Observation[观察结果]
-    Observation --> Critic[反思 / 评估]
-    Critic --> Planner
-    Planner --> Deliverable[最终结果]
-```
-
-## 2. [opendatalab/MinerU](https://github.com/opendatalab/MinerU)
+## 1. [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire)
 
 - 语言：Python
-- Stars：70,477
-- 主题：ai4science, document-analysis, docx, extract-data, layout-analysis, ocr, parser, pdf, pdf-converter, pdf-extractor-llm, pdf-extractor-pretrain, pdf-extractor-rag, pdf-parser, pptx, python, xlsx
-- Star 趋势：
-
-![opendatalab/MinerU Star History](https://api.star-history.com/svg?repos=opendatalab%2FMinerU&type=Date)
-
-- 作用 / 解决的问题：Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 70,477，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai4science, document-analysis, docx, extract-data, layout-analysis, ocr, parser, pdf, pdf-converter, pdf-extractor-llm, pdf-extractor-pretrain, pdf-extractor-rag, pdf-parser, pptx, python, xlsx 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - [English](README.md) \| [简体中文](README_zh-CN.md)
-  - Converts PDF · DOCX · PPTX · XLSX · Images · Web pages into structured Markdown / JSON · VLM+OCR dual engine · 109 languages <br>
-  - MCP Server · LangChain / Dify / FastGPT native integration · 10+ domestic AI chip support
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户目标] --> Planner[任务规划 Agent]
-    Planner --> Memory[上下文记忆]
-    Planner --> Tools[工具调用层]
-    Tools --> APIs[外部 API / 本地工具]
-    APIs --> Observation[观察结果]
-    Observation --> Critic[反思 / 评估]
-    Critic --> Planner
-    Planner --> Deliverable[最终结果]
-```
-
-## 3. [alchaincyf/zhangxuefeng-skill](https://github.com/alchaincyf/zhangxuefeng-skill)
-
-- 语言：-
-- Stars：9,274
-- 主题：未在 GitHub API 中公开 topics
-- Star 趋势：
-
-![alchaincyf/zhangxuefeng-skill Star History](https://api.star-history.com/svg?repos=alchaincyf%2Fzhangxuefeng-skill&type=Date)
-
-- 作用 / 解决的问题：张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 9,274，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - [看效果](#效果示例) · [安装](#安装) · [蒸馏了什么](#蒸馏了什么) · [调研来源](#调研来源)
-  - 张雪峰    ❯ 停停停，你先别急着说金融。我问你几个问题。
-  - 张雪峰    ❯ 我跟你说，这个问题得看你是什么专业的。
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户任务] --> Planner[Agent 任务规划]
-    Planner --> Registry[Skill 注册表]
-    Registry --> Select[能力匹配 / 权限校验]
-    Select --> Skill[可复用 Skill]
-    Skill --> Tool[工具 / API / Prompt]
-    Tool --> Observation[执行结果]
-    Observation --> Planner
-    Planner --> Output[最终交付]
-```
-
-## 4. [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire)
-
-- 语言：Python
-- Stars：3,176
+- Stars：4,282
 - 主题：ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger, china-stock, claude, claude-code, financial-analysis, fintech, fundamental-analysis, investment, investment-research, llm, mcp, portfolio-management, stock-analysis, stock-market, value-investing, warren-buffett
 - Star 趋势：
 
 ![xbtlin/ai-berkshire Star History](https://api.star-history.com/svg?repos=xbtlin%2Fai-berkshire&type=Date)
 
-- 作用 / 解决的问题：AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。\| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.
+- 作用 / 解决的问题：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。\| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 3,176，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 4,282，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger, china-stock, claude, claude-code, financial-analysis, fintech, fundamental-analysis, investment, investment-research, llm, mcp, portfolio-management, stock-analysis, stock-market, value-investing, warren-buffett 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -155,30 +47,105 @@ flowchart LR
     Client --> Answer[生成回答 / 执行动作]
 ```
 
-## 5. [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
+## 2. [google-labs-code/design.md](https://github.com/google-labs-code/design.md)
 
-- 语言：Python
-- Stars：23,727
-- 主题：agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production
+- 语言：TypeScript
+- Stars：22,404
+- 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
-![calesthio/OpenMontage Star History](https://api.star-history.com/svg?repos=calesthio%2FOpenMontage&type=Date)
+![google-labs-code/design.md Star History](https://api.star-history.com/svg?repos=google-labs-code%2Fdesign.md&type=Date)
 
-- 作用 / 解决的问题：World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.
+- 作用 / 解决的问题：A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 22,404，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
+  - A DESIGN.md file combines machine-readable design tokens (YAML front matter) with human-readable design rationale (markdown prose). Tokens give agents exact values. Prose tells them *why* those values exist and how to apply them.
+  - Architectural Minimalism meets Journalistic Gravitas. The UI evokes a
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户目标] --> Planner[任务规划 Agent]
+    Planner --> Memory[上下文记忆]
+    Planner --> Tools[工具调用层]
+    Tools --> APIs[外部 API / 本地工具]
+    APIs --> Observation[观察结果]
+    Observation --> Critic[反思 / 评估]
+    Critic --> Planner
+    Planner --> Deliverable[最终结果]
+```
+
+## 3. [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)
+
+- 语言：Python
+- Stars：33,174
+- 主题：ai-agent, aippt, office, powerpoint, powerpoint-generation, ppt, pptx, presentation, slide, slides
+- Star 趋势：
+
+![hugohe3/ppt-master Star History](https://api.star-history.com/svg?repos=hugohe3%2Fppt-master&type=Date)
+
+- 作用 / 解决的问题：AI generates a real, editable PowerPoint from any document — native shapes & animations, speaker notes voiced as audio narration, and the option to follow your own .pptx template, not slide images · by Hugo He
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合围绕 ai-agent, aippt, office, powerpoint, powerpoint-generation, ppt, pptx, presentation, slide, slides 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 33,174，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai-agent, aippt, office, powerpoint, powerpoint-generation, ppt, pptx, presentation, slide, slides 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - PPT Master — AI generates natively editable PPTX from any document
+  - Drop in your source material and get back a real PowerPoint: directly editable, with native slide transitions and entrance animations, speaker notes you can turn into audio narration, and the option to follow your own PPT template — a complete deck you can pre...
+  - What you'll do: install Python, install an AI IDE, drop in your material.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户需求] --> Interface[应用入口]
+    Interface --> Orchestrator[AI 编排层]
+    Orchestrator --> Model[LLM / 模型能力]
+    Orchestrator --> Data[领域数据 / 上下文]
+    Orchestrator --> Tools[工具与自动化流程]
+    Model --> Result[候选结果]
+    Data --> Result
+    Tools --> Result
+    Result --> Review[校验 / 观测 / 反馈]
+    Review --> Output[可交付结果]
+```
+
+## 4. [JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template)
+
+- 语言：TypeScript
+- Stars：22,186
+- 主题：ai, ai-agents, ai-tools, automation, boilerplate, claude, claude-code, clone, developer-tools, nextjs, react, reverse-engineering, shadcn-ui, skills, tailwindcss, template, typescript, web-scraping, website-clone
+- Star 趋势：
+
+![JCodesMore/ai-website-cloner-template Star History](https://api.star-history.com/svg?repos=JCodesMore%2Fai-website-cloner-template&type=Date)
+
+- 作用 / 解决的问题：Clone any website with one command using AI coding agents
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 23,727，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agent, agentic-ai, ai, claude, copilot, cursor, elevenlabs, ffmpeg, flux, image-generation, open-source, openai, python, remotion, stable-diffusion, text-to-speech, text-to-video, video-generation, video-production 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 22,186，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai, ai-agents, ai-tools, automation, boilerplate, claude, claude-code, clone, developer-tools, nextjs, react, reverse-engineering, shadcn-ui, skills, tailwindcss, template, typescript, web-scraping, website-clone 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition.
-  - Important distinction: OpenMontage can make image-based videos, but it can also make a real video video for free/open-source workflows: the agent builds a corpus from free stock footage and open archives, retrieves actual motion clips, edits them into a timeli...
-  - "SIGNAL FROM TOMORROW" — a cinematic sci-fi trailer fully produced through OpenMontage: concept, script, scene plan, Veo-generated motion clips, soundtrack, and Remotion composition.
+  - A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents.
+  - Point it at a URL, run /clone-website, and your AI agent will inspect the site, extract design tokens and assets, write component specs, and dispatch parallel builders to reconstruct every section.
+  - Click the image above to watch the full demo on YouTube.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -191,5 +158,43 @@ flowchart LR
     Tool --> Observation[执行结果]
     Observation --> Planner
     Planner --> Output[最终交付]
+```
+
+## 5. [garrytan/gstack](https://github.com/garrytan/gstack)
+
+- 语言：TypeScript
+- Stars：117,305
+- 主题：未在 GitHub API 中公开 topics
+- Star 趋势：
+
+![garrytan/gstack Star History](https://api.star-history.com/svg?repos=garrytan%2Fgstack&type=Date)
+
+- 作用 / 解决的问题：Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 117,305，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - gstack is my answer. I've been building products for twenty years, and right now I'm shipping more products than I ever have. In the last 60 days: 3 production services, 40+ shipped features, part-time, while running YC full-time. On logical code change — not ...
+  - The LOC critics aren't wrong that raw line counts inflate with AI. They are wrong that normalized-for-inflation, I'm less productive. I'm more productive, by a lot. Full methodology, caveats, and reproduction script: [On the LOC Controversy](docs/ON_THE_LOC_CO...
+  - 2013 — when I built Bookface at YC (772 contributions):
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户需求] --> Interface[应用入口]
+    Interface --> Orchestrator[AI 编排层]
+    Orchestrator --> Model[LLM / 模型能力]
+    Orchestrator --> Data[领域数据 / 上下文]
+    Orchestrator --> Tools[工具与自动化流程]
+    Model --> Result[候选结果]
+    Data --> Result
+    Tools --> Result
+    Result --> Review[校验 / 观测 / 反馈]
+    Review --> Output[可交付结果]
 ```
 
