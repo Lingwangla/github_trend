@@ -1,15 +1,52 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-06-30T02:55:30Z
+更新时间：2026-07-01T03:25:44Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
-## 1. [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
+## 1. [usestrix/strix](https://github.com/usestrix/strix)
+
+- 语言：Python
+- Stars：28,245
+- 主题：agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, artificial-intelligence, bug-bounty, code-quality, ctf-tools, cybersecurity, cybersecurity-tools, ethical-hacking, hacking, llm-security, offensive-security, penetration-testing, pentesting-tools, red-teaming, security, security-automation
+- Star 趋势：
+
+![usestrix/strix Star History](https://api.star-history.com/svg?repos=usestrix%2Fstrix&type=Date)
+
+- 作用 / 解决的问题：Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 28,245，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, artificial-intelligence, bug-bounty, code-quality, ctf-tools, cybersecurity, cybersecurity-tools, ethical-hacking, hacking, llm-security, offensive-security, penetration-testing, pentesting-tools, red-teaming, security, security-automation 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - The open-source AI pentesting tool. Autonomous AI hackers that find and fix your app’s vulnerabilities.
+  - Strix are autonomous AI penetration testing agents that act just like real hackers - they run your code dynamically, find vulnerabilities, and validate them through actual proof-of-concepts. Built for developers and security teams who need fast, accurate secur...
+  - Full pentesting toolkit - reconnaissance, exploitation, and validation out of the box
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户目标] --> Planner[任务规划 Agent]
+    Planner --> Memory[上下文记忆]
+    Planner --> Tools[工具调用层]
+    Tools --> APIs[外部 API / 本地工具]
+    APIs --> Observation[观察结果]
+    Observation --> Critic[反思 / 评估]
+    Critic --> Planner
+    Planner --> Deliverable[最终结果]
+```
+
+## 2. [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 
 - 语言：Shell
-- Stars：119,086
+- Stars：121,134
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -21,7 +58,7 @@
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 119,086，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 121,134，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
@@ -42,29 +79,28 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 2. [logto-io/logto](https://github.com/logto-io/logto)
+## 3. [altic-dev/FluidVoice](https://github.com/altic-dev/FluidVoice)
 
-- 语言：TypeScript
-- Stars：12,726
-- 主题：authentication, authorization, email, identity, jwt, login, logto, mfa, oauth2, openid-connect, password, passwordless, rbac, saml, signup, sms, social-login, sso, totp, typescript
+- 语言：Swift
+- Stars：4,984
+- 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
-![logto-io/logto Star History](https://api.star-history.com/svg?repos=logto-io%2Flogto&type=Date)
+![altic-dev/FluidVoice Star History](https://api.star-history.com/svg?repos=altic-dev%2FFluidVoice&type=Date)
 
-- 作用 / 解决的问题：🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.
+- 作用 / 解决的问题：Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 authentication, authorization, email, identity, jwt, login, logto, mfa, oauth2, openid-connect, password, passwordless, rbac, saml, signup, sms, social-login, sso, totp, typescript 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+  - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 12,726，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 authentication, authorization, email, identity, jwt, login, logto, mfa, oauth2, openid-connect, password, passwordless, rbac, saml, signup, sms, social-login, sso, totp, typescript 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 4,984，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 使用 Swift 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Logto is the modern, open-source auth infrastructure for SaaS and AI apps.
-  - It takes the pain out of OIDC and OAuth 2.1 and makes it easy to build secure, production-ready auth with multi-tenancy, enterprise SSO, and RBAC.
-  - Built for teams scaling SaaS, AI, and agent-based platforms without the usual auth headaches.
+  - Open source voice-to-text dictation app for macOS with on-device AI enhancement.
+  - This project is free and open source under GPLv3. If FluidVoice is useful to you, please star the repository — it helps visibility and keeps development going.
+  - Insanely fast Parakeet — rebuilt Parakeet implementation with pretty much zero delay between speaking and seeing words on screen
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -81,37 +117,36 @@ flowchart LR
     Review --> Output[可交付结果]
 ```
 
-## 3. [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire)
+## 4. [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute)
 
-- 语言：Python
-- Stars：6,751
-- 主题：ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger, china-stock, claude, claude-code, financial-analysis, fintech, fundamental-analysis, investment, investment-research, llm, mcp, portfolio-management, stock-analysis, stock-market, value-investing, warren-buffett
+- 语言：TypeScript
+- Stars：8,671
+- 主题：a2a, ai-agents, ai-gateway, anthropic, claude, claude-code, cline, codex, copilot, cursor, deepseek, free-ai, gemini, gemini-cli, llm-gateway, mcp, openai, openai-proxy, qwen, token-saver
 - Star 趋势：
 
-![xbtlin/ai-berkshire Star History](https://api.star-history.com/svg?repos=xbtlin%2Fai-berkshire&type=Date)
+![diegosouzapw/OmniRoute Star History](https://api.star-history.com/svg?repos=diegosouzapw%2FOmniRoute&type=Date)
 
-- 作用 / 解决的问题：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。\| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.
+- 作用 / 解决的问题：Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 6,751，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger, china-stock, claude, claude-code, financial-analysis, fintech, fundamental-analysis, investment, investment-research, llm, mcp, portfolio-management, stock-analysis, stock-market, value-investing, warren-buffett 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 8,671，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 a2a, ai-agents, ai-gateway, anthropic, claude, claude-code, cline, codex, copilot, cursor, deepseek, free-ai, gemini, gemini-cli, llm-gateway, mcp, openai, openai-proxy, qwen, token-saver 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - AI Berkshire - AI 时代的价值投资研究框架
-  - "Price is what you pay, value is what you get." — Warren Buffett
-  - 用 AI 重新定义投资研究的深度与效率。
+  - Never stop coding. Connect every AI tool to 236 providers — 50+ free — through one endpoint.
+  - Plug Claude Code, Codex, Cursor, Cline, Copilot & Antigravity into FREE Claude / GPT / Gemini. Auto-fallback.
+  - RTK + Caveman compression saves 15–95% tokens. Never hit limits.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
     User[用户 / AI 编程助手] --> Client[Agent Client]
     Client --> Protocol[MCP 协议层]
-    Protocol --> Server[xbtlin/ai-berkshire]
+    Protocol --> Server[diegosouzapw/OmniRoute]
     Server --> Tools[工具接口 / Skills]
     Server --> Index[代码索引 / 知识图谱]
     Server --> Data[文件系统 / API / 数据源]
@@ -122,10 +157,10 @@ flowchart LR
     Client --> Answer[生成回答 / 执行动作]
 ```
 
-## 4. [browser-use/video-use](https://github.com/browser-use/video-use)
+## 5. [browser-use/video-use](https://github.com/browser-use/video-use)
 
 - 语言：Python
-- Stars：12,002
+- Stars：12,688
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -137,7 +172,7 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 12,002，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 12,688，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
@@ -156,47 +191,5 @@ flowchart LR
     Observation --> Critic[反思 / 评估]
     Critic --> Planner
     Planner --> Deliverable[最终结果]
-```
-
-## 5. [Unclecheng-li/VulnClaw](https://github.com/Unclecheng-li/VulnClaw)
-
-- 语言：Python
-- Stars：1,205
-- 主题：ai, ai-agent, ai-tools, ctf, cybersecurity, openclaw, penetration-testing, penetration-testing-tools, security-tools, skill
-- Star 趋势：
-
-![Unclecheng-li/VulnClaw Star History](https://api.star-history.com/svg?repos=Unclecheng-li%2FVulnClaw&type=Date)
-
-- 作用 / 解决的问题：基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 1,205，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai, ai-agent, ai-tools, ctf, cybersecurity, openclaw, penetration-testing, penetration-testing-tools, security-tools, skill 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - AI 驱动的渗透测试 CLI 工具 — 说人话，打漏洞。*
-  - 🌐 English version: [README_EN.md](README_EN.md)
-  - 本项目是可独立运行的 AI 渗透测试 Agent。
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户 / AI 编程助手] --> Client[Agent Client]
-    Client --> Protocol[MCP 协议层]
-    Protocol --> Server[Unclecheng-li/VulnClaw]
-    Server --> Tools[工具接口 / Skills]
-    Server --> Index[代码索引 / 知识图谱]
-    Server --> Data[文件系统 / API / 数据源]
-    Tools --> Result[结构化结果]
-    Index --> Result
-    Data --> Result
-    Result --> Client
-    Client --> Answer[生成回答 / 执行动作]
 ```
 
