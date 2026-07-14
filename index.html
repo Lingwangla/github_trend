@@ -147,109 +147,18 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-07-13T02:24:43Z</p>
+      <p class="updated">更新时间：2026-07-14T02:04:12Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#1</span>
-          <a href="https://github.com/Dicklesworthstone/destructive_command_guard" target="_blank" rel="noopener noreferrer">Dicklesworthstone/destructive_command_guard</a>
-        </div>
-        <div class="meta">
-          <span>语言：Rust</span>
-          <span>Stars：2,999</span>
-        </div>
-        <div class="topics"><span class="topic">ai-agents</span><span class="topic">cli</span><span class="topic">developer-tools</span><span class="topic">git</span><span class="topic">rust</span><span class="topic">safety</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=Dicklesworthstone%2Fdestructive_command_guard&amp;type=Date" alt="Dicklesworthstone/destructive_command_guard Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 2,999，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agents, cli, developer-tools, git, rust, safety 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>A high-performance hook for AI coding agents that blocks destructive commands before they execute, protecting your work from accidental deletion across Claude Code, Codex CLI, Gemini CLI, Copilot CLI, VS Code Copilot Chat, Cursor, Hermes Agent, Grok (xAI), and...</li><li>The Problem: AI coding agents (Claude, Codex, Gemini, Copilot, etc.) occasionally run catastrophic commands like git reset --hard, rm -rf ./src, or DROP TABLE users—destroying hours of uncommitted work in seconds.</li><li>The Solution: dcg is a high-performance hook that intercepts destructive commands *before* they execute, blocking them with clear explanations and safer alternatives.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户目标] --&gt; Planner[任务规划 Agent]
-    Planner --&gt; Memory[上下文记忆]
-    Planner --&gt; Tools[工具调用层]
-    Tools --&gt; APIs[外部 API / 本地工具]
-    APIs --&gt; Observation[观察结果]
-    Observation --&gt; Critic[反思 / 评估]
-    Critic --&gt; Planner
-    Planner --&gt; Deliverable[最终结果]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
-          <span class="rank">#2</span>
-          <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener noreferrer">wonderwhy-er/DesktopCommanderMCP</a>
-        </div>
-        <div class="meta">
-          <span>语言：TypeScript</span>
-          <span>Stars：8,014</span>
-        </div>
-        <div class="topics"><span class="topic">agent</span><span class="topic">ai</span><span class="topic">code-analysis</span><span class="topic">code-generation</span><span class="topic">gemini-cli-extension</span><span class="topic">mcp</span><span class="topic">terminal-ai</span><span class="topic">terminal-automation</span><span class="topic">vibe-coding</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=wonderwhy-er%2FDesktopCommanderMCP&amp;type=Date" alt="wonderwhy-er/DesktopCommanderMCP Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 8,014，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent, ai, code-analysis, code-generation, gemini-cli-extension, mcp, terminal-ai, terminal-automation, vibe-coding 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>Search, update, manage files and run terminal commands with AI</li><li>Work with code and text, run processes, and automate tasks, going far beyond other AI editors - while using host client subscriptions instead of API token costs.</li><li>Want a better experience? The Desktop Commander App gives you everything the MCP server does, plus:</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
-    Client --&gt; Protocol[MCP 协议层]
-    Protocol --&gt; Server[wonderwhy-er/DesktopCommanderMCP]
-    Server --&gt; Tools[工具接口 / Skills]
-    Server --&gt; Index[代码索引 / 知识图谱]
-    Server --&gt; Data[文件系统 / API / 数据源]
-    Tools --&gt; Result[结构化结果]
-    Index --&gt; Result
-    Data --&gt; Result
-    Result --&gt; Client
-    Client --&gt; Answer[生成回答 / 执行动作]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
-          <span class="rank">#3</span>
           <a href="https://github.com/HKUDS/Vibe-Trading" target="_blank" rel="noopener noreferrer">HKUDS/Vibe-Trading</a>
         </div>
         <div class="meta">
           <span>语言：Python</span>
-          <span>Stars：20,638</span>
+          <span>Stars：21,809</span>
         </div>
         <div class="topics"><span class="topic">ai-agent</span><span class="topic">algorithmic-trading</span><span class="topic">backtesting</span><span class="topic">fintech</span><span class="topic">llm</span><span class="topic">mcp</span><span class="topic">multi-agent</span><span class="topic">python</span><span class="topic">quantitative-finance</span><span class="topic">trading</span></div>
         <section class="section">
@@ -268,7 +177,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 20,638，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agent, algorithmic-trading, backtesting, fintech, llm, mcp, multi-agent, python, quantitative-finance, trading 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 21,809，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agent, algorithmic-trading, backtesting, fintech, llm, mcp, multi-agent, python, quantitative-finance, trading 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -291,12 +200,58 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#4</span>
+          <span class="rank">#2</span>
+          <a href="https://github.com/moeru-ai/airi" target="_blank" rel="noopener noreferrer">moeru-ai/airi</a>
+        </div>
+        <div class="meta">
+          <span>语言：TypeScript</span>
+          <span>Stars：41,915</span>
+        </div>
+        <div class="topics"><span class="topic">ai-companion</span><span class="topic">ai-vtuber</span><span class="topic">airi</span><span class="topic">digital-life</span><span class="topic">grok-companion</span><span class="topic">live2d</span><span class="topic">neuro-sama</span><span class="topic">neurosama</span><span class="topic">openclaw</span><span class="topic">vrm</span><span class="topic">vtuber</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=moeru-ai%2Fairi&amp;type=Date" alt="moeru-ai/airi Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama&#39;s altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 ai-companion, ai-vtuber, airi, digital-life, grok-companion, live2d, neuro-sama, neurosama, openclaw, vrm, vtuber 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 41,915，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-companion, ai-vtuber, airi, digital-life, grok-companion, live2d, neuro-sama, neurosama, openclaw, vrm, vtuber 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>media=&#34;(prefers-color-scheme: light), (prefers-color-scheme: no-preference)&#34;</li><li>media=&#34;(prefers-color-scheme: light), (prefers-color-scheme: no-preference)&#34;</li><li>media=&#34;(prefers-color-scheme: light), (prefers-color-scheme: no-preference)&#34;</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户需求] --&gt; Interface[应用入口]
+    Interface --&gt; Orchestrator[AI 编排层]
+    Orchestrator --&gt; Model[LLM / 模型能力]
+    Orchestrator --&gt; Data[领域数据 / 上下文]
+    Orchestrator --&gt; Tools[工具与自动化流程]
+    Model --&gt; Result[候选结果]
+    Data --&gt; Result
+    Tools --&gt; Result
+    Result --&gt; Review[校验 / 观测 / 反馈]
+    Review --&gt; Output[可交付结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#3</span>
           <a href="https://github.com/Shubhamsaboo/awesome-llm-apps" target="_blank" rel="noopener noreferrer">Shubhamsaboo/awesome-llm-apps</a>
         </div>
         <div class="meta">
           <span>语言：Python</span>
-          <span>Stars：118,641</span>
+          <span>Stars：119,689</span>
         </div>
         <div class="topics"><span class="topic">agents</span><span class="topic">llms</span><span class="topic">python</span><span class="topic">rag</span></div>
         <section class="section">
@@ -315,7 +270,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 118,641，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agents, llms, python, rag 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 119,689，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agents, llms, python, rag 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -337,47 +292,91 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#5</span>
-          <a href="https://github.com/anthropics/claude-cookbooks" target="_blank" rel="noopener noreferrer">anthropics/claude-cookbooks</a>
+          <span class="rank">#4</span>
+          <a href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener noreferrer">Nutlope/hallmark</a>
         </div>
         <div class="meta">
-          <span>语言：Jupyter Notebook</span>
-          <span>Stars：48,467</span>
+          <span>语言：CSS</span>
+          <span>Stars：5,203</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=anthropics%2Fclaude-cookbooks&amp;type=Date" alt="anthropics/claude-cookbooks Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=Nutlope%2Fhallmark&amp;type=Date" alt="Nutlope/hallmark Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.</p>
+          <p>Anti-AI-slop design skill for Claude Code, Cursor, and Codex.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 48,467，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Jupyter Notebook 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 5,203，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 CSS 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>The Claude Cookbooks provide code and guides designed to help developers build with Claude, offering copy-able code snippets that you can easily integrate into your own projects.</li><li>While the code examples are primarily written in Python, the concepts can be adapted to any programming language that supports interaction with the Claude API.</li><li>Looking for more resources to enhance your experience with Claude and AI assistants? Check out these helpful links:</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>A design skill for Claude Code, Cursor, and Codex that refuses to look AI-generated.</li><li>Hallmark picks a macrostructure for the brief, dresses it in one of twenty themes, runs fifty-seven slop-test gates plus a pre-emit self-critique, and refuses the on-distribution defaults every LLM was trained into. Two pages by Hallmark for two different brie...</li><li>| *(default)* | Build new UI. Picks a macrostructure, applies the rule-set, runs the slop test before handing back. |</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户需求] --&gt; Interface[应用入口]
-    Interface --&gt; Orchestrator[AI 编排层]
-    Orchestrator --&gt; Model[LLM / 模型能力]
-    Orchestrator --&gt; Data[领域数据 / 上下文]
-    Orchestrator --&gt; Tools[工具与自动化流程]
-    Model --&gt; Result[候选结果]
-    Data --&gt; Result
-    Tools --&gt; Result
-    Result --&gt; Review[校验 / 观测 / 反馈]
-    Review --&gt; Output[可交付结果]
+    User[用户任务] --&gt; Planner[Agent 任务规划]
+    Planner --&gt; Registry[Skill 注册表]
+    Registry --&gt; Select[能力匹配 / 权限校验]
+    Select --&gt; Skill[可复用 Skill]
+    Skill --&gt; Tool[工具 / API / Prompt]
+    Tool --&gt; Observation[执行结果]
+    Observation --&gt; Planner
+    Planner --&gt; Output[最终交付]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#5</span>
+          <a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a>
+        </div>
+        <div class="meta">
+          <span>语言：Python</span>
+          <span>Stars：84,815</span>
+        </div>
+        <div class="topics"><span class="topic">antigravity</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">gemini</span><span class="topic">graphrag</span><span class="topic">knowledge-graph</span><span class="topic">leiden</span><span class="topic">openclaw</span><span class="topic">rag</span><span class="topic">skills</span><span class="topic">tree-sitter</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=Graphify-Labs%2Fgraphify&amp;type=Date" alt="Graphify-Labs/graphify Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 84,815，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 antigravity, claude-code, codex, gemini, graphrag, knowledge-graph, leiden, openclaw, rag, skills, tree-sitter 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>🇺🇸 &lt;a href=&#34;README.md&#34;&gt;English&lt;/a&gt; | 🇨🇳 &lt;a href=&#34;docs/translations/README.zh-CN.md&#34;&gt;简体中文&lt;/a&gt; | 🇯🇵 &lt;a href=&#34;docs/translations/README.ja-JP.md&#34;&gt;日本語&lt;/a&gt; | 🇰🇷 &lt;a href=&#34;docs/translations/README.ko-KR.md&#34;&gt;한국어&lt;/a&gt; | 🇩🇪 &lt;a href=&#34;docs/translations/README.de-DE.md&#34;&gt;Deut...</li><li>Code maps for free, fully local. Code is parsed with tree-sitter AST: deterministic, no LLM, nothing leaves your machine. (Docs, PDFs, images and video use your assistant&#39;s model, or a configured API key, for a semantic pass.)</li><li>Every edge is explained. Each connection is tagged EXTRACTED (explicit in the source) or INFERRED (resolved by graphify), so you can tell what was read directly from what was inferred.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户问题] --&gt; Query[查询理解]
+    Query --&gt; Retriever[检索器]
+    Docs[文档 / 知识库] --&gt; Chunk[切分与向量化]
+    Chunk --&gt; Store[向量库 / 索引]
+    Store --&gt; Retriever
+    Retriever --&gt; Context[相关上下文]
+    Context --&gt; LLM[LLM 生成器]
+    Query --&gt; LLM
+    LLM --&gt; Eval[引用校验 / 质量评估]
+    Eval --&gt; Answer[可信答案]
           </div>
         </section>
       </li>
