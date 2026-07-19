@@ -1,15 +1,54 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-07-18T02:03:24Z
+更新时间：2026-07-19T02:15:21Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
-## 1. [PostHog/posthog](https://github.com/PostHog/posthog)
+## 1. [apache/ossie](https://github.com/apache/ossie)
 
 - 语言：Python
-- Stars：36,204
+- Stars：1,281
+- 主题：metadata, semantic
+- Star 趋势：
+
+![apache/ossie Star History](https://api.star-history.com/svg?repos=apache%2Fossie&type=Date)
+
+- 作用 / 解决的问题：Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic data
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合围绕 metadata, semantic 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 1,281，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 metadata, semantic 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - or more contributor license agreements.  See the NOTICE file
+  - distributed with this work for additional information
+  - regarding copyright ownership.  The ASF licenses this file
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户需求] --> Interface[应用入口]
+    Interface --> Orchestrator[AI 编排层]
+    Orchestrator --> Model[LLM / 模型能力]
+    Orchestrator --> Data[领域数据 / 上下文]
+    Orchestrator --> Tools[工具与自动化流程]
+    Model --> Result[候选结果]
+    Data --> Result
+    Tools --> Result
+    Result --> Review[校验 / 观测 / 反馈]
+    Review --> Output[可交付结果]
+```
+
+## 2. [PostHog/posthog](https://github.com/PostHog/posthog)
+
+- 语言：Python
+- Stars：36,610
 - 主题：ab-testing, ai-analytics, analytics, cdp, data-warehouse, experiments, feature-flags, javascript, product-analytics, python, react, session-replay, surveys, typescript, web-analytics
 - Star 趋势：
 
@@ -22,7 +61,7 @@
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 36,204，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 36,610，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ab-testing, ai-analytics, analytics, cdp, data-warehouse, experiments, feature-flags, javascript, product-analytics, python, react, session-replay, surveys, typescript, web-analytics 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -47,67 +86,27 @@ flowchart LR
     Client --> Answer[生成回答 / 执行动作]
 ```
 
-## 2. [HenryNdubuaku/maths-cs-ai-compendium](https://github.com/HenryNdubuaku/maths-cs-ai-compendium)
+## 3. [ibelick/ui-skills](https://github.com/ibelick/ui-skills)
 
 - 语言：TypeScript
-- Stars：6,637
-- 主题：ai-textbook, algorithms, artificial-intelligence, computer-science, computer-vision, deep-learning, jax, linear-algebra, machine-learning, machine-learning-algorithms, math, mathematics, multimodal-learning, nlp, probability, python, reinforcement-learning, speech-processing, statistics
+- Stars：5,047
+- 主题：skills, ui-skills
 - Star 趋势：
 
-![HenryNdubuaku/maths-cs-ai-compendium Star History](https://api.star-history.com/svg?repos=HenryNdubuaku%2Fmaths-cs-ai-compendium&type=Date)
+![ibelick/ui-skills Star History](https://api.star-history.com/svg?repos=ibelick%2Fui-skills&type=Date)
 
-- 作用 / 解决的问题：Become a cracked AI/ML Research Engineer
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 ai-textbook, algorithms, artificial-intelligence, computer-science, computer-vision, deep-learning, jax, linear-algebra, machine-learning, machine-learning-algorithms, math, mathematics, multimodal-learning, nlp, probability, python, reinforcement-learning, speech-processing, statistics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 6,637，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai-textbook, algorithms, artificial-intelligence, computer-science, computer-vision, deep-learning, jax, linear-algebra, machine-learning, machine-learning-algorithms, math, mathematics, multimodal-learning, nlp, probability, python, reinforcement-learning, speech-processing, statistics 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Most textbooks bury good ideas under dense notation, skip the intuition, assume you already know half the material, and quickly get outdated in fast-moving fields like AI. This is an open, unconventional textbook covering maths, computing, and artificial intel...
-  - Over the past years working in AI/ML, I filled notebooks with intuition first, real-world context, no hand-waving explanations of maths, computing and AI concepts. In 2025, a few friends used these notes to prep for interviews at DeepMind, OpenAI, Nvidia etc. ...
-  - This repo includes an MCP server that lets any AI assistant (Claude Code, Cursor, VS Code, etc.) use the compendium as a knowledge base. It requires a local clone of the repo. Comes with tools for educational purposes and example implementations.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
-```
-
-## 3. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
-
-- 语言：CSS
-- Stars：12,074
-- 主题：未在 GitHub API 中公开 topics
-- Star 趋势：
-
-![Nutlope/hallmark Star History](https://api.star-history.com/svg?repos=Nutlope%2Fhallmark&type=Date)
-
-- 作用 / 解决的问题：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
+- 作用 / 解决的问题：Skills for Design Engineers
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 12,074，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 CSS 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 5,047，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 skills, ui-skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - A design skill for Claude Code, Cursor, and Codex that refuses to look AI-generated.
-  - Hallmark picks a macrostructure for the brief, dresses it in one of twenty themes, runs fifty-seven slop-test gates plus a pre-emit self-critique, and refuses the on-distribution defaults every LLM was trained into. Two pages by Hallmark for two different brie...
-  - \| *(default)* \| Build new UI. Picks a macrostructure, applies the rule-set, runs the slop test before handing back. \|
+  - Run npx ui-skills start to route your agent through the right UI skill set for the task.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -122,46 +121,51 @@ flowchart LR
     Planner --> Output[最终交付]
 ```
 
-## 4. [github/copilot-sdk](https://github.com/github/copilot-sdk)
+## 4. [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch)
 
-- 语言：Java
-- Stars：9,801
-- 主题：未在 GitHub API 中公开 topics
+- 语言：Python
+- Stars：39,126
+- 主题：agents, ai, ai-agents, ai-engineering, computer-vision, course, deep-learning, from-scratch, generative-ai, llm, machine-learning, mcp, nlp, python, reinforcement-learning, rust, swarm-intelligence, transformers, tutorial, typescript
 - Star 趋势：
 
-![github/copilot-sdk Star History](https://api.star-history.com/svg?repos=github%2Fcopilot-sdk&type=Date)
+![rohitg00/ai-engineering-from-scratch Star History](https://api.star-history.com/svg?repos=rohitg00%2Fai-engineering-from-scratch&type=Date)
 
-- 作用 / 解决的问题：Multi-platform SDK for integrating GitHub Copilot Agent into apps and services
+- 作用 / 解决的问题：Learn it. Build it. Ship it for others.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 9,801，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 Java 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 39,126，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agents, ai, ai-agents, ai-engineering, computer-vision, course, deep-learning, from-scratch, generative-ai, llm, machine-learning, mcp, nlp, python, reinforcement-learning, rust, swarm-intelligence, transformers, tutorial, typescript 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Embed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust.
-  - The GitHub Copilot SDK exposes the same engine behind Copilot CLI: a production-tested agent runtime you can invoke programmatically. No need to build your own orchestration—you define agent behavior, Copilot handles planning, tool invocation, file edits, and ...
-  - \| SDK                      \| Location                                                                \| Cookbook                                                                                              \| Installation                                         ...
+  - 84% of students already use AI tools. Only 18% feel prepared to use them
+  - 503 lessons. 20 phases. ~320 hours. Python, TypeScript, Rust, Julia. Every lesson ships
+  - a reusable artifact: a prompt, a skill, an agent, an MCP server. Free, open source, MIT.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
-    User[用户目标] --> Planner[任务规划 Agent]
-    Planner --> Memory[上下文记忆]
-    Planner --> Tools[工具调用层]
-    Tools --> APIs[外部 API / 本地工具]
-    APIs --> Observation[观察结果]
-    Observation --> Critic[反思 / 评估]
-    Critic --> Planner
-    Planner --> Deliverable[最终结果]
+    User[用户 / AI 编程助手] --> Client[Agent Client]
+    Client --> Protocol[MCP 协议层]
+    Protocol --> Server[rohitg00/ai-engineering-from-scratch]
+    Server --> Tools[工具接口 / Skills]
+    Server --> Index[代码索引 / 知识图谱]
+    Server --> Data[文件系统 / API / 数据源]
+    Tools --> Result[结构化结果]
+    Index --> Result
+    Data --> Result
+    Result --> Client
+    Client --> Answer[生成回答 / 执行动作]
 ```
 
 ## 5. [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph)
 
 - 语言：Python
-- Stars：19,768
+- Stars：20,195
 - 主题：ai-coding, claude, claude-code, code-review, graphrag, incremental, knowledge-graph, llm, mcp, python, static-analysis, tree-sitter
 - Star 趋势：
 
@@ -173,7 +177,7 @@ flowchart LR
   - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 19,768，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 20,195，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ai-coding, claude, claude-code, code-review, graphrag, incremental, knowledge-graph, llm, mcp, python, static-analysis, tree-sitter 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
