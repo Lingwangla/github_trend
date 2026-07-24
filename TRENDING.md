@@ -1,6 +1,6 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-07-23T02:23:39Z
+更新时间：2026-07-24T02:15:11Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
@@ -9,7 +9,7 @@
 ## 1. [koala73/worldmonitor](https://github.com/koala73/worldmonitor)
 
 - 语言：TypeScript
-- Stars：69,168
+- Stars：71,729
 - 主题：agent, ai, dashboard, geopolitics, mcp, mcp-server, monitoring, news, opensource, osint, palantir, situation
 - Star 趋势：
 
@@ -22,7 +22,7 @@
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 69,168，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 71,729，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 agent, ai, dashboard, geopolitics, mcp, mcp-server, monitoring, news, opensource, osint, palantir, situation 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -47,30 +47,30 @@ flowchart LR
     Client --> Answer[生成回答 / 执行动作]
 ```
 
-## 2. [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
+## 2. [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite)
 
-- 语言：Python
-- Stars：8,371
-- 主题：adhd, claude-, claude-code-plugin, claude-skills, developer-tools, productivity
+- 语言：JavaScript
+- Stars：1,714
+- 主题：agent-skills, ai-agent, browser, skills, skills-sh
 - Star 趋势：
 
-![ayghri/i-have-adhd Star History](https://api.star-history.com/svg?repos=ayghri%2Fi-have-adhd&type=Date)
+![citrolabs/ego-lite Star History](https://api.star-history.com/svg?repos=citrolabs%2Fego-lite&type=Date)
 
-- 作用 / 解决的问题：A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.
+- 作用 / 解决的问题：The best browser for both you and your AI agents work in parallel.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 8,371，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 adhd, claude-, claude-code-plugin, claude-skills, developer-tools, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 1,714，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agent-skills, ai-agent, browser, skills, skills-sh 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Then type /i-have-adhd. No local clone needed: Claude Code fetches the repo and keeps it updated.
-  - Want it on every session? touch ~/.claude/.i-have-adhd-always (see [INSTALL.md](./INSTALL.md)).
-  - codex plugin marketplace add ayghri/i-have-adhd --ref main
+  - The best browser for both you and your AI agents work in parallel.
+  - ego (lite) is a browser where you and your AI agents work in parallel. Your agents run multiple browser tasks in their own Spaces while your tabs stay yours, and tasks complete faster on fewer tokens.
+  - Existing tools like browser-use and agent-browser are browser automation frameworks: they need a separate browser to drive, logins never carry cleanly, and you and the agent end up fighting for the same tabs. ego lite is one browser designed from the start for...
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -85,61 +85,22 @@ flowchart LR
     Planner --> Output[最终交付]
 ```
 
-## 3. [jamiepine/voicebox](https://github.com/jamiepine/voicebox)
+## 3. [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute)
 
 - 语言：TypeScript
-- Stars：45,818
-- 主题：ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, voice-ai, voice-clone, whisper
-- Star 趋势：
-
-![jamiepine/voicebox Star History](https://api.star-history.com/svg?repos=jamiepine%2Fvoicebox&type=Date)
-
-- 作用 / 解决的问题：The open-source AI voice studio. Clone, dictate, create.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, voice-ai, voice-clone, whisper 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 45,818，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, voice-ai, voice-clone, whisper 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Clone any voice. Generate speech. Dictate into any app. Talk to agents in voices you own.<br/>
-  - The full voice I/O stack, running locally on your machine.
-  - Voicebox is a local-first AI voice studio — a free and open-source alternative to ElevenLabs and WisprFlow in one app. Clone voices from a few seconds of audio, generate speech in 23 languages across 7 TTS engines, dictate into any text field with a global hot...
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
-```
-
-## 4. [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute)
-
-- 语言：TypeScript
-- Stars：25,423
+- Stars：27,304
 - 主题：a2a, ai-agents, ai-gateway, anthropic, claude, claude-code, cline, codex, copilot, cursor, deepseek, free-ai, gemini, kimi, llm-gateway, mcp, openai, openai-proxy, qwen, token-saver
 - Star 趋势：
 
 ![diegosouzapw/OmniRoute Star History](https://api.star-history.com/svg?repos=diegosouzapw%2FOmniRoute&type=Date)
 
-- 作用 / 解决的问题：Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors
+- 作用 / 解决的问题：Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 25,423，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 27,304，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 a2a, ai-agents, ai-gateway, anthropic, claude, claude-code, cline, codex, copilot, cursor, deepseek, free-ai, gemini, kimi, llm-gateway, mcp, openai, openai-proxy, qwen, token-saver 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -164,10 +125,10 @@ flowchart LR
     Client --> Answer[生成回答 / 执行动作]
 ```
 
-## 5. [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
+## 4. [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
 
 - 语言：Python
-- Stars：68,828
+- Stars：69,476
 - 主题：agent-skills, ai-agents, antigravity, automation, claude, claude-code, codex, composio, cursor, developer-tools, gemini-cli, mcp, openai-codex, rube, saas, skill, workflow-automation
 - Star 趋势：
 
@@ -180,7 +141,7 @@ flowchart LR
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 68,828，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 69,476，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 agent-skills, ai-agents, antigravity, automation, claude, claude-code, codex, composio, cursor, developer-tools, gemini-cli, mcp, openai-codex, rube, saas, skill, workflow-automation 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -203,5 +164,43 @@ flowchart LR
     Data --> Result
     Result --> Client
     Client --> Answer[生成回答 / 执行动作]
+```
+
+## 5. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
+
+- 语言：JavaScript
+- Stars：10,026
+- 主题：3mf, agents, ai-agents, build123d, cad, dxf, glb, mechanical-engineering, opencascade, robotics, sdf, srdf, step, stl, stp, text-to-cad, urdf
+- Star 趋势：
+
+![earthtojake/text-to-cad Star History](https://api.star-history.com/svg?repos=earthtojake%2Ftext-to-cad&type=Date)
+
+- 作用 / 解决的问题：A collection of agent skills for CAD, robotics and hardware design
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 10,026，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 3mf, agents, ai-agents, build123d, cad, dxf, glb, mechanical-engineering, opencascade, robotics, sdf, srdf, step, stl, stp, text-to-cad, urdf 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - A skills library for CAD, robotics, and hardware design agents
+  - CAD Skills is a library of agent skills for generating, inspecting, sourcing,
+  - slicing, and handing off CAD and robot-description artifacts from local project
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户任务] --> Planner[Agent 任务规划]
+    Planner --> Registry[Skill 注册表]
+    Registry --> Select[能力匹配 / 权限校验]
+    Select --> Skill[可复用 Skill]
+    Skill --> Tool[工具 / API / Prompt]
+    Tool --> Observation[执行结果]
+    Observation --> Planner
+    Planner --> Output[最终交付]
 ```
 
