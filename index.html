@@ -147,62 +147,18 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-07-26T02:25:04Z</p>
+      <p class="updated">更新时间：2026-07-27T02:32:39Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#1</span>
-          <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener noreferrer">alibaba/open-code-review</a>
-        </div>
-        <div class="meta">
-          <span>语言：Go</span>
-          <span>Stars：13,009</span>
-        </div>
-        <div class="topics"><span class="topic">agent</span><span class="topic">agent-skills</span><span class="topic">code-review</span><span class="topic">code-review-assistant</span><span class="topic">harness</span><span class="topic">repository-level-context</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=alibaba%2Fopen-code-review&amp;type=Date" alt="alibaba/open-code-review Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>Open-source &amp; free — Battle-tested at Alibaba&#39;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 13,009，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent, agent-skills, code-review, code-review-assistant, harness, repository-level-context 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Go 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>English | &lt;a href=&#34;README.zh-CN.md&#34;&gt;简体中文&lt;/a&gt; | &lt;a href=&#34;README.ja-JP.md&#34;&gt;日本語&lt;/a&gt; | &lt;a href=&#34;README.ko-KR.md&#34;&gt;한국어&lt;/a&gt; | &lt;a href=&#34;README.ru-RU.md&#34;&gt;Русский&lt;/a&gt;</li><li>Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group&#39;s internal official AI code review assistant — over the past two years, it has served tens of thousands of developers and identified millions of code defects. After thorough...</li><li>It reads Git diffs, sends changed files to a configurable LLM via an agent with tool-use capabilities, and generates structured review comments with line-level precision. The agent can read full file contents, search the codebase, inspect other changed files f...</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户目标] --&gt; Planner[任务规划 Agent]
-    Planner --&gt; Memory[上下文记忆]
-    Planner --&gt; Tools[工具调用层]
-    Tools --&gt; APIs[外部 API / 本地工具]
-    APIs --&gt; Observation[观察结果]
-    Observation --&gt; Critic[反思 / 评估]
-    Critic --&gt; Planner
-    Planner --&gt; Deliverable[最终结果]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
-          <span class="rank">#2</span>
           <a href="https://github.com/citrolabs/ego-lite" target="_blank" rel="noopener noreferrer">citrolabs/ego-lite</a>
         </div>
         <div class="meta">
           <span>语言：JavaScript</span>
-          <span>Stars：3,632</span>
+          <span>Stars：4,681</span>
         </div>
         <div class="topics"><span class="topic">agent-skills</span><span class="topic">ai-agent</span><span class="topic">browser</span><span class="topic">skills</span><span class="topic">skills-sh</span></div>
         <section class="section">
@@ -221,7 +177,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 3,632，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, ai-agent, browser, skills, skills-sh 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 4,681，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, ai-agent, browser, skills, skills-sh 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -241,70 +197,113 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#3</span>
-          <a href="https://github.com/ComposioHQ/awesome-claude-skills" target="_blank" rel="noopener noreferrer">ComposioHQ/awesome-claude-skills</a>
+          <span class="rank">#2</span>
+          <a href="https://github.com/CoreBunch/Instatic" target="_blank" rel="noopener noreferrer">CoreBunch/Instatic</a>
         </div>
         <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：70,615</span>
+          <span>语言：TypeScript</span>
+          <span>Stars：5,722</span>
         </div>
-        <div class="topics"><span class="topic">agent-skills</span><span class="topic">ai-agents</span><span class="topic">antigravity</span><span class="topic">automation</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">composio</span><span class="topic">cursor</span><span class="topic">developer-tools</span><span class="topic">gemini-cli</span><span class="topic">mcp</span><span class="topic">openai-codex</span><span class="topic">rube</span><span class="topic">saas</span><span class="topic">skill</span><span class="topic">workflow-automation</span></div>
+        <div class="topics"><span class="topic">cms</span><span class="topic">css</span><span class="topic">css-framework</span><span class="topic">page-builder</span><span class="topic">static</span><span class="topic">website</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=ComposioHQ%2Fawesome-claude-skills&amp;type=Date" alt="ComposioHQ/awesome-claude-skills Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=CoreBunch%2FInstatic&amp;type=Date" alt="CoreBunch/Instatic Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows</p>
+          <p>The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it&#39;s all there.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 70,615，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, ai-agents, antigravity, automation, claude, claude-code, codex, composio, cursor, developer-tools, gemini-cli, mcp, openai-codex, rube, saas, skill, workflow-automation 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 5,722，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 cms, css, css-framework, page-builder, static, website 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>A comprehensive and curated list of 1000+ production ready and practical Claude Skills and Plugins for enhancing productivity across usecases on not just Claude.ai, Claude Code, but also across coding agents like Codex, Cursor, Gemini CLI, Antigravity and more...</li><li>Skills tell your agent how to work. An MCP Gateway gives it secure access to the tools it needs.</li><li>The connect-apps plugin lets Claude perform real actions - send emails, create issues, post to Slack. It handles auth and connects to 1000+ apps using Composio under the hood.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>A self-hosted CMS where the visual editor, content engine, and publisher all live in one Bun server — and the pages it ships are clean enough to read in view-source.</li><li>[One-Click Deploy](#deploy-in-one-click) · [Quick Start](#quick-start) · [Docs](docs/README.md) · [Plugins](docs/features/plugin-system.md) · [Roadmap](#early-on-purpose)</li><li>Watch the introductory video about Instatic on YouTube.*</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
-    Client --&gt; Protocol[MCP 协议层]
-    Protocol --&gt; Server[ComposioHQ/awesome-claude-skills]
-    Server --&gt; Tools[工具接口 / Skills]
-    Server --&gt; Index[代码索引 / 知识图谱]
-    Server --&gt; Data[文件系统 / API / 数据源]
-    Tools --&gt; Result[结构化结果]
-    Index --&gt; Result
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#3</span>
+          <a href="https://github.com/OtterMind/Chat2DB" target="_blank" rel="noopener noreferrer">OtterMind/Chat2DB</a>
+        </div>
+        <div class="meta">
+          <span>语言：Java</span>
+          <span>Stars：27,159</span>
+        </div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">bi</span><span class="topic">chatgpt</span><span class="topic">clickhouse</span><span class="topic">clickhouse-client</span><span class="topic">database</span><span class="topic">datagrip</span><span class="topic">db2</span><span class="topic">dbeaver</span><span class="topic">gpt</span><span class="topic">hive</span><span class="topic">mysql</span><span class="topic">navicat</span><span class="topic">oracle</span><span class="topic">postgresql</span><span class="topic">redis</span><span class="topic">redis-client</span><span class="topic">sqlserver</span><span class="topic">text2sql</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=OtterMind%2FChat2DB&amp;type=Date" alt="OtterMind/Chat2DB Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 ai, bi, chatgpt, clickhouse, clickhouse-client, database, datagrip, db2, dbeaver, gpt, hive, mysql, navicat, oracle, postgresql, redis, redis-client, sqlserver, text2sql 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 27,159，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, bi, chatgpt, clickhouse, clickhouse-client, database, datagrip, db2, dbeaver, gpt, hive, mysql, navicat, oracle, postgresql, redis, redis-client, sqlserver, text2sql 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Java 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>Chat2DB Community is a free, cross-platform database client for Windows, macOS, and Linux. It runs entirely on your machine and combines a full-featured SQL workspace with an AI assistant that you connect to your own model.</li><li>30+ databases — MySQL, PostgreSQL, Oracle, SQL Server, ClickHouse, MongoDB, Redis, SQLite, MariaDB, TiDB, Hive, DB2, Snowflake, BigQuery, Elasticsearch, and more via plugins.</li><li>SQL workspace — editing, completion, formatting, execution, saved SQL, and execution history.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户需求] --&gt; Interface[应用入口]
+    Interface --&gt; Orchestrator[AI 编排层]
+    Orchestrator --&gt; Model[LLM / 模型能力]
+    Orchestrator --&gt; Data[领域数据 / 上下文]
+    Orchestrator --&gt; Tools[工具与自动化流程]
+    Model --&gt; Result[候选结果]
     Data --&gt; Result
-    Result --&gt; Client
-    Client --&gt; Answer[生成回答 / 执行动作]
+    Tools --&gt; Result
+    Result --&gt; Review[校验 / 观测 / 反馈]
+    Review --&gt; Output[可交付结果]
           </div>
         </section>
       </li>
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#4</span>
-          <a href="https://github.com/anthropics/claude-cookbooks" target="_blank" rel="noopener noreferrer">anthropics/claude-cookbooks</a>
+          <a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener noreferrer">pbakaus/impeccable</a>
         </div>
         <div class="meta">
-          <span>语言：Jupyter Notebook</span>
-          <span>Stars：49,911</span>
+          <span>语言：JavaScript</span>
+          <span>Stars：50,739</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=anthropics%2Fclaude-cookbooks&amp;type=Date" alt="anthropics/claude-cookbooks Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=pbakaus%2Fimpeccable&amp;type=Date" alt="pbakaus/impeccable Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.</p>
+          <p>The design language that makes your AI harness better at design.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
@@ -312,11 +311,11 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 49,911，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Jupyter Notebook 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 50,739，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>The Claude Cookbooks provide code and guides designed to help developers build with Claude, offering copy-able code snippets that you can easily integrate into your own projects.</li><li>While the code examples are primarily written in Python, the concepts can be adapted to any programming language that supports interaction with the Claude API.</li><li>Looking for more resources to enhance your experience with Claude and AI assistants? Check out these helpful links:</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 60 deterministic detector rules for AI-generated frontend design.</li><li>Every model trained on the same SaaS templates. Skip the guidance and you get the same handful of tells on every project: Inter for everything, purple-to-blue gradients, cards nested in cards, gray text on colored backgrounds, the rounded-square icon tile abov...</li><li>One setup flow. /impeccable init writes PRODUCT.md and offers DESIGN.md, so later commands know the audience, brand/product lane, voice, anti-references, colors, type, and components.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
     User[用户需求] --&gt; Interface[应用入口]
@@ -335,44 +334,44 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#5</span>
-          <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener noreferrer">obra/superpowers</a>
+          <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener noreferrer">alibaba/open-code-review</a>
         </div>
         <div class="meta">
-          <span>语言：Shell</span>
-          <span>Stars：261,124</span>
+          <span>语言：Go</span>
+          <span>Stars：13,919</span>
         </div>
-        <div class="topics"><span class="topic">ai</span><span class="topic">brainstorming</span><span class="topic">coding</span><span class="topic">obra</span><span class="topic">sdlc</span><span class="topic">skills</span><span class="topic">subagent-driven-development</span><span class="topic">superpowers</span></div>
+        <div class="topics"><span class="topic">agent</span><span class="topic">agent-skills</span><span class="topic">code-review</span><span class="topic">code-review-assistant</span><span class="topic">harness</span><span class="topic">repository-level-context</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=obra%2Fsuperpowers&amp;type=Date" alt="obra/superpowers Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=alibaba%2Fopen-code-review&amp;type=Date" alt="alibaba/open-code-review Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>An agentic skills framework &amp; software development methodology that works.</p>
+          <p>Open-source &amp; free — Battle-tested at Alibaba&#39;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 261,124，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, brainstorming, coding, obra, sdlc, skills, subagent-driven-development, superpowers 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 13,919，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent, agent-skills, code-review, code-review-assistant, harness, repository-level-context 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Go 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.</li><li>We&#39;re hiring someone to help out full time with Superpowers community and code work.</li><li>If this sounds like someone you know, definitely send them our way.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>English | &lt;a href=&#34;README.zh-CN.md&#34;&gt;简体中文&lt;/a&gt; | &lt;a href=&#34;README.ja-JP.md&#34;&gt;日本語&lt;/a&gt; | &lt;a href=&#34;README.ko-KR.md&#34;&gt;한국어&lt;/a&gt; | &lt;a href=&#34;README.ru-RU.md&#34;&gt;Русский&lt;/a&gt;</li><li>Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group&#39;s internal official AI code review assistant — over the past two years, it has served tens of thousands of developers and identified millions of code defects. After thorough...</li><li>It reads Git diffs, sends changed files to a configurable LLM via an agent with tool-use capabilities, and generates structured review comments with line-level precision. The agent can read full file contents, search the codebase, inspect other changed files f...</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户任务] --&gt; Planner[Agent 任务规划]
-    Planner --&gt; Registry[Skill 注册表]
-    Registry --&gt; Select[能力匹配 / 权限校验]
-    Select --&gt; Skill[可复用 Skill]
-    Skill --&gt; Tool[工具 / API / Prompt]
-    Tool --&gt; Observation[执行结果]
-    Observation --&gt; Planner
-    Planner --&gt; Output[最终交付]
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
           </div>
         </section>
       </li>
