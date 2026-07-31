@@ -1,96 +1,15 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-07-30T01:59:47Z
+更新时间：2026-07-31T02:25:37Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
-## 1. [moeru-ai/airi](https://github.com/moeru-ai/airi)
-
-- 语言：TypeScript
-- Stars：45,406
-- 主题：ai-companion, ai-vtuber, airi, digital-life, grok-companion, live2d, neuro-sama, neurosama, openclaw, vrm, vtuber
-- Star 趋势：
-
-![moeru-ai/airi Star History](https://api.star-history.com/svg?repos=moeru-ai%2Fairi&type=Date)
-
-- 作用 / 解决的问题：💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 ai-companion, ai-vtuber, airi, digital-life, grok-companion, live2d, neuro-sama, neurosama, openclaw, vrm, vtuber 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 45,406，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai-companion, ai-vtuber, airi, digital-life, grok-companion, live2d, neuro-sama, neurosama, openclaw, vrm, vtuber 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  - media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  - media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
-```
-
-## 2. [affaan-m/ECC](https://github.com/affaan-m/ECC)
-
-- 语言：JavaScript
-- Stars：235,614
-- 主题：ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity
-- Star 趋势：
-
-![affaan-m/ECC Star History](https://api.star-history.com/svg?repos=affaan-m%2FECC&type=Date)
-
-- 作用 / 解决的问题：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 235,614，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Your agent can write code, but ECC gives it a coordinated engineering system and toolbox: it plans before it builds, verifies changes with tests, reviews its own work from a fresh context, remembers what matters, and turns repeated wins into reusable skills an...
-  - plan -> test -> implement -> review -> verify -> remember -> improve
-  - Instead of rebuilding that process in every prompt, you install it once and make it part of how your agent works.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户 / AI 编程助手] --> Client[Agent Client]
-    Client --> Protocol[MCP 协议层]
-    Protocol --> Server[affaan-m/ECC]
-    Server --> Tools[工具接口 / Skills]
-    Server --> Index[代码索引 / 知识图谱]
-    Server --> Data[文件系统 / API / 数据源]
-    Tools --> Result[结构化结果]
-    Index --> Result
-    Data --> Result
-    Result --> Client
-    Client --> Answer[生成回答 / 执行动作]
-```
-
-## 3. [huggingface/speech-to-speech](https://github.com/huggingface/speech-to-speech)
+## 1. [huggingface/speech-to-speech](https://github.com/huggingface/speech-to-speech)
 
 - 语言：Python
-- Stars：7,890
+- Stars：8,967
 - 主题：ai, assistant, language-model, machine-learning, python, speech, speech-synthesis, speech-to-text, speech-translation
 - Star 趋势：
 
@@ -102,7 +21,7 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 7,890，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 8,967，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ai, assistant, language-model, machine-learning, python, speech, speech-synthesis, speech-to-text, speech-translation 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -124,28 +43,29 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 4. [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice)
+## 2. [microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners)
 
-- 语言：Python
-- Stars：51,318
-- 主题：未在 GitHub API 中公开 topics
+- 语言：Jupyter Notebook
+- Stars：54,095
+- 主题：ai, artificial-intelligence, cnn, computer-vision, deep-learning, gan, machine-learning, microsoft-for-beginners, nlp, rnn
 - Star 趋势：
 
-![microsoft/VibeVoice Star History](https://api.star-history.com/svg?repos=microsoft%2FVibeVoice&type=Date)
+![microsoft/AI-For-Beginners Star History](https://api.star-history.com/svg?repos=microsoft%2FAI-For-Beginners&type=Date)
 
-- 作用 / 解决的问题：Open-Source Frontier Voice AI
+- 作用 / 解决的问题：12 Weeks, 24 Lessons, AI for All!
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+  - 适合围绕 ai, artificial-intelligence, cnn, computer-vision, deep-learning, gan, machine-learning, microsoft-for-beginners, nlp, rnn 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 51,318，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 54,095，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai, artificial-intelligence, cnn, computer-vision, deep-learning, gan, machine-learning, microsoft-for-beginners, nlp, rnn 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Jupyter Notebook 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - ⭐️ VibeVoice-ASR is natively multilingual, supporting over 50 languages — check the [supported languages](docs/vibevoice-asr.md#language-distribution) for details.
-  - 🔥 The VibeVoice-ASR [finetuning code](finetuning-asr/README.md) is now available!
-  - 2025-12-16: 📣 We added experimental speakers to <a href="docs/vibevoice-realtime-0.5b.md"><strong>VibeVoice‑Realtime‑0.5B</strong></a> for exploration, including multilingual voices in nine languages (DE, FR, IT, JP, KR, NL, PL, PT, ES) and 11 distinct English...
+  - Artificial Intelligence for Beginners - A Curriculum
+  - Explore the world of Artificial Intelligence (AI) with our 12-week, 24-lesson curriculum!  It includes practical lessons, quizzes, and labs. The curriculum is beginner-friendly and covers tools like TensorFlow and PyTorch, as well as ethics in AI
+  - Supported via GitHub Action (Automated & Always Up-to-Date)
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -162,10 +82,10 @@ flowchart LR
     Review --> Output[可交付结果]
 ```
 
-## 5. [different-ai/openwork](https://github.com/different-ai/openwork)
+## 3. [different-ai/openwork](https://github.com/different-ai/openwork)
 
 - 语言：TypeScript
-- Stars：17,963
+- Stars：18,800
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -177,7 +97,7 @@ flowchart LR
   - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 17,963，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 18,800，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
@@ -198,5 +118,80 @@ flowchart LR
     Tools --> Result
     Result --> Review[校验 / 观测 / 反馈]
     Review --> Output[可交付结果]
+```
+
+## 4. [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
+
+- 语言：Python
+- Stars：55,595
+- 主题：ai-prompts, ai-skill, bluesky, claude, claude-code, clawhub, deep-research, hackernews, instagram, openclaw, polymarket, recency, reddit, research, social-media, tiktok, trends, twitter, web-search, youtube
+- Star 趋势：
+
+![mvanhorn/last30days-skill Star History](https://api.star-history.com/svg?repos=mvanhorn%2Flast30days-skill&type=Date)
+
+- 作用 / 解决的问题：AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 55,595，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai-prompts, ai-skill, bluesky, claude, claude-code, clawhub, deep-research, hackernews, instagram, openclaw, polymarket, recency, reddit, research, social-media, tiktok, trends, twitter, web-search, youtube 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - English \| [Français](README.fr.md) \| [Deutsch](README.de.md) \| [Español](README.es.md) \| [Português (Brasil)](README.pt-BR.md) \| [日本語](README.ja.md) \| [简体中文](README.zh-CN.md)
+  - An AI agent-led search engine scored by upvotes, likes, and real money - not editors.
+  - This README tracks the current v3 pipeline. The runtime skill spec lives in [skills/last30days/SKILL.md](skills/last30days/SKILL.md), which is the source of truth for the latest command and setup behavior.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户任务] --> Planner[Agent 任务规划]
+    Planner --> Registry[Skill 注册表]
+    Registry --> Select[能力匹配 / 权限校验]
+    Select --> Skill[可复用 Skill]
+    Skill --> Tool[工具 / API / Prompt]
+    Tool --> Observation[执行结果]
+    Observation --> Planner
+    Planner --> Output[最终交付]
+```
+
+## 5. [ansible/ansible](https://github.com/ansible/ansible)
+
+- 语言：Python
+- Stars：69,906
+- 主题：ansible, python
+- Star 趋势：
+
+![ansible/ansible Star History](https://api.star-history.com/svg?repos=ansible%2Fansible&type=Date)
+
+- 作用 / 解决的问题：Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 69,906，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ansible, python 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - Ansible is a radically simple IT automation system. It handles
+  - configuration management, application deployment, cloud provisioning,
+  - ad-hoc task execution, network automation, and multi-node orchestration. Ansible makes complex
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户目标] --> Planner[任务规划 Agent]
+    Planner --> Memory[上下文记忆]
+    Planner --> Tools[工具调用层]
+    Tools --> APIs[外部 API / 本地工具]
+    APIs --> Observation[观察结果]
+    Observation --> Critic[反思 / 评估]
+    Critic --> Planner
+    Planner --> Deliverable[最终结果]
 ```
 
