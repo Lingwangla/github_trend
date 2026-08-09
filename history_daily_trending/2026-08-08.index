@@ -147,7 +147,7 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-08-09T01:19:48Z</p>
+      <p class="updated">更新时间：2026-08-08T01:15:21Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
@@ -158,7 +158,7 @@
         </div>
         <div class="meta">
           <span>语言：TypeScript</span>
-          <span>Stars：8,975</span>
+          <span>Stars：6,562</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
@@ -177,7 +177,7 @@
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 8,975，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 6,562，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -202,7 +202,7 @@ flowchart LR
         </div>
         <div class="meta">
           <span>语言：JavaScript</span>
-          <span>Stars：84,576</span>
+          <span>Stars：83,909</span>
         </div>
         <div class="topics"><span class="topic">agent-skills</span><span class="topic">antigravity</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">cursor</span><span class="topic">skills</span></div>
         <section class="section">
@@ -221,7 +221,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 84,576，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, antigravity, claude-code, codex, cursor, skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 83,909，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, antigravity, claude-code, codex, cursor, skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -242,44 +242,44 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#3</span>
-          <a href="https://github.com/google/skills" target="_blank" rel="noopener noreferrer">google/skills</a>
+          <a href="https://github.com/cloudflare/computer" target="_blank" rel="noopener noreferrer">cloudflare/computer</a>
         </div>
         <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：16,742</span>
+          <span>语言：TypeScript</span>
+          <span>Stars：5,733</span>
         </div>
-        <div class="topics"><span class="topic">google</span><span class="topic">googlecloud</span><span class="topic">skills</span></div>
+        <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=google%2Fskills&amp;type=Date" alt="google/skills Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=cloudflare%2Fcomputer&amp;type=Date" alt="cloudflare/computer Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>Agent Skills for Google products and technologies</p>
+          <p>Give your agent a computer 👾</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 16,742，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 google, googlecloud, skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 5,733，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>From the npx install command, you can select the specific skills from this</li><li>[Authenticating to Google Cloud](./skills/cloud/google-cloud-recipe-auth)</li><li>[Google Cloud Recipe: Foundation Builder](./skills/cloud/google-cloud-recipe-foundation-builder)</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>Cloudflare Computer is a virtual filesystem that lives inside a</li><li>Durable Object. The Durable Object holds the authoritative state in</li><li>SQLite and exposes one pluggable execution surface through</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户任务] --&gt; Planner[Agent 任务规划]
-    Planner --&gt; Registry[Skill 注册表]
-    Registry --&gt; Select[能力匹配 / 权限校验]
-    Select --&gt; Skill[可复用 Skill]
-    Skill --&gt; Tool[工具 / API / Prompt]
-    Tool --&gt; Observation[执行结果]
-    Observation --&gt; Planner
-    Planner --&gt; Output[最终交付]
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
           </div>
         </section>
       </li>
@@ -290,7 +290,7 @@ flowchart LR
         </div>
         <div class="meta">
           <span>语言：Shell</span>
-          <span>Stars：210,037</span>
+          <span>Stars：208,830</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
@@ -309,7 +309,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 210,037，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 208,830，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -330,44 +330,44 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#5</span>
-          <a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noopener noreferrer">TauricResearch/TradingAgents</a>
+          <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener noreferrer">obra/superpowers</a>
         </div>
         <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：96,481</span>
+          <span>语言：Shell</span>
+          <span>Stars：268,749</span>
         </div>
-        <div class="topics"><span class="topic">agent</span><span class="topic">finance</span><span class="topic">llm</span><span class="topic">multiagent</span><span class="topic">trading</span></div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">brainstorming</span><span class="topic">coding</span><span class="topic">obra</span><span class="topic">sdlc</span><span class="topic">skills</span><span class="topic">subagent-driven-development</span><span class="topic">superpowers</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=TauricResearch%2FTradingAgents&amp;type=Date" alt="TauricResearch/TradingAgents Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=obra%2Fsuperpowers&amp;type=Date" alt="obra/superpowers Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>TradingAgents: Multi-Agents LLM Financial Trading Framework</p>
+          <p>An agentic skills framework &amp; software development methodology that works.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 96,481，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent, finance, llm, multiagent, trading 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 268,749，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, brainstorming, coding, obra, sdlc, skills, subagent-driven-development, superpowers 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>TradingAgents: Multi-Agents LLM Financial Trading Framework</li><li>[2026-07] TradingAgents v0.3.1 released with correctness and stability fixes: Alpha Vantage look-ahead filtering, graph-router crash-safety, graph-shape-aware checkpoint resume, working crypto sentiment sources, a configurable LLM retry budget, Bedrock API-key...</li><li>[2026-06] TradingAgents v0.3.0 released with a verified data-access contract, an expanded provider registry (NVIDIA, Kimi, Groq, Mistral, Bedrock, and any OpenAI-compatible endpoint), FRED and Polymarket data vendors, a current-generation model catalog, and a ...</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.</li><li>Give your agent Superpowers: [Claude Code](#claude-code), [Antigravity](#antigravity), [Codex App](#codex-app), [Codex CLI](#codex-cli), [Cursor](#cursor), [Factory Droid](#factory-droid), [Gemini CLI](#gemini-cli), [GitHub Copilot CLI](#github-copilot-cli), [...</li><li>It starts from the moment you fire up your coding agent. As soon as it sees that you&#39;re building something, it *doesn&#39;t* just jump into trying to write code. Instead, it steps back and asks you what you&#39;re really trying to do.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户目标] --&gt; Planner[任务规划 Agent]
-    Planner --&gt; Memory[上下文记忆]
-    Planner --&gt; Tools[工具调用层]
-    Tools --&gt; APIs[外部 API / 本地工具]
-    APIs --&gt; Observation[观察结果]
-    Observation --&gt; Critic[反思 / 评估]
-    Critic --&gt; Planner
-    Planner --&gt; Deliverable[最终结果]
+    User[用户任务] --&gt; Planner[Agent 任务规划]
+    Planner --&gt; Registry[Skill 注册表]
+    Registry --&gt; Select[能力匹配 / 权限校验]
+    Select --&gt; Skill[可复用 Skill]
+    Skill --&gt; Tool[工具 / API / Prompt]
+    Tool --&gt; Observation[执行结果]
+    Observation --&gt; Planner
+    Planner --&gt; Output[最终交付]
           </div>
         </section>
       </li>
