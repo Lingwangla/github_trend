@@ -147,62 +147,111 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-08-12T01:28:25Z</p>
+      <p class="updated">更新时间：2026-08-13T01:38:59Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#1</span>
-          <a href="https://github.com/msitarzewski/agency-agents" target="_blank" rel="noopener noreferrer">msitarzewski/agency-agents</a>
+          <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">cathrynlavery/diagram-design</a>
         </div>
         <div class="meta">
-          <span>语言：Shell</span>
-          <span>Stars：143,264</span>
+          <span>语言：HTML</span>
+          <span>Stars：10,588</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=msitarzewski%2Fagency-agents&amp;type=Date" alt="msitarzewski/agency-agents Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=cathrynlavery%2Fdiagram-design&amp;type=Date" alt="cathrynlavery/diagram-design Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.</p>
+          <p>29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 143,264，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 10,588，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 HTML 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>🎭 The Agency: AI Specialists Ready to Transform Your Workflow</li><li>A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.</li><li>Born from a Reddit thread and months of iteration, The Agency is a growing collection of meticulously crafted AI agent personalities. Each agent is:</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>New in 2.0 — the Loop: flywheels with a shared-memory hub. The dashed lines are the write-backs.*</li><li>New in 2.3: semantic system patterns and optional accessible motion, while static output stays the default.*</li><li>No Figma. No generic rounded boxes. No 30-minute color-picking sessions.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户目标] --&gt; Planner[任务规划 Agent]
-    Planner --&gt; Memory[上下文记忆]
-    Planner --&gt; Tools[工具调用层]
-    Tools --&gt; APIs[外部 API / 本地工具]
-    APIs --&gt; Observation[观察结果]
-    Observation --&gt; Critic[反思 / 评估]
-    Critic --&gt; Planner
-    Planner --&gt; Deliverable[最终结果]
+    User[用户需求] --&gt; Interface[应用入口]
+    Interface --&gt; Orchestrator[AI 编排层]
+    Orchestrator --&gt; Model[LLM / 模型能力]
+    Orchestrator --&gt; Data[领域数据 / 上下文]
+    Orchestrator --&gt; Tools[工具与自动化流程]
+    Model --&gt; Result[候选结果]
+    Data --&gt; Result
+    Tools --&gt; Result
+    Result --&gt; Review[校验 / 观测 / 反馈]
+    Review --&gt; Output[可交付结果]
           </div>
         </section>
       </li>
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#2</span>
+          <a href="https://github.com/macro-inc/macro" target="_blank" rel="noopener noreferrer">macro-inc/macro</a>
+        </div>
+        <div class="meta">
+          <span>语言：Rust</span>
+          <span>Stars：1,847</span>
+        </div>
+        <div class="topics"><span class="topic">agent</span><span class="topic">ai</span><span class="topic">ai-agents</span><span class="topic">all-in-one</span><span class="topic">crm</span><span class="topic">crm-system</span><span class="topic">email</span><span class="topic">linear</span><span class="topic">mcp</span><span class="topic">messaging</span><span class="topic">notes</span><span class="topic">notion</span><span class="topic">office</span><span class="topic">rust</span><span class="topic">slack</span><span class="topic">slack-alternative</span><span class="topic">startup</span><span class="topic">startup-tools</span><span class="topic">typescript</span><span class="topic">workspace</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=macro-inc%2Fmacro&amp;type=Date" alt="macro-inc/macro Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 1,847，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent, ai, ai-agents, all-in-one, crm, crm-system, email, linear, mcp, messaging, notes, notion, office, rust, slack, slack-alternative, startup, startup-tools, typescript, workspace 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>Macro is the all-in-one workspace for you and your team. It unifies email + messages + docs + tasks + agents + CRM into a single fast interface with shared team-level memory. Everything in your workspace is @linked and searchable so your team (and your agents)...</li><li>We built Macro because we wanted a single operating system for our startup. There are many good software products, and we used them all — Slack, Linear, Notion, HubSpot, and Superhuman — but they don&#39;t work together as one system. As we scaled our last venture...</li><li>Macro is a complete redesign of work software from the ground up as a single system.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
+    Client --&gt; Protocol[MCP 协议层]
+    Protocol --&gt; Server[macro-inc/macro]
+    Server --&gt; Tools[工具接口 / Skills]
+    Server --&gt; Index[代码索引 / 知识图谱]
+    Server --&gt; Data[文件系统 / API / 数据源]
+    Tools --&gt; Result[结构化结果]
+    Index --&gt; Result
+    Data --&gt; Result
+    Result --&gt; Client
+    Client --&gt; Answer[生成回答 / 执行动作]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#3</span>
           <a href="https://github.com/semantica-agi/semantica" target="_blank" rel="noopener noreferrer">semantica-agi/semantica</a>
         </div>
         <div class="meta">
           <span>语言：Python</span>
-          <span>Stars：4,907</span>
+          <span>Stars：5,737</span>
         </div>
         <div class="topics"><span class="topic">agent-memory</span><span class="topic">ai</span><span class="topic">ai-governance</span><span class="topic">ai-infrastructure</span><span class="topic">artificial-intelligence</span><span class="topic">context-engineering</span><span class="topic">context-graphs</span><span class="topic">data-engineering</span><span class="topic">decision-intelligence</span><span class="topic">developer-tools</span><span class="topic">explainable-ai</span><span class="topic">generative-ai</span><span class="topic">graph-rag</span><span class="topic">knowledge-graph</span><span class="topic">llm</span><span class="topic">ontology</span><span class="topic">provenance</span><span class="topic">python</span><span class="topic">reasoning</span><span class="topic">semantic-search</span></div>
         <section class="section">
@@ -221,7 +270,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 4,907，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-memory, ai, ai-governance, ai-infrastructure, artificial-intelligence, context-engineering, context-graphs, data-engineering, decision-intelligence, developer-tools, explainable-ai, generative-ai, graph-rag, knowledge-graph, llm, ontology, provenance, python, reasoning, semantic-search 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 5,737，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-memory, ai, ai-governance, ai-infrastructure, artificial-intelligence, context-engineering, context-graphs, data-engineering, decision-intelligence, developer-tools, explainable-ai, generative-ai, graph-rag, knowledge-graph, llm, ontology, provenance, python, reasoning, semantic-search 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -243,138 +292,89 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#3</span>
-          <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener noreferrer">addyosmani/agent-skills</a>
-        </div>
-        <div class="meta">
-          <span>语言：JavaScript</span>
-          <span>Stars：86,230</span>
-        </div>
-        <div class="topics"><span class="topic">agent-skills</span><span class="topic">antigravity</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">cursor</span><span class="topic">skills</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=addyosmani%2Fagent-skills&amp;type=Date" alt="addyosmani/agent-skills Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>Production-grade engineering skills for AI coding agents.</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 86,230，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, antigravity, claude-code, codex, cursor, skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>Production-grade engineering skills for AI coding agents.</li><li>Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.</li><li>DEFINE          PLAN           BUILD          VERIFY         REVIEW          SHIP</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户任务] --&gt; Planner[Agent 任务规划]
-    Planner --&gt; Registry[Skill 注册表]
-    Registry --&gt; Select[能力匹配 / 权限校验]
-    Select --&gt; Skill[可复用 Skill]
-    Skill --&gt; Tool[工具 / API / Prompt]
-    Tool --&gt; Observation[执行结果]
-    Observation --&gt; Planner
-    Planner --&gt; Output[最终交付]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
           <span class="rank">#4</span>
-          <a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" rel="noopener noreferrer">ZhuLinsen/daily_stock_analysis</a>
+          <a href="https://github.com/stablyai/orca" target="_blank" rel="noopener noreferrer">stablyai/orca</a>
         </div>
         <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：62,149</span>
+          <span>语言：TypeScript</span>
+          <span>Stars：43,921</span>
         </div>
-        <div class="topics"><span class="topic">a-stock</span><span class="topic">ai-agent</span><span class="topic">aigc</span><span class="topic">llm</span><span class="topic">quant</span><span class="topic">quantitative-finance</span><span class="topic">quantitative-trading</span></div>
+        <div class="topics"><span class="topic">ade</span><span class="topic">agent-ide</span><span class="topic">ai-agents</span><span class="topic">claude-code</span><span class="topic">cli</span><span class="topic">codex</span><span class="topic">cursor-agent</span><span class="topic">devtools</span><span class="topic">ghostty</span><span class="topic">ide</span><span class="topic">mobile-app</span><span class="topic">opencode</span><span class="topic">orchestration</span><span class="topic">parallel-agents</span><span class="topic">pi</span><span class="topic">terminal</span><span class="topic">worktrees</span><span class="topic">yc-backed</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=ZhuLinsen%2Fdaily_stock_analysis&amp;type=Date" alt="ZhuLinsen/daily_stock_analysis Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=stablyai%2Forca&amp;type=Date" alt="stablyai/orca Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.</p>
+          <p>Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 a-stock, ai-agent, aigc, llm, quant, quantitative-finance, quantitative-trading 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 62,149，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 a-stock, ai-agent, aigc, llm, quant, quantitative-finance, quantitative-trading 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 43,921，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ade, agent-ide, ai-agents, claude-code, cli, codex, cursor-agent, devtools, ghostty, ide, mobile-app, opencode, orchestration, parallel-agents, pi, terminal, worktrees, yc-backed 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股/台股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱</li><li>[产品预览](#-产品预览) · [功能特性](#-功能特性) · [快速开始](#-快速开始) · [推送效果](#-推送效果) · [文档中心](docs/INDEX.md) · [完整指南](docs/full-guide.md)</li><li>简体中文 | [English](docs/README_EN.md) | [繁體中文](docs/README_CHT.md)</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>Run Codex, ClaudeCode, OpenCode or Pi side-by-side — each in its own worktree, tracked in one place.</li><li>Monitor and steer your agents from your phone — get notified when an agent finishes and send follow-ups from anywhere.</li><li>Fan one prompt across five agents, each in its own isolated git worktree — compare the results and merge the winner.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户需求] --&gt; Interface[应用入口]
-    Interface --&gt; Orchestrator[AI 编排层]
-    Orchestrator --&gt; Model[LLM / 模型能力]
-    Orchestrator --&gt; Data[领域数据 / 上下文]
-    Orchestrator --&gt; Tools[工具与自动化流程]
-    Model --&gt; Result[候选结果]
-    Data --&gt; Result
-    Tools --&gt; Result
-    Result --&gt; Review[校验 / 观测 / 反馈]
-    Review --&gt; Output[可交付结果]
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
           </div>
         </section>
       </li>
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#5</span>
-          <a href="https://github.com/vitali87/code-graph-rag" target="_blank" rel="noopener noreferrer">vitali87/code-graph-rag</a>
+          <a href="https://github.com/msitarzewski/agency-agents" target="_blank" rel="noopener noreferrer">msitarzewski/agency-agents</a>
         </div>
         <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：3,828</span>
+          <span>语言：Shell</span>
+          <span>Stars：144,593</span>
         </div>
-        <div class="topics"><span class="topic">ai</span><span class="topic">ast</span><span class="topic">claude-code</span><span class="topic">code-analysis</span><span class="topic">code-understanding</span><span class="topic">codebase-search</span><span class="topic">developer-tools</span><span class="topic">graph-database</span><span class="topic">knowledge-graph</span><span class="topic">llm</span><span class="topic">mcp</span><span class="topic">mcp-server</span><span class="topic">memgraph</span><span class="topic">monorepo</span><span class="topic">multi-language</span><span class="topic">python</span><span class="topic">rag</span><span class="topic">retrieval-augmented-generation</span><span class="topic">semantic-search</span><span class="topic">tree-sitter</span></div>
+        <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=vitali87%2Fcode-graph-rag&amp;type=Date" alt="vitali87/code-graph-rag Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=msitarzewski%2Fagency-agents&amp;type=Date" alt="msitarzewski/agency-agents Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs</p>
+          <p>A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 3,828，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ast, claude-code, code-analysis, code-understanding, codebase-search, developer-tools, graph-database, knowledge-graph, llm, mcp, mcp-server, memgraph, monorepo, multi-language, python, rag, retrieval-augmented-generation, semantic-search, tree-sitter 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 144,593，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>Stars/Forks: shields.io hits GitHub&#39;s API (returns &#34;repo not found&#34; for suspended accounts).</li><li>gitcgr: indexes from GitHub (shows &#34;not indexed&#34; while unavailable).</li><li>MseeP.ai: badge PNG ignores inline height on Bitbucket and renders as a full-size tile.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>🎭 The Agency: AI Specialists Ready to Transform Your Workflow</li><li>A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.</li><li>Born from a Reddit thread and months of iteration, The Agency is a growing collection of meticulously crafted AI agent personalities. Each agent is:</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
-    Client --&gt; Protocol[MCP 协议层]
-    Protocol --&gt; Server[vitali87/code-graph-rag]
-    Server --&gt; Tools[工具接口 / Skills]
-    Server --&gt; Index[代码索引 / 知识图谱]
-    Server --&gt; Data[文件系统 / API / 数据源]
-    Tools --&gt; Result[结构化结果]
-    Index --&gt; Result
-    Data --&gt; Result
-    Result --&gt; Client
-    Client --&gt; Answer[生成回答 / 执行动作]
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
           </div>
         </section>
       </li>
