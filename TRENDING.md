@@ -1,6 +1,6 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-08-18T00:58:25Z
+更新时间：2026-08-19T00:58:43Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
@@ -9,7 +9,7 @@
 ## 1. [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)
 
 - 语言：Python
-- Stars：106,040
+- Stars：108,542
 - 主题：ai-video-generator, content-creation, ffmpeg, instagram-reels, llm, python, short-video, subtitles, text-to-speech, tiktok, video-automation, video-workflow, workflow-automation, youtube-shorts
 - Star 趋势：
 
@@ -21,7 +21,7 @@
   - 适合围绕 ai-video-generator, content-creation, ffmpeg, instagram-reels, llm, python, short-video, subtitles, text-to-speech, tiktok, video-automation, video-workflow, workflow-automation, youtube-shorts 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 106,040，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 108,542，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ai-video-generator, content-creation, ffmpeg, instagram-reels, llm, python, short-video, subtitles, text-to-speech, tiktok, video-automation, video-workflow, workflow-automation, youtube-shorts 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -45,29 +45,29 @@ flowchart LR
     Review --> Output[可交付结果]
 ```
 
-## 2. [usestrix/strix](https://github.com/usestrix/strix)
+## 2. [chaitanyagiri/munder-difflin](https://github.com/chaitanyagiri/munder-difflin)
 
-- 语言：Python
-- Stars：54,180
-- 主题：agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, artificial-intelligence, bug-bounty, code-quality, ctf-tools, cybersecurity, cybersecurity-tools, ethical-hacking, hacking, llm-security, offensive-security, penetration-testing, pentesting-tools, red-teaming, security, security-automation
+- 语言：TypeScript
+- Stars：2,035
+- 主题：agents, claude-code, free, harness, harness-engineering, memory
 - Star 趋势：
 
-![usestrix/strix Star History](https://api.star-history.com/svg?repos=usestrix%2Fstrix&type=Date)
+![chaitanyagiri/munder-difflin Star History](https://api.star-history.com/svg?repos=chaitanyagiri%2Fmunder-difflin&type=Date)
 
-- 作用 / 解决的问题：Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.
+- 作用 / 解决的问题：local multi-agent harness
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 54,180，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, artificial-intelligence, bug-bounty, code-quality, ctf-tools, cybersecurity, cybersecurity-tools, ethical-hacking, hacking, llm-security, offensive-security, penetration-testing, pentesting-tools, red-teaming, security, security-automation 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 2,035，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agents, claude-code, free, harness, harness-engineering, memory 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - The open-source AI pentesting tool. Autonomous AI hackers that find and fix your app’s vulnerabilities.
-  - Strix are autonomous AI penetration testing agents that act just like real hackers - they run your code dynamically, find vulnerabilities, and validate them through actual proofs-of-concept. Built for developers and security teams who need fast, accurate secur...
-  - Full pentesting toolkit - reconnaissance, exploitation, and validation out of the box
+  - Free, open source and performant — a multi-agent harness that works with the
+  - subscriptions you already pay for, on their hourly limits. It turns the terminal coding CLI
+  - you already run into a clone of you, one that keeps working while you're away and
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -85,7 +85,7 @@ flowchart LR
 ## 3. [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory)
 
 - 语言：Rust
-- Stars：2,061
+- Stars：2,727
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -97,7 +97,7 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 2,061，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 2,727，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
@@ -118,10 +118,51 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 4. [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)
+## 4. [volcengine/OpenViking](https://github.com/volcengine/OpenViking)
 
 - 语言：Python
-- Stars：28,435
+- Stars：29,384
+- 主题：agent-memory, agent-plugins, agentic-rag, context-database, dsh-plugin, self-evolving
+- Star 趋势：
+
+![volcengine/OpenViking Star History](https://api.star-history.com/svg?repos=volcengine%2FOpenViking&type=Date)
+
+- 作用 / 解决的问题：Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 29,384，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agent-memory, agent-plugins, agentic-rag, context-database, dsh-plugin, self-evolving 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - English / [中文](README_CN.md) / [日本語](README_JA.md)
+  - ├── resources/              # Resources: project docs, repos, web pages, etc.
+  - L0 (Abstract): a one-sentence summary for quick relevance checks.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户问题] --> Query[查询理解]
+    Query --> Retriever[检索器]
+    Docs[文档 / 知识库] --> Chunk[切分与向量化]
+    Chunk --> Store[向量库 / 索引]
+    Store --> Retriever
+    Retriever --> Context[相关上下文]
+    Context --> LLM[LLM 生成器]
+    Query --> LLM
+    LLM --> Eval[引用校验 / 质量评估]
+    Eval --> Answer[可信答案]
+```
+
+## 5. [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)
+
+- 语言：Python
+- Stars：29,199
 - 主题：ai-agents, claude-code, cloud-security, cybersecurity, devsecops, ethical-hacking, incident-response, infosec, llm, malware-analysis, mcp, mitre-attack, nist-csf, osint, penetration-testing, red-team, security, security-automation, threat-hunting, threat-intelligence
 - Star 趋势：
 
@@ -135,7 +176,7 @@ flowchart LR
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 28,435，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 29,199，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ai-agents, claude-code, cloud-security, cybersecurity, devsecops, ethical-hacking, incident-response, infosec, llm, malware-analysis, mcp, mitre-attack, nist-csf, osint, penetration-testing, red-team, security, security-automation, threat-hunting, threat-intelligence 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -158,44 +199,5 @@ flowchart LR
     Data --> Result
     Result --> Client
     Client --> Answer[生成回答 / 执行动作]
-```
-
-## 5. [santifer/career-ops](https://github.com/santifer/career-ops)
-
-- 语言：JavaScript
-- Stars：64,651
-- 主题：ai, ai-agent, anthropic, ats, automation, beginner-friendly, career, careerops, claude, claude-code, cli, first-timers-only, golang, good-first-issue, interview-prep, job-application, job-hunting, job-search, open-source, resume
-- Star 趋势：
-
-![santifer/career-ops Star History](https://api.star-history.com/svg?repos=santifer%2Fcareer-ops&type=Date)
-
-- 作用 / 解决的问题：Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 ai, ai-agent, anthropic, ats, automation, beginner-friendly, career, careerops, claude, claude-code, cli, first-timers-only, golang, good-first-issue, interview-prep, job-application, job-hunting, job-search, open-source, resume 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 64,651，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai, ai-agent, anthropic, ats, automation, beginner-friendly, career, careerops, claude, claude-code, cli, first-timers-only, golang, good-first-issue, interview-prep, job-application, job-hunting, job-search, open-source, resume 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - [English](README.md) \| [Español](README.es.md) \| [Deutsch](README.de.md) \| [Français](README.fr.md) \| [Português (Brasil)](README.pt-BR.md) \| [한국어](README.ko-KR.md) \| [日本語](README.ja.md) \| [简体中文](README.cn.md) \| [繁體中文](README.zh-TW.md) \| [Українська](README.ua...
-  - Companies use AI to filter candidates. <strong>I just gave candidates AI to <em>choose</em> companies.</strong><br>
-  - Evaluates offers with a structured evaluation -- blocks A-F scored across 5 weighted dimensions, plus block G, a separate posting-legitimacy assessment that never affects the 1-5 score
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
 ```
 
