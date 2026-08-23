@@ -147,18 +147,62 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-08-22T00:58:58Z</p>
+      <p class="updated">更新时间：2026-08-23T01:03:27Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#1</span>
+          <a href="https://github.com/openai/codex" target="_blank" rel="noopener noreferrer">openai/codex</a>
+        </div>
+        <div class="meta">
+          <span>语言：Rust</span>
+          <span>Stars：113,399</span>
+        </div>
+        <div class="topics"><span class="topic">未公开 topics</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=openai%2Fcodex&amp;type=Date" alt="openai/codex Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>Lightweight coding agent that runs in your terminal</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 113,399，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>Run the following on Mac or Linux to install Codex CLI:</li><li>Run the following on Windows to install Codex CLI:</li><li>Codex CLI can also be installed via the following package managers:</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#2</span>
           <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">mattpocock/skills</a>
         </div>
         <div class="meta">
           <span>语言：Shell</span>
-          <span>Stars：229,509</span>
+          <span>Stars：232,057</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
@@ -177,7 +221,7 @@
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 229,509，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 232,057，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -197,86 +241,40 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#2</span>
-          <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener noreferrer">harry0703/MoneyPrinterTurbo</a>
-        </div>
-        <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：113,915</span>
-        </div>
-        <div class="topics"><span class="topic">ai-video-generator</span><span class="topic">content-creation</span><span class="topic">ffmpeg</span><span class="topic">instagram-reels</span><span class="topic">llm</span><span class="topic">python</span><span class="topic">short-video</span><span class="topic">subtitles</span><span class="topic">text-to-speech</span><span class="topic">tiktok</span><span class="topic">video-automation</span><span class="topic">video-workflow</span><span class="topic">workflow-automation</span><span class="topic">youtube-shorts</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=harry0703%2FMoneyPrinterTurbo&amp;type=Date" alt="harry0703/MoneyPrinterTurbo Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 ai-video-generator, content-creation, ffmpeg, instagram-reels, llm, python, short-video, subtitles, text-to-speech, tiktok, video-automation, video-workflow, workflow-automation, youtube-shorts 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 113,915，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-video-generator, content-creation, ffmpeg, instagram-reels, llm, python, short-video, subtitles, text-to-speech, tiktok, video-automation, video-workflow, workflow-automation, youtube-shorts 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>⚡ 超低成本与稳定调度：价格低至官方 1 折，模型倍率与调用明细全程透明；多路供应动态调度，告别限流与断连困扰。&lt;br&gt;</li><li>🧠 全系大模型完美驱动脚本：全面覆盖 OpenAI、Claude、Google Gemini、DeepSeek、通义千问（Qwen）等主流 LLM，兼容 OpenAI 标准接口，为 MoneyPrinterTurbo 的文案生成与素材关键词提炼提供低延迟、高并发支持。&lt;br&gt;</li><li>🎨 前沿多模态生态：全面接入 FLUX、Midjourney、Seedance、可灵（Kling）、Sora、Luma 等顶级生图与视频模型，满足下一代 AI 视频生成需求。&lt;br&gt;</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户需求] --&gt; Interface[应用入口]
-    Interface --&gt; Orchestrator[AI 编排层]
-    Orchestrator --&gt; Model[LLM / 模型能力]
-    Orchestrator --&gt; Data[领域数据 / 上下文]
-    Orchestrator --&gt; Tools[工具与自动化流程]
-    Model --&gt; Result[候选结果]
-    Data --&gt; Result
-    Tools --&gt; Result
-    Result --&gt; Review[校验 / 观测 / 反馈]
-    Review --&gt; Output[可交付结果]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
           <span class="rank">#3</span>
-          <a href="https://github.com/PostHog/posthog" target="_blank" rel="noopener noreferrer">PostHog/posthog</a>
+          <a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a>
         </div>
         <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：38,292</span>
+          <span>语言：JavaScript</span>
+          <span>Stars：242,174</span>
         </div>
-        <div class="topics"><span class="topic">ab-testing</span><span class="topic">ai-analytics</span><span class="topic">analytics</span><span class="topic">cdp</span><span class="topic">data-warehouse</span><span class="topic">experiments</span><span class="topic">feature-flags</span><span class="topic">javascript</span><span class="topic">product-analytics</span><span class="topic">python</span><span class="topic">react</span><span class="topic">session-replay</span><span class="topic">surveys</span><span class="topic">typescript</span><span class="topic">web-analytics</span></div>
+        <div class="topics"><span class="topic">ai-agents</span><span class="topic">anthropic</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">developer-tools</span><span class="topic">llm</span><span class="topic">mcp</span><span class="topic">productivity</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=PostHog%2Fposthog&amp;type=Date" alt="PostHog/posthog Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=affaan-m%2FECC&amp;type=Date" alt="affaan-m/ECC Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.</p>
+          <p>The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 38,292，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ab-testing, ai-analytics, analytics, cdp, data-warehouse, experiments, feature-flags, javascript, product-analytics, python, react, session-replay, surveys, typescript, web-analytics 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 242,174，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>PostHog is the open source platform for building self-driving products</li><li>[PostHog is the open source platform for building self-driving products](#posthog-is-the-open-source-platform-for-building-self-driving-products)</li><li>[Getting started with PostHog](#getting-started-with-posthog)</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>That installs ECC&#39;s skills, agents, commands, and plugin-managed hooks. If you choose this path, stop there. Do not also run a full manual install into Claude Code.</li><li>Guided package setup is coming in ecc-universal 2.2.0. Use the native</li><li>Claude plugin commands above while npm remains on 2.1.0.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
     User[用户 / AI 编程助手] --&gt; Client[Agent Client]
     Client --&gt; Protocol[MCP 协议层]
-    Protocol --&gt; Server[PostHog/posthog]
+    Protocol --&gt; Server[affaan-m/ECC]
     Server --&gt; Tools[工具接口 / Skills]
     Server --&gt; Index[代码索引 / 知识图谱]
     Server --&gt; Data[文件系统 / API / 数据源]
@@ -295,7 +293,7 @@ flowchart LR
         </div>
         <div class="meta">
           <span>语言：Shell</span>
-          <span>Stars：275,659</span>
+          <span>Stars：276,192</span>
         </div>
         <div class="topics"><span class="topic">ai</span><span class="topic">brainstorming</span><span class="topic">coding</span><span class="topic">obra</span><span class="topic">sdlc</span><span class="topic">skills</span><span class="topic">subagent-driven-development</span><span class="topic">superpowers</span></div>
         <section class="section">
@@ -314,7 +312,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 275,659，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, brainstorming, coding, obra, sdlc, skills, subagent-driven-development, superpowers 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 276,192，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, brainstorming, coding, obra, sdlc, skills, subagent-driven-development, superpowers 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -335,34 +333,34 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#5</span>
-          <a href="https://github.com/santifer/career-ops" target="_blank" rel="noopener noreferrer">santifer/career-ops</a>
+          <a href="https://github.com/Wei-Shaw/sub2api" target="_blank" rel="noopener noreferrer">Wei-Shaw/sub2api</a>
         </div>
         <div class="meta">
-          <span>语言：JavaScript</span>
-          <span>Stars：67,448</span>
+          <span>语言：Go</span>
+          <span>Stars：38,787</span>
         </div>
-        <div class="topics"><span class="topic">ai</span><span class="topic">ai-agent</span><span class="topic">anthropic</span><span class="topic">ats</span><span class="topic">automation</span><span class="topic">beginner-friendly</span><span class="topic">career</span><span class="topic">careerops</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">cli</span><span class="topic">first-timers-only</span><span class="topic">golang</span><span class="topic">good-first-issue</span><span class="topic">interview-prep</span><span class="topic">job-application</span><span class="topic">job-hunting</span><span class="topic">job-search</span><span class="topic">open-source</span><span class="topic">resume</span></div>
+        <div class="topics"><span class="topic">2api</span><span class="topic">antigravity2api</span><span class="topic">cc2api</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">crs</span><span class="topic">crs2</span><span class="topic">gemini</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=santifer%2Fcareer-ops&amp;type=Date" alt="santifer/career-ops Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=Wei-Shaw%2Fsub2api&amp;type=Date" alt="Wei-Shaw/sub2api Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)</p>
+          <p>Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 ai, ai-agent, anthropic, ats, automation, beginner-friendly, career, careerops, claude, claude-code, cli, first-timers-only, golang, good-first-issue, interview-prep, job-application, job-hunting, job-search, open-source, resume 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 2api, antigravity2api, cc2api, claude, claude-code, codex, crs, crs2, gemini 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 67,448，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agent, anthropic, ats, automation, beginner-friendly, career, careerops, claude, claude-code, cli, first-timers-only, golang, good-first-issue, interview-prep, job-application, job-hunting, job-search, open-source, resume 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 38,787，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 2api, antigravity2api, cc2api, claude, claude-code, codex, crs, crs2, gemini 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Go 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>[English](README.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Português (Brasil)](README.pt-BR.md) | [한국어](README.ko-KR.md) | [日本語](README.ja.md) | [简体中文](README.cn.md) | [繁體中文](README.zh-TW.md) | [Українська](README.ua...</li><li>Companies use AI to filter candidates. &lt;strong&gt;I just gave candidates AI to &lt;em&gt;choose&lt;/em&gt; companies.&lt;/strong&gt;&lt;br&gt;</li><li>Generates tailored PDFs -- ATS-optimized CVs customized per job description</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>AI API Gateway Platform for Subscription Quota Distribution</li><li>English | [中文](README_CN.md) | [日本語](README_JA.md)</li><li>Please read the following carefully before using this project:</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
     User[用户需求] --&gt; Interface[应用入口]
