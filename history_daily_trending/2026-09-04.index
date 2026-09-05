@@ -147,7 +147,7 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-09-05T02:41:54Z</p>
+      <p class="updated">更新时间：2026-09-04T02:40:18Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
@@ -158,7 +158,7 @@
         </div>
         <div class="meta">
           <span>语言：Shell</span>
-          <span>Stars：250,519</span>
+          <span>Stars：247,604</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
@@ -177,7 +177,7 @@
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 250,519，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 247,604，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -198,11 +198,55 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#2</span>
+          <a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">NousResearch/hermes-agent</a>
+        </div>
+        <div class="meta">
+          <span>语言：Python</span>
+          <span>Stars：240,897</span>
+        </div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">ai-agent</span><span class="topic">ai-agents</span><span class="topic">anthropic</span><span class="topic">chatgpt</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">hermes</span><span class="topic">hermes-agent</span><span class="topic">llm</span><span class="topic">nous-research</span><span class="topic">openai</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=NousResearch%2Fhermes-agent&amp;type=Date" alt="NousResearch/hermes-agent Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>The agent that grows with you</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 240,897，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agent, ai-agents, anthropic, chatgpt, claude, claude-code, codex, hermes, hermes-agent, llm, nous-research, openai 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>The installer handles everything: uv, Python 3.11, Node.js, ripgrep, ffmpeg, and a portable Git Bash (MinGit, unpacked to %LOCALAPPDATA%\hermes\git — no admin required, completely isolated from any system Git install). Hermes uses this bundled Git Bash to run ...</li><li>If you already have Git installed, the installer detects it and uses that instead. Otherwise a ~45MB MinGit download is all you need — it won&#39;t touch or interfere with any system Git.</li><li>source ~/.bashrc    # reload shell (or: source ~/.zshrc)</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#3</span>
           <a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">DietrichGebert/ponytail</a>
         </div>
         <div class="meta">
           <span>语言：JavaScript</span>
-          <span>Stars：126,193</span>
+          <span>Stars：123,581</span>
         </div>
         <div class="topics"><span class="topic">agent-skills</span><span class="topic">ai-agents</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">claude-code-plugin</span><span class="topic">cursor-rules</span><span class="topic">developer-tools</span><span class="topic">llm</span><span class="topic">prompt-engineering</span><span class="topic">yagni</span></div>
         <section class="section">
@@ -221,7 +265,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 126,193，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, ai-agents, claude, claude-code, claude-code-plugin, cursor-rules, developer-tools, llm, prompt-engineering, yagni 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 123,581，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, ai-agents, claude, claude-code, claude-code-plugin, cursor-rules, developer-tools, llm, prompt-engineering, yagni 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -241,59 +285,12 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#3</span>
-          <a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a>
-        </div>
-        <div class="meta">
-          <span>语言：JavaScript</span>
-          <span>Stars：248,574</span>
-        </div>
-        <div class="topics"><span class="topic">ai-agents</span><span class="topic">anthropic</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">developer-tools</span><span class="topic">llm</span><span class="topic">mcp</span><span class="topic">productivity</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=affaan-m%2FECC&amp;type=Date" alt="affaan-m/ECC Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 248,574，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>Run the canonical guided setup from your terminal:</li><li>If npm reports a version or cache error, confirm the registry version before retrying:</li><li>This path requires Node.js 18 or newer, Git, and Claude Code 2.1 or newer on</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
-    Client --&gt; Protocol[MCP 协议层]
-    Protocol --&gt; Server[affaan-m/ECC]
-    Server --&gt; Tools[工具接口 / Skills]
-    Server --&gt; Index[代码索引 / 知识图谱]
-    Server --&gt; Data[文件系统 / API / 数据源]
-    Tools --&gt; Result[结构化结果]
-    Index --&gt; Result
-    Data --&gt; Result
-    Result --&gt; Client
-    Client --&gt; Answer[生成回答 / 执行动作]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
           <span class="rank">#4</span>
           <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener noreferrer">anthropics/skills</a>
         </div>
         <div class="meta">
           <span>语言：Python</span>
-          <span>Stars：174,158</span>
+          <span>Stars：173,698</span>
         </div>
         <div class="topics"><span class="topic">agent-skills</span></div>
         <section class="section">
@@ -312,7 +309,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 174,158，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 173,698，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -333,44 +330,47 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#5</span>
-          <a href="https://github.com/blader/humanizer" target="_blank" rel="noopener noreferrer">blader/humanizer</a>
+          <a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a>
         </div>
         <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：42,778</span>
+          <span>语言：JavaScript</span>
+          <span>Stars：247,267</span>
         </div>
-        <div class="topics"><span class="topic">agent-skills</span><span class="topic">ai-writing</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">cursor</span><span class="topic">prompt-engineering</span><span class="topic">writing-tools</span></div>
+        <div class="topics"><span class="topic">ai-agents</span><span class="topic">anthropic</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">developer-tools</span><span class="topic">llm</span><span class="topic">mcp</span><span class="topic">productivity</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=blader%2Fhumanizer&amp;type=Date" alt="blader/humanizer Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=affaan-m%2FECC&amp;type=Date" alt="affaan-m/ECC Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>Agent skill that removes signs of AI-generated writing from text</p>
+          <p>The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 42,778，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, ai-writing, claude-code, codex, cursor, prompt-engineering, writing-tools 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 247,267，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>Humanizer rewrites AI-sounding text so it reads like a person wrote it, without changing what it says. Because it is just Markdown, it works with any agent that supports skills.</li><li>&#34;LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases.&#34;</li><li>It does not make things up. A name, number, date, quote, citation, or other factual detail must come from the source or the writer. For personal writing, Humanizer keeps the writer&#39;s style. Technical and reference prose stays neutral and plain. If you provide ...</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>Run the canonical guided setup from your terminal:</li><li>If npm reports a version or cache error, confirm the registry version before retrying:</li><li>This path requires Node.js 18 or newer, Git, and Claude Code 2.1 or newer on</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户任务] --&gt; Planner[Agent 任务规划]
-    Planner --&gt; Registry[Skill 注册表]
-    Registry --&gt; Select[能力匹配 / 权限校验]
-    Select --&gt; Skill[可复用 Skill]
-    Skill --&gt; Tool[工具 / API / Prompt]
-    Tool --&gt; Observation[执行结果]
-    Observation --&gt; Planner
-    Planner --&gt; Output[最终交付]
+    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
+    Client --&gt; Protocol[MCP 协议层]
+    Protocol --&gt; Server[affaan-m/ECC]
+    Server --&gt; Tools[工具接口 / Skills]
+    Server --&gt; Index[代码索引 / 知识图谱]
+    Server --&gt; Data[文件系统 / API / 数据源]
+    Tools --&gt; Result[结构化结果]
+    Index --&gt; Result
+    Data --&gt; Result
+    Result --&gt; Client
+    Client --&gt; Answer[生成回答 / 执行动作]
           </div>
         </section>
       </li>
