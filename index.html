@@ -147,18 +147,156 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-09-07T02:36:58Z</p>
+      <p class="updated">更新时间：2026-09-08T02:49:34Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#1</span>
+          <a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener noreferrer">heygen-com/hyperframes</a>
+        </div>
+        <div class="meta">
+          <span>语言：TypeScript</span>
+          <span>Stars：46,191</span>
+        </div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">animation</span><span class="topic">ffmpeg</span><span class="topic">framework</span><span class="topic">gsap</span><span class="topic">html</span><span class="topic">mcp</span><span class="topic">puppeteer</span><span class="topic">rendering</span><span class="topic">typescript</span><span class="topic">video</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=heygen-com%2Fhyperframes&amp;type=Date" alt="heygen-com/hyperframes Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>Write HTML. Render video. Built for agents.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 46,191，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, animation, ffmpeg, framework, gsap, html, mcp, puppeteer, rendering, typescript, video 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows.</li><li>The picker opens with nothing pre-selected — the Core Skills group is all you need: the /hyperframes router installs each creation workflow on demand. Agents and non-interactive runs should use npx hyperframes skills update instead — it installs exactly the co...</li><li>skills add resolves the skills.sh registry blob, which can lag main by hours. npx hyperframes skills update installs from the current main, so reach for it when you need the newest copy of a skill.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
+    Client --&gt; Protocol[MCP 协议层]
+    Protocol --&gt; Server[heygen-com/hyperframes]
+    Server --&gt; Tools[工具接口 / Skills]
+    Server --&gt; Index[代码索引 / 知识图谱]
+    Server --&gt; Data[文件系统 / API / 数据源]
+    Tools --&gt; Result[结构化结果]
+    Index --&gt; Result
+    Data --&gt; Result
+    Result --&gt; Client
+    Client --&gt; Answer[生成回答 / 执行动作]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#2</span>
+          <a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener noreferrer">mksglu/context-mode</a>
+        </div>
+        <div class="meta">
+          <span>语言：TypeScript</span>
+          <span>Stars：20,915</span>
+        </div>
+        <div class="topics"><span class="topic">antigravity</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">claude-code-hooks</span><span class="topic">claude-code-plugins</span><span class="topic">claude-code-skill</span><span class="topic">codex</span><span class="topic">codex-cli</span><span class="topic">context-mode</span><span class="topic">copilot</span><span class="topic">cursor-plugin</span><span class="topic">kiro</span><span class="topic">mcp</span><span class="topic">mcp-server</span><span class="topic">mcp-tools</span><span class="topic">openclaw</span><span class="topic">opencode</span><span class="topic">pi-agent</span><span class="topic">skills</span><span class="topic">zed-extension</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=mksglu%2Fcontext-mode&amp;type=Date" alt="mksglu/context-mode Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 20,915，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, claude-code-skill, codex, codex-cli, context-mode, copilot, cursor-plugin, kiro, mcp, mcp-server, mcp-tools, openclaw, opencode, pi-agent, skills, zed-extension 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>Every MCP tool call dumps raw data into your context window. A Playwright snapshot costs 56 KB. Twenty GitHub issues cost 59 KB. One access log — 45 KB. After 30 minutes, 40% of your context is gone. And when the agent compacts the conversation to free space, ...</li><li>Context Mode is an MCP server that solves all four sides of this problem:</li><li>1. Context Saving — Sandbox tools keep raw data out of the context window. 315 KB becomes 5.4 KB. 98% reduction.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户 / AI 编程助手] --&gt; Client[Agent Client]
+    Client --&gt; Protocol[MCP 协议层]
+    Protocol --&gt; Server[mksglu/context-mode]
+    Server --&gt; Tools[工具接口 / Skills]
+    Server --&gt; Index[代码索引 / 知识图谱]
+    Server --&gt; Data[文件系统 / API / 数据源]
+    Tools --&gt; Result[结构化结果]
+    Index --&gt; Result
+    Data --&gt; Result
+    Result --&gt; Client
+    Client --&gt; Answer[生成回答 / 执行动作]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#3</span>
+          <a href="https://github.com/jo-inc/camofox-browser" target="_blank" rel="noopener noreferrer">jo-inc/camofox-browser</a>
+        </div>
+        <div class="meta">
+          <span>语言：JavaScript</span>
+          <span>Stars：9,810</span>
+        </div>
+        <div class="topics"><span class="topic">ai-agent</span><span class="topic">anti-bot</span><span class="topic">antidetect-browser</span><span class="topic">automation</span><span class="topic">bot-detection</span><span class="topic">browser-automation</span><span class="topic">cloudflare-bypass</span><span class="topic">headless-browser</span><span class="topic">javascript</span><span class="topic">nodejs</span><span class="topic">playwright</span><span class="topic">puppeteer</span><span class="topic">scraping</span><span class="topic">stealth-browser</span><span class="topic">web-scraping</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=jo-inc%2Fcamofox-browser&amp;type=Date" alt="jo-inc/camofox-browser Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 9,810，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agent, anti-bot, antidetect-browser, automation, bot-detection, browser-automation, cloudflare-bypass, headless-browser, javascript, nodejs, playwright, puppeteer, scraping, stealth-browser, web-scraping 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>AI agents need to browse the real web. Playwright gets blocked. Headless Chrome gets fingerprinted. Stealth plugins become the fingerprint.</li><li>Camoufox patches Firefox at the C++ implementation level - navigator.hardwareConcurrency, WebGL renderers, AudioContext, screen geometry, WebRTC - all spoofed before JavaScript ever sees them. No shims, no wrappers, no tells.</li><li>This project wraps that engine in a REST API built for agents: accessibility snapshots instead of bloated HTML, stable element refs for clicking, and search macros for common sites.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#4</span>
           <a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a>
         </div>
         <div class="meta">
           <span>语言：JavaScript</span>
-          <span>Stars：251,487</span>
+          <span>Stars：252,948</span>
         </div>
         <div class="topics"><span class="topic">ai-agents</span><span class="topic">anthropic</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">developer-tools</span><span class="topic">llm</span><span class="topic">mcp</span><span class="topic">productivity</span></div>
         <section class="section">
@@ -177,7 +315,7 @@
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 251,487，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 252,948，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -200,23 +338,23 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#2</span>
-          <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">mattpocock/skills</a>
+          <span class="rank">#5</span>
+          <a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener noreferrer">coreyhaines31/marketingskills</a>
         </div>
         <div class="meta">
-          <span>语言：Shell</span>
-          <span>Stars：254,766</span>
+          <span>语言：JavaScript</span>
+          <span>Stars：48,204</span>
         </div>
-        <div class="topics"><span class="topic">未公开 topics</span></div>
+        <div class="topics"><span class="topic">claude</span><span class="topic">codex</span><span class="topic">marketing</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=mattpocock%2Fskills&amp;type=Date" alt="mattpocock/skills Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=coreyhaines31%2Fmarketingskills&amp;type=Date" alt="coreyhaines31/marketingskills Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>Skills for Real Engineers. Straight from my .agents directory.</p>
+          <p>Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
@@ -224,145 +362,11 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 254,766，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 48,204，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 claude, codex, marketing 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>My agent skills that I use every day to do real engineering - not vibe coding.</li><li>Developing real applications is hard. Approaches like GSD, BMAD, and Spec-Kit try to help by owning the process. But while doing so, they take away your control and make bugs in the process hard to resolve.</li><li>These skills are designed to be small, easy to adapt, and composable. They work with any model. They&#39;re based on decades of engineering experience. Hack around with them. Make them your own. Enjoy.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户任务] --&gt; Planner[Agent 任务规划]
-    Planner --&gt; Registry[Skill 注册表]
-    Registry --&gt; Select[能力匹配 / 权限校验]
-    Select --&gt; Skill[可复用 Skill]
-    Skill --&gt; Tool[工具 / API / Prompt]
-    Tool --&gt; Observation[执行结果]
-    Observation --&gt; Planner
-    Planner --&gt; Output[最终交付]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
-          <span class="rank">#3</span>
-          <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">cathrynlavery/diagram-design</a>
-        </div>
-        <div class="meta">
-          <span>语言：HTML</span>
-          <span>Stars：32,493</span>
-        </div>
-        <div class="topics"><span class="topic">agent-skills</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">data-visualization</span><span class="topic">diagrams</span><span class="topic">drawio</span><span class="topic">mermaid</span><span class="topic">svg</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=cathrynlavery%2Fdiagram-design&amp;type=Date" alt="cathrynlavery/diagram-design Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 agent-skills, claude-code, codex, data-visualization, diagrams, drawio, mermaid, svg 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 32,493，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agent-skills, claude-code, codex, data-visualization, diagrams, drawio, mermaid, svg 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 HTML 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>New in 2.0 — the Loop: flywheels with a shared-memory hub. The dashed lines are the write-backs.*</li><li>New in 2.3: semantic system patterns and optional accessible motion, while static output stays the default.*</li><li>New in 2.5.10: ten more layout grammars — Sankey, fishbone, Wardley map, kanban, user journey, deployment, dependency graph, UML class, story map, and database schema.*</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户需求] --&gt; Interface[应用入口]
-    Interface --&gt; Orchestrator[AI 编排层]
-    Orchestrator --&gt; Model[LLM / 模型能力]
-    Orchestrator --&gt; Data[领域数据 / 上下文]
-    Orchestrator --&gt; Tools[工具与自动化流程]
-    Model --&gt; Result[候选结果]
-    Data --&gt; Result
-    Tools --&gt; Result
-    Result --&gt; Review[校验 / 观测 / 反馈]
-    Review --&gt; Output[可交付结果]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
-          <span class="rank">#4</span>
-          <a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">NousResearch/hermes-agent</a>
-        </div>
-        <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：242,599</span>
-        </div>
-        <div class="topics"><span class="topic">ai</span><span class="topic">ai-agent</span><span class="topic">ai-agents</span><span class="topic">anthropic</span><span class="topic">chatgpt</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">hermes</span><span class="topic">hermes-agent</span><span class="topic">llm</span><span class="topic">nous-research</span><span class="topic">openai</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=NousResearch%2Fhermes-agent&amp;type=Date" alt="NousResearch/hermes-agent Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>The agent that grows with you</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 242,599，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agent, ai-agents, anthropic, chatgpt, claude, claude-code, codex, hermes, hermes-agent, llm, nous-research, openai 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>The installer handles everything: uv, Python 3.11, Node.js, ripgrep, ffmpeg, and a portable Git Bash (MinGit, unpacked to %LOCALAPPDATA%\hermes\git — no admin required, completely isolated from any system Git install). Hermes uses this bundled Git Bash to run ...</li><li>If you already have Git installed, the installer detects it and uses that instead. Otherwise a ~45MB MinGit download is all you need — it won&#39;t touch or interfere with any system Git.</li><li>source ~/.bashrc    # reload shell (or: source ~/.zshrc)</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户目标] --&gt; Planner[任务规划 Agent]
-    Planner --&gt; Memory[上下文记忆]
-    Planner --&gt; Tools[工具调用层]
-    Tools --&gt; APIs[外部 API / 本地工具]
-    APIs --&gt; Observation[观察结果]
-    Observation --&gt; Critic[反思 / 评估]
-    Critic --&gt; Planner
-    Planner --&gt; Deliverable[最终结果]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
-          <span class="rank">#5</span>
-          <a href="https://github.com/openai/skills" target="_blank" rel="noopener noreferrer">openai/skills</a>
-        </div>
-        <div class="meta">
-          <span>语言：Python</span>
-          <span>Stars：25,655</span>
-        </div>
-        <div class="topics"><span class="topic">未公开 topics</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=openai%2Fskills&amp;type=Date" alt="openai/skills Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>Skills Catalog for Codex</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 25,655，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>Agent Skills are folders of instructions, scripts, and resources that AI agents can discover and use to perform at specific tasks. Write once, use everywhere.</li><li>Codex uses skills to help package capabilities that teams and individuals can use to complete specific tasks in a repeatable way. This repository catalogs skills for use and distribution with Codex.</li><li>Skills in [.system](skills/.system/) are automatically installed in the latest version of Codex.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>Contributions welcome! Found a way to improve a skill or have a new one to add? [Open a PR](#contributing).</li><li>Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, your agent can recognize when you&#39;re working on a marketing task and apply the right frameworks and best practices.</li><li>Skills reference each other and build on shared context. The product-marketing skill is the foundation — every other skill checks it first to understand your product, audience, and positioning before doing anything.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
     User[用户任务] --&gt; Planner[Agent 任务规划]
