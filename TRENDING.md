@@ -1,6 +1,6 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-09-11T02:44:36Z
+更新时间：2026-09-12T02:53:40Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
@@ -9,7 +9,7 @@
 ## 1. [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
 
 - 语言：Python
-- Stars：38,602
+- Stars：42,027
 - 主题：adhd, claude-, claude-code-plugin, claude-skills, developer-tools, productivity
 - Star 趋势：
 
@@ -22,7 +22,7 @@
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 38,602，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 42,027，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 adhd, claude-, claude-code-plugin, claude-skills, developer-tools, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -44,48 +44,93 @@ flowchart LR
     Planner --> Output[最终交付]
 ```
 
-## 2. [obra/superpowers](https://github.com/obra/superpowers)
+## 2. [melgarafael/DeskcommCRM](https://github.com/melgarafael/DeskcommCRM)
 
-- 语言：Shell
-- Stars：284,744
-- 主题：ai, brainstorming, coding, obra, sdlc, skills, subagent-driven-development, superpowers
+- 语言：TypeScript
+- Stars：1,384
+- 主题：ai, ai-agents, chatbot, crm, customer-support, ecommerce, lgpd, mcp, multi-tenant, nextjs, nuvemshop, open-source, rag, sales-automation, self-hosted, supabase, typescript, waha, whatsapp, whatsapp-api
 - Star 趋势：
 
-![obra/superpowers Star History](https://api.star-history.com/svg?repos=obra%2Fsuperpowers&type=Date)
+![melgarafael/DeskcommCRM Star History](https://api.star-history.com/svg?repos=melgarafael%2FDeskcommCRM&type=Date)
 
-- 作用 / 解决的问题：An agentic skills framework & software development methodology that works.
+- 作用 / 解决的问题：Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
+  - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 284,744，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai, brainstorming, coding, obra, sdlc, skills, subagent-driven-development, superpowers 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 1,384，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai, ai-agents, chatbot, crm, customer-support, ecommerce, lgpd, mcp, multi-tenant, nextjs, nuvemshop, open-source, rag, sales-automation, self-hosted, supabase, typescript, waha, whatsapp, whatsapp-api 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.
-  - [Visual companion telemetry](#visual-companion-telemetry)
-  - It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it *doesn't* just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do.
+  - 🇧🇷 Português · [🇺🇸 English](README.en.md) · [🇪🇸 Español](README.es.md)
+  - 🛠️ DeskcommCRM — o Sistema Operacional de Vendas com IA, open source, pro WhatsApp
+  - Agentes de IA que atendem, qualificam e vendem no WhatsApp — dentro de um CRM open source rodando no seu servidor.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
-    User[用户任务] --> Planner[Agent 任务规划]
-    Planner --> Registry[Skill 注册表]
-    Registry --> Select[能力匹配 / 权限校验]
-    Select --> Skill[可复用 Skill]
-    Skill --> Tool[工具 / API / Prompt]
-    Tool --> Observation[执行结果]
-    Observation --> Planner
-    Planner --> Output[最终交付]
+    User[用户 / AI 编程助手] --> Client[Agent Client]
+    Client --> Protocol[MCP 协议层]
+    Protocol --> Server[melgarafael/DeskcommCRM]
+    Server --> Tools[工具接口 / Skills]
+    Server --> Index[代码索引 / 知识图谱]
+    Server --> Data[文件系统 / API / 数据源]
+    Tools --> Result[结构化结果]
+    Index --> Result
+    Data --> Result
+    Result --> Client
+    Client --> Answer[生成回答 / 执行动作]
 ```
 
-## 3. [alsk1992/CloddsBot](https://github.com/alsk1992/CloddsBot)
+## 3. [vastsa/PI-Desktop](https://github.com/vastsa/PI-Desktop)
 
 - 语言：TypeScript
-- Stars：1,702
+- Stars：2,802
+- 主题：ai-agent, coding-agent, desktop-app, electron, global, i18n, local-first, mcp, pi, pi-agent, pi-desktop, plugins, react, rust, typescript
+- Star 趋势：
+
+![vastsa/PI-Desktop Star History](https://api.star-history.com/svg?repos=vastsa%2FPI-Desktop&type=Date)
+
+- 作用 / 解决的问题：Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 2,802，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai-agent, coding-agent, desktop-app, electron, global, i18n, local-first, mcp, pi, pi-agent, pi-desktop, plugins, react, rust, typescript 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - Your local-first desktop workspace for AI coding agents.
+  - Bring your own model. Open any local project. Let agents work — while you stay in control.
+  - No PI-Desktop account. No mandatory relay. No editor lock-in.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户 / AI 编程助手] --> Client[Agent Client]
+    Client --> Protocol[MCP 协议层]
+    Protocol --> Server[vastsa/PI-Desktop]
+    Server --> Tools[工具接口 / Skills]
+    Server --> Index[代码索引 / 知识图谱]
+    Server --> Data[文件系统 / API / 数据源]
+    Tools --> Result[结构化结果]
+    Index --> Result
+    Data --> Result
+    Result --> Client
+    Client --> Answer[生成回答 / 执行动作]
+```
+
+## 4. [alsk1992/CloddsBot](https://github.com/alsk1992/CloddsBot)
+
+- 语言：TypeScript
+- Stars：2,179
 - 主题：agi, ai, arbitrage, claude, crypto, defi, ethereum, futures, hft, hyperliquid, kalshi, polymarket, prediction-markets, pumpswap, solana, telegram-bot, trading, trading-bot, typescript, x402
 - Star 趋势：
 
@@ -97,14 +142,14 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 1,702，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 2,179，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 agi, ai, arbitrage, claude, crypto, defi, ethereum, futures, hft, hyperliquid, kalshi, polymarket, prediction-markets, pumpswap, solana, telegram-bot, trading, trading-bot, typescript, x402 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
   - Clodds is a personal AI trading terminal for prediction markets, crypto spot, perpetual futures with leverage, token launches, and Bittensor subnet mining. Run it on your own machine, chat via any of 21 messaging platforms, trade across 10 prediction markets +...
   - Powered by Claude with 118+ trading strategies, whale tracking, arbitrage detection, copy trading, and DCA bots.
-  - 30-second terminal onboarding — See Clodds in action:
+  - Requirement: Node.js 22 or newer. Node.js 20 is not supported and dependency installation may fail.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -119,80 +164,41 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 4. [Tencent/teamai-cli](https://github.com/Tencent/teamai-cli)
+## 5. [nashsu/llm_wiki](https://github.com/nashsu/llm_wiki)
 
 - 语言：TypeScript
-- Stars：3,862
+- Stars：18,782
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
-![Tencent/teamai-cli Star History](https://api.star-history.com/svg?repos=Tencent%2Fteamai-cli&type=Date)
+![nashsu/llm_wiki Star History](https://api.star-history.com/svg?repos=nashsu%2Fllm_wiki&type=Date)
 
-- 作用 / 解决的问题：Make Every Team AI Native
+- 作用 / 解决的问题：LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from your sources。
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+  - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 3,862，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 18,782，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - [English](README.md) \| [简体中文](README.zh-CN.md)
-  - TeamAI manages your team's skills, rules, MCP, and knowledge across Claude Code, Codex, CodeBuddy, WorkBuddy, OpenCode, Cursor, and other AI agents.
-  - Choose one, depending on where you want resources installed
+  - LLM reads your documents, builds a structured wiki, and keeps it current.
+  - English \| <a href="README_CN.md">中文</a> \| <a href="README_JA.md">日本語</a> \| <a href="README_KO.md">한국어</a>
+  - Two-Step Chain-of-Thought Ingest — LLM analyzes first, then generates wiki pages with source traceability and incremental cache
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
-```
-
-## 5. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
-
-- 语言：HTML
-- Stars：37,843
-- 主题：agent-skills, claude-code, codex, data-visualization, diagrams, drawio, mermaid, svg
-- Star 趋势：
-
-![cathrynlavery/diagram-design Star History](https://api.star-history.com/svg?repos=cathrynlavery%2Fdiagram-design&type=Date)
-
-- 作用 / 解决的问题：38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 agent-skills, claude-code, codex, data-visualization, diagrams, drawio, mermaid, svg 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 37,843，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agent-skills, claude-code, codex, data-visualization, diagrams, drawio, mermaid, svg 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 HTML 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - New in 2.0 — the Loop: flywheels with a shared-memory hub. The dashed lines are the write-backs.*
-  - New in 2.3: semantic system patterns and optional accessible motion, while static output stays the default.*
-  - New in 2.5.10: ten more layout grammars — Sankey, fishbone, Wardley map, kanban, user journey, deployment, dependency graph, UML class, story map, and database schema.*
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
+    User[用户问题] --> Query[查询理解]
+    Query --> Retriever[检索器]
+    Docs[文档 / 知识库] --> Chunk[切分与向量化]
+    Chunk --> Store[向量库 / 索引]
+    Store --> Retriever
+    Retriever --> Context[相关上下文]
+    Context --> LLM[LLM 生成器]
+    Query --> LLM
+    LLM --> Eval[引用校验 / 质量评估]
+    Eval --> Answer[可信答案]
 ```
 
