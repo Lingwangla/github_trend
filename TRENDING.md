@@ -1,6 +1,6 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-09-17T03:09:18Z
+更新时间：2026-09-18T02:56:33Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
@@ -9,7 +9,7 @@
 ## 1. [alibaba/open-code-review](https://github.com/alibaba/open-code-review)
 
 - 语言：Go
-- Stars：32,266
+- Stars：35,072
 - 主题：agent, agent-skills, code-review, code-review-assistant, harness, repository-level-context
 - Star 趋势：
 
@@ -21,7 +21,7 @@
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 32,266，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 35,072，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 agent, agent-skills, code-review, code-review-assistant, harness, repository-level-context 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Go 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -46,7 +46,7 @@ flowchart LR
 ## 2. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
 
 - 语言：JavaScript
-- Stars：7,536
+- Stars：10,840
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -59,7 +59,7 @@ flowchart LR
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 7,536，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 10,840，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
@@ -80,105 +80,103 @@ flowchart LR
     Planner --> Output[最终交付]
 ```
 
-## 3. [jamiepine/voicebox](https://github.com/jamiepine/voicebox)
+## 3. [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
 
-- 语言：TypeScript
-- Stars：54,453
-- 主题：ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, voice-ai, voice-clone, whisper
+- 语言：JavaScript
+- Stars：95,919
+- 主题：agent-skills, antigravity, claude-code, codex, cursor, skills
 - Star 趋势：
 
-![jamiepine/voicebox Star History](https://api.star-history.com/svg?repos=jamiepine%2Fvoicebox&type=Date)
+![addyosmani/agent-skills Star History](https://api.star-history.com/svg?repos=addyosmani%2Fagent-skills&type=Date)
 
-- 作用 / 解决的问题：The open-source AI voice studio. Clone, dictate, create.
+- 作用 / 解决的问题：Production-grade engineering skills for AI coding agents.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, voice-ai, voice-clone, whisper 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 54,453，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, voice-ai, voice-clone, whisper 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 95,919，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agent-skills, antigravity, claude-code, codex, cursor, skills 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Clone any voice. Generate speech. Dictate into any app. Talk to agents in voices you own.<br/>
-  - The full voice I/O stack, running locally on your machine.
-  - Voicebox is a local-first AI voice studio — a free and open-source alternative to ElevenLabs and WisprFlow in one app. Clone voices from a few seconds of audio, generate speech in 23 languages across 7 TTS engines, dictate into any text field with a global hot...
+  - Production-grade engineering skills for AI coding agents.
+  - Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.
+  - DEFINE          PLAN           BUILD          VERIFY         REVIEW          SHIP
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
+    User[用户任务] --> Planner[Agent 任务规划]
+    Planner --> Registry[Skill 注册表]
+    Registry --> Select[能力匹配 / 权限校验]
+    Select --> Skill[可复用 Skill]
+    Skill --> Tool[工具 / API / Prompt]
+    Tool --> Observation[执行结果]
+    Observation --> Planner
+    Planner --> Output[最终交付]
 ```
 
-## 4. [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
-
-- 语言：Python
-- Stars：24,319
-- 主题：未在 GitHub API 中公开 topics
-- Star 趋势：
-
-![anthropics/knowledge-work-plugins Star History](https://api.star-history.com/svg?repos=anthropics%2Fknowledge-work-plugins&type=Date)
-
-- 作用 / 解决的问题：Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 24,319，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Cowork lets you set the goal and Claude delivers finished, professional work. Plugins let you go further: tell Claude how you like work done, which tools and data to pull from, how to handle critical workflows, and what slash commands to expose — so your team ...
-  - Each plugin bundles the skills, connectors, slash commands, and sub-agents for a specific job function. Out of the box, they give Claude a strong starting point for helping anyone in that role. The real power comes when you customize them for your company — yo...
-  - We're open-sourcing 11 plugins built and inspired by our own work:
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
-```
-
-## 5. [anthropics/claude-code](https://github.com/anthropics/claude-code)
+## 4. [Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill)
 
 - 语言：TypeScript
-- Stars：145,572
-- 主题：未在 GitHub API 中公开 topics
+- Stars：4,340
+- 主题：agent, browser-use, dsh-plugin
 - Star 趋势：
 
-![anthropics/claude-code Star History](https://api.star-history.com/svg?repos=anthropics%2Fclaude-code&type=Date)
+![Tencent/BrowserSkill Star History](https://api.star-history.com/svg?repos=Tencent%2FBrowserSkill&type=Date)
 
-- 作用 / 解决的问题：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
+- 作用 / 解决的问题：Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 145,572，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 4,340，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agent, browser-use, dsh-plugin 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows -- all through natural language commands. Use it in your ter...
-  - 2. Navigate to your project directory and run claude.
-  - This repository includes several Claude Code plugins that extend functionality with custom commands and agents. See the [plugins directory](./plugins/README.md) for detailed documentation on available plugins.
+  - BrowserSkill connects Cursor, Claude Code, Codex, OpenClaw, CodeBuddy,
+  - WorkBuddy, Pi, Hermes Agent, DeepSeek Harness, and other AI agents to your already logged-in
+  - Need the agent to touch a tab you already have open? It must borrow that tab
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户目标] --> Planner[任务规划 Agent]
+    Planner --> Memory[上下文记忆]
+    Planner --> Tools[工具调用层]
+    Tools --> APIs[外部 API / 本地工具]
+    APIs --> Observation[观察结果]
+    Observation --> Critic[反思 / 评估]
+    Critic --> Planner
+    Planner --> Deliverable[最终结果]
+```
+
+## 5. [alphaXiv/OpenResearch](https://github.com/alphaXiv/OpenResearch)
+
+- 语言：Rust
+- Stars：5,014
+- 主题：未在 GitHub API 中公开 topics
+- Star 趋势：
+
+![alphaXiv/OpenResearch Star History](https://api.star-history.com/svg?repos=alphaXiv%2FOpenResearch&type=Date)
+
+- 作用 / 解决的问题：Turn your coding agents into research agents
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 5,014，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - The local-first workspace for research agents and autoresearch.
+  - literature, develop hypotheses, run experiments, and produce research artifacts.</p>
+  - On Windows, use the beta download above after installing
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
