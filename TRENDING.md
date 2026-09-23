@@ -1,107 +1,33 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-09-19T02:54:22Z
+更新时间：2026-09-23T03:03:24Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
-## 1. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
-
-- 语言：JavaScript
-- Stars：13,900
-- 主题：未在 GitHub API 中公开 topics
-- Star 趋势：
-
-![cloudflare/security-audit-skill Star History](https://api.star-history.com/svg?repos=cloudflare%2Fsecurity-audit-skill&type=Date)
-
-- 作用 / 解决的问题：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 13,900，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - A coding-agent skill that turns your agent into a security auditor. It orchestrates isolated agents through reconnaissance, coverage-led hunting, candidate validation, structured output, independent record verification, and target-neutral reporting.
-  - 1. Reconnaissance -- map architecture, trust boundaries, input surfaces, prior evidence, and deterministic coverage in architecture.md and coverage-ledger.json.
-  - 2. Coverage-led hunting -- assign isolated hunters from ledger units, record their checks, and use coverage critics to find gaps.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户任务] --> Planner[Agent 任务规划]
-    Planner --> Registry[Skill 注册表]
-    Registry --> Select[能力匹配 / 权限校验]
-    Select --> Skill[可复用 Skill]
-    Skill --> Tool[工具 / API / Prompt]
-    Tool --> Observation[执行结果]
-    Observation --> Planner
-    Planner --> Output[最终交付]
-```
-
-## 2. [anthropics/claude-code](https://github.com/anthropics/claude-code)
-
-- 语言：TypeScript
-- Stars：146,338
-- 主题：未在 GitHub API 中公开 topics
-- Star 趋势：
-
-![anthropics/claude-code Star History](https://api.star-history.com/svg?repos=anthropics%2Fclaude-code&type=Date)
-
-- 作用 / 解决的问题：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 146,338，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows -- all through natural language commands. Use it in your ter...
-  - 2. Navigate to your project directory and run claude.
-  - This repository includes several Claude Code plugins that extend functionality with custom commands and agents. See the [plugins directory](./plugins/README.md) for detailed documentation on available plugins.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户目标] --> Planner[任务规划 Agent]
-    Planner --> Memory[上下文记忆]
-    Planner --> Tools[工具调用层]
-    Tools --> APIs[外部 API / 本地工具]
-    APIs --> Observation[观察结果]
-    Observation --> Critic[反思 / 评估]
-    Critic --> Planner
-    Planner --> Deliverable[最终结果]
-```
-
-## 3. [alibaba/open-code-review](https://github.com/alibaba/open-code-review)
+## 1. [agent-substrate/substrate](https://github.com/agent-substrate/substrate)
 
 - 语言：Go
-- Stars：36,752
-- 主题：agent, agent-skills, code-review, code-review-assistant, harness, repository-level-context
+- Stars：3,030
+- 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
-![alibaba/open-code-review Star History](https://api.star-history.com/svg?repos=alibaba%2Fopen-code-review&type=Date)
+![agent-substrate/substrate Star History](https://api.star-history.com/svg?repos=agent-substrate%2Fsubstrate&type=Date)
 
-- 作用 / 解决的问题：Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.
+- 作用 / 解决的问题：Agent Substrate: the core system
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 36,752，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agent, agent-skills, code-review, code-review-assistant, harness, repository-level-context 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 当前 Stars 为 3,030，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 Go 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - English \| <a href="docs/i18n/README.zh-CN.md">简体中文</a> \| <a href="docs/i18n/README.ja-JP.md">日本語</a> \| <a href="docs/i18n/README.ko-KR.md">한국어</a> \| <a href="docs/i18n/README.ru-RU.md">Русский</a>
-  - Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code review assistant — over the past two years, it has served tens of thousands of developers and identified millions of code defects. After thorough...
-  - It reads Git diffs, sends changed files to a configurable LLM via an agent with tool-use capabilities, and generates structured review comments with line-level precision. The agent can read full file contents, search the codebase, inspect other changed files f...
+  - NOTE: This is not an officially supported Google product. This project is not
+  - Agent Substrate is a secure-by-default agent execution runtime engineered to run millions of sandboxes with 10x higher density than standard container runtimes. Purpose-built for the era of autonomous agents, Substrate delivers sub-500ms resume operations at o...
+  - At its core, Agent Substrate maps a larger set of “actors” (applications such as agents) onto a smaller set of ready “workers”, relying on the fact that agent-like applications tend to be idle most of the time to achieve heavy multiplexing.  It provides functi...
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -116,38 +42,149 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 4. [affaan-m/ECC](https://github.com/affaan-m/ECC)
+## 2. [dream-num/univer](https://github.com/dream-num/univer)
 
-- 语言：JavaScript
-- Stars：262,121
-- 主题：ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity
+- 语言：TypeScript
+- Stars：15,566
+- 主题：board, collaboration, data-table, doc, docx, excel, grid, pdf, ppt, pptx, presentation, sdk, sheet, slides, spreadsheet, table, word, wordprocessor, xlsx
 - Star 趋势：
 
-![affaan-m/ECC Star History](https://api.star-history.com/svg?repos=affaan-m%2FECC&type=Date)
+![dream-num/univer Star History](https://api.star-history.com/svg?repos=dream-num%2Funiver&type=Date)
 
-- 作用 / 解决的问题：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+- 作用 / 解决的问题：The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 15,566，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 board, collaboration, data-table, doc, docx, excel, grid, pdf, ppt, pptx, presentation, sdk, sheet, slides, spreadsheet, table, word, wordprocessor, xlsx 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - Spreadsheets · Documents · Presentations · Bases · Boards · PDFs (coming soon)
+  - Build embeddable productivity experiences with a plugin architecture, Canvas-based rendering,
+  - a formula engine, and one Facade API that works in the browser and on Node.js.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户目标] --> Planner[任务规划 Agent]
+    Planner --> Memory[上下文记忆]
+    Planner --> Tools[工具调用层]
+    Tools --> APIs[外部 API / 本地工具]
+    APIs --> Observation[观察结果]
+    Observation --> Critic[反思 / 评估]
+    Critic --> Planner
+    Planner --> Deliverable[最终结果]
+```
+
+## 3. [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates)
+
+- 语言：Python
+- Stars：31,172
+- 主题：anthropic, anthropic-claude, claude, claude-code
+- Star 趋势：
+
+![davila7/claude-code-templates Star History](https://api.star-history.com/svg?repos=davila7%2Fclaude-code-templates&type=Date)
+
+- 作用 / 解决的问题：CLI tool for configuring and monitoring Claude Code
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合围绕 anthropic, anthropic-claude, claude, claude-code 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 31,172，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 anthropic, anthropic-claude, claude, claude-code 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - npx claude-code-templates@latest --skill web-data/search,web-data/scrape,web-data/data-feeds,web-data/bright-data-mcp,web-data/bright-data-best-practices,development/brightdata-local-search --mcp web-data/brightdata --yes
+  - Ready-to-use configurations for Anthropic's Claude Code. A comprehensive collection of AI agents, custom commands, settings, hooks, external integrations (MCPs), and project templates to enhance your development workflow.
+  - npx claude-code-templates@latest --agent development-team/frontend-developer --command testing/generate-tests --mcp development/github-integration --yes
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户需求] --> Interface[应用入口]
+    Interface --> Orchestrator[AI 编排层]
+    Orchestrator --> Model[LLM / 模型能力]
+    Orchestrator --> Data[领域数据 / 上下文]
+    Orchestrator --> Tools[工具与自动化流程]
+    Model --> Result[候选结果]
+    Data --> Result
+    Tools --> Result
+    Result --> Review[校验 / 观测 / 反馈]
+    Review --> Output[可交付结果]
+```
+
+## 4. [google/ax](https://github.com/google/ax)
+
+- 语言：Go
+- Stars：7,764
+- 主题：未在 GitHub API 中公开 topics
+- Star 趋势：
+
+![google/ax Star History](https://api.star-history.com/svg?repos=google%2Fax&type=Date)
+
+- 作用 / 解决的问题：Google's open agentic orchestration runtime
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 7,764，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 使用 Go 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - We are still actively refining our core concepts, protocols,
+  - and specifications. We will likely to introduce major breaking
+  - Declare an agentic task with workspaces and gateway specifications. AX sandboxes it, wires up its workspace, fences its network, and helps running it at scale.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户目标] --> Planner[任务规划 Agent]
+    Planner --> Memory[上下文记忆]
+    Planner --> Tools[工具调用层]
+    Tools --> APIs[外部 API / 本地工具]
+    APIs --> Observation[观察结果]
+    Observation --> Critic[反思 / 评估]
+    Critic --> Planner
+    Planner --> Deliverable[最终结果]
+```
+
+## 5. [superdesigndev/treg](https://github.com/superdesigndev/treg)
+
+- 语言：Python
+- Stars：2,276
+- 主题：agents, api-keys, cli, credentials, developer-tools, dsh-plugin, mcp, proxy, python, registry, secrets
+- Star 趋势：
+
+![superdesigndev/treg Star History](https://api.star-history.com/svg?repos=superdesigndev%2Ftreg&type=Date)
+
+- 作用 / 解决的问题：OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 262,121，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 2,276，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agents, api-keys, cli, credentials, developer-tools, dsh-plugin, mcp, proxy, python, registry, secrets 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Use the [guided setup](#install-ecc) or [native plugin commands](#claude-code-details). Both install the same ecc@ecc plugin. Choose one and do not stack a full manual Claude install on top.
-  - Your agent can write code, but ECC gives it a coordinated engineering system and toolbox: it plans before it builds, verifies changes with tests, reviews its own work from a fresh context, remembers what matters, and turns repeated wins into reusable skills an...
-  - plan -> test -> implement -> review -> verify -> remember -> improve
+  - OpenRouter, but for agent tools instead of models. Point an agent at one base URL with one token
+  - and it can do the job: 3,000+ catalogued endpoints across 60+ providers — SEO and backlinks,
+  - social and trends, people and company enrichment, ads, scraping, image and video generation —
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
     User[用户 / AI 编程助手] --> Client[Agent Client]
     Client --> Protocol[MCP 协议层]
-    Protocol --> Server[affaan-m/ECC]
+    Protocol --> Server[superdesigndev/treg]
     Server --> Tools[工具接口 / Skills]
     Server --> Index[代码索引 / 知识图谱]
     Server --> Data[文件系统 / API / 数据源]
@@ -156,42 +193,5 @@ flowchart LR
     Data --> Result
     Result --> Client
     Client --> Answer[生成回答 / 执行动作]
-```
-
-## 5. [Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill)
-
-- 语言：TypeScript
-- Stars：5,360
-- 主题：agent, browser-use, dsh-plugin
-- Star 趋势：
-
-![Tencent/BrowserSkill Star History](https://api.star-history.com/svg?repos=Tencent%2FBrowserSkill&type=Date)
-
-- 作用 / 解决的问题：Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 5,360，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agent, browser-use, dsh-plugin 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - BrowserSkill connects Cursor, Claude Code, Codex, OpenClaw, CodeBuddy,
-  - WorkBuddy, Pi, Hermes Agent, DeepSeek Harness, and other AI agents to your already logged-in
-  - Need the agent to touch a tab you already have open? It must borrow that tab
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户目标] --> Planner[任务规划 Agent]
-    Planner --> Memory[上下文记忆]
-    Planner --> Tools[工具调用层]
-    Tools --> APIs[外部 API / 本地工具]
-    APIs --> Observation[观察结果]
-    Observation --> Critic[反思 / 评估]
-    Critic --> Planner
-    Planner --> Deliverable[最终结果]
 ```
 
