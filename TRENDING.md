@@ -1,33 +1,33 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-09-29T03:57:20Z
+更新时间：2026-09-30T03:44:56Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
-## 1. [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
+## 1. [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell)
 
-- 语言：TypeScript
-- Stars：93,132
+- 语言：Rust
+- Stars：10,772
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
-![paperclipai/paperclip Star History](https://api.star-history.com/svg?repos=paperclipai%2Fpaperclip&type=Date)
+![NVIDIA/OpenShell Star History](https://api.star-history.com/svg?repos=NVIDIA%2FOpenShell&type=Date)
 
-- 作用 / 解决的问题：The open-source app everyone uses to manage agents at work
+- 作用 / 解决的问题：OpenShell is the safe, private runtime for autonomous AI agents.
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 93,132，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 10,772，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Paperclip is the app people use to manage AI agents for work.
-  - If OpenClaw is an _employee_, Paperclip is the _company_.
-  - Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Bring your own agents, assign goals, and track work and costs from one dashboard.
+  - OpenShell is the safe, private runtime for fleets of autonomous AI agents. Agents are most useful when they can read files, install packages, call APIs, and use credentials. OpenShell gives them that capability without giving them unrestricted access to your d...
+  - OpenShell governs what agents can do in two ways: it instruments the kernel to enforce policy on every file access, system call, and network connection at runtime, and it uses formal verification to check what a policy change would allow before it is applied.
+  - Formally verified policy changes. Before a policy change is approved, OpenShell uses formal verification to flag risky new access it would grant, such as reaching a new host with credentials or calling a new API method, so those changes wait for human review.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -45,7 +45,7 @@ flowchart LR
 ## 2. [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)
 
 - 语言：Python
-- Stars：41,267
+- Stars：43,035
 - 主题：agentic-ai, agents, ai-memory, memory
 - Star 趋势：
 
@@ -57,7 +57,7 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 41,267，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 43,035，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 agentic-ai, agents, ai-memory, memory 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -79,68 +79,28 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 3. [byoungd/up](https://github.com/byoungd/up)
-
-- 语言：JavaScript
-- Stars：64,885
-- 主题：chinese, english-learning, tutorial
-- Star 趋势：
-
-![byoungd/up Star History](https://api.star-history.com/svg?repos=byoungd%2Fup&type=Date)
-
-- 作用 / 解决的问题：An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 chinese, english-learning, tutorial 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 64,885，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 chinese, english-learning, tutorial 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 JavaScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - description: 《人生进阶指南》帮助普通人在 AI 时代持续学习、完成真实项目、穿越人生低谷并留下成长证据。
-  - 副标题：AI 时代终身学习指南。这是一份持续更新的书稿，从英语这扇具体的门出发，写到 AI 学习、真实项目、创业失败、身体恢复，以及一个普通人怎样把生活一点点交还给自己。
-  - AI 正在让答案变得前所未有地廉价。几秒钟里，我们可以得到一份解释、一段代码、一张计划表，甚至一个看似笃定的人生建议。可真正稀缺的东西并没有因此消失：知道什么问题值得追问，辨别什么证据可以相信，把建议变成真实作品，并为最后的判断承担责任。
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户需求] --> Interface[应用入口]
-    Interface --> Orchestrator[AI 编排层]
-    Orchestrator --> Model[LLM / 模型能力]
-    Orchestrator --> Data[领域数据 / 上下文]
-    Orchestrator --> Tools[工具与自动化流程]
-    Model --> Result[候选结果]
-    Data --> Result
-    Tools --> Result
-    Result --> Review[校验 / 观测 / 反馈]
-    Review --> Output[可交付结果]
-```
-
-## 4. [mvschwarz/openrig](https://github.com/mvschwarz/openrig)
+## 3. [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
 
 - 语言：TypeScript
-- Stars：1,833
-- 主题：agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code, cli, codex-cli, multi-agent, multi-agent-systems, tmux, typescript
+- Stars：94,618
+- 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
-![mvschwarz/openrig Star History](https://api.star-history.com/svg?repos=mvschwarz%2Fopenrig&type=Date)
+![paperclipai/paperclip Star History](https://api.star-history.com/svg?repos=paperclipai%2Fpaperclip&type=Date)
 
-- 作用 / 解决的问题：Multi-agent harness that runs Claude Code and Codex together as one system
+- 作用 / 解决的问题：The open-source app everyone uses to manage agents at work
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 1,833，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code, cli, codex-cli, multi-agent, multi-agent-systems, tmux, typescript 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 当前 Stars 为 94,618，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - A harness wraps a model. A rig wraps your harnesses. Define your agent team in YAML, boot it with one command. Claude Code and Codex in the same rig, managed as one system.
-  - Requires Node.js 22 or 24 and tmux, on macOS or Linux. On a Mac with Apple silicon, use Node.js 22 ([compatibility history](docs/releases/v0.5.15.md#known-compatibility-limitation)). Native Windows is not supported yet, and WSL2 has not been tested. Launching ...
-  - To install with Bun instead, run bun add -g @openrig/cli. OpenRig still runs on Node.js, so install Node.js 22 as well. Bun may block this package's postinstall script, in which case the Node.js and SQLite check described under [what OpenRig changes on your ma...
+  - Paperclip is the app people use to manage AI agents for work.
+  - If OpenClaw is an _employee_, Paperclip is the _company_.
+  - Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Bring your own agents, assign goals, and track work and costs from one dashboard.
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -155,29 +115,69 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 5. [dream-num/univer](https://github.com/dream-num/univer)
+## 4. [t8y2/dbx](https://github.com/t8y2/dbx)
 
-- 语言：TypeScript
-- Stars：21,366
-- 主题：board, collaboration, data-table, doc, docx, excel, grid, pdf, ppt, pptx, presentation, sdk, sheet, slides, spreadsheet, table, word, wordprocessor, xlsx
+- 语言：Rust
+- Stars：22,267
+- 主题：ai, cli, clickhouse, database, database-client, database-management, docker, gui, mcp, mongodb, mysql, postgresql, redis, rust, sql-server, sqlite, tauri, vue
 - Star 趋势：
 
-![dream-num/univer Star History](https://api.star-history.com/svg?repos=dream-num%2Funiver&type=Date)
+![t8y2/dbx Star History](https://api.star-history.com/svg?repos=t8y2%2Fdbx&type=Date)
 
-- 作用 / 解决的问题：The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.
+- 作用 / 解决的问题：25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. \| 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 22,267，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai, cli, clickhouse, database, database-client, database-management, docker, gui, mcp, mongodb, mysql, postgresql, redis, rust, sql-server, sqlite, tauri, vue 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - English \| <a href="README.zh-CN.md">前往中文版本</a>
+  - RainYun is a cloud service provider offering cloud servers, physical servers, game hosting, and developer-friendly infrastructure services.
+  - TrustAsia provides cloud-based code signing service for DBX, enabling trusted software through automated CI/CD builds.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户 / AI 编程助手] --> Client[Agent Client]
+    Client --> Protocol[MCP 协议层]
+    Protocol --> Server[t8y2/dbx]
+    Server --> Tools[工具接口 / Skills]
+    Server --> Index[代码索引 / 知识图谱]
+    Server --> Data[文件系统 / API / 数据源]
+    Tools --> Result[结构化结果]
+    Index --> Result
+    Data --> Result
+    Result --> Client
+    Client --> Answer[生成回答 / 执行动作]
+```
+
+## 5. [mvschwarz/openrig](https://github.com/mvschwarz/openrig)
+
+- 语言：TypeScript
+- Stars：2,509
+- 主题：agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code, cli, codex-cli, multi-agent, multi-agent-systems, tmux, typescript
+- Star 趋势：
+
+![mvschwarz/openrig Star History](https://api.star-history.com/svg?repos=mvschwarz%2Fopenrig&type=Date)
+
+- 作用 / 解决的问题：Multi-agent harness that runs Claude Code and Codex together as one system
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 21,366，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 board, collaboration, data-table, doc, docx, excel, grid, pdf, ppt, pptx, presentation, sdk, sheet, slides, spreadsheet, table, word, wordprocessor, xlsx 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 当前 Stars 为 2,509，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code, cli, codex-cli, multi-agent, multi-agent-systems, tmux, typescript 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Spreadsheets · Documents · Presentations · Bases · Boards · PDFs
-  - Build embeddable productivity experiences with a plugin architecture, Canvas-based rendering,
-  - a formula engine, and one Facade API that works in the browser and on Node.js.
+  - A harness wraps a model. A rig wraps your harnesses. Define your agent team in YAML, boot it with one command. Claude Code and Codex in the same rig, managed as one system.
+  - Start here: [the guided first-use path](docs/reference/getting-started.md): install, launch a two-agent team in your repository, and get one reviewed change.
+  - Requires Node.js 22 or 24 and tmux, on macOS or Linux. On a Mac with Apple silicon, use Node.js 22 ([compatibility history](docs/releases/v0.5.15.md#known-compatibility-limitation)). Native Windows is not supported yet, and WSL2 has not been tested. Launching ...
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
