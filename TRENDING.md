@@ -1,56 +1,15 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-11-03T05:06:27Z
+更新时间：2026-11-04T04:39:04Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
 网页版本：由 GitHub Pages 自动发布。
 
-## 1. [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)
-
-- 语言：Rust
-- Stars：10,471
-- 主题：accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust
-- Star 趋势：
-
-![vercel-labs/agent-desktop Star History](https://api.star-history.com/svg?repos=vercel-labs%2Fagent-desktop&type=Date)
-
-- 作用 / 解决的问题：Computer use CLI for AI agents
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 10,471，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - Computer use for AI agents: read and operate desktop apps through the OS accessibility tree.
-  - Every CLI call runs in its own process. Headless calls still prohibit foreground activation and synthesized input.
-  - Bun, Yarn and pnpm can install the same package. It includes native binaries and platform helpers for x64 and ARM64.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户 / AI 编程助手] --> Client[Agent Client]
-    Client --> Protocol[MCP 协议层]
-    Protocol --> Server[vercel-labs/agent-desktop]
-    Server --> Tools[工具接口 / Skills]
-    Server --> Index[代码索引 / 知识图谱]
-    Server --> Data[文件系统 / API / 数据源]
-    Tools --> Result[结构化结果]
-    Index --> Result
-    Data --> Result
-    Result --> Client
-    Client --> Answer[生成回答 / 执行动作]
-```
-
-## 2. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+## 1. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
 - 语言：TypeScript
-- Stars：110,963
+- Stars：112,108
 - 主题：ai, ai-agents, ai-memory, anthropic, artificial-intelligence, chromadb, claude, claude-agent-sdk, claude-agents, claude-code, claude-code-plugin, claude-skills, embeddings, long-term-memory, mem0, memory-engine, openmemory, rag, sqlite, supermemory
 - Star 趋势：
 
@@ -63,7 +22,7 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 110,963，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 112,108，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 ai, ai-agents, ai-memory, anthropic, artificial-intelligence, chromadb, claude, claude-agent-sdk, claude-agents, claude-code, claude-code-plugin, claude-skills, embeddings, long-term-memory, mem0, memory-engine, openmemory, rag, sqlite, supermemory 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
@@ -87,67 +46,106 @@ flowchart LR
     Eval --> Answer[可信答案]
 ```
 
-## 3. [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+## 2. [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)
 
-- 语言：Shell
-- Stars：33,794
-- 主题：ai-agents, ai-assisted-development, anthropic, claude, claude-code, game-design, game-development, gamedev, godot, indie-game-dev, unity, unreal-engine
+- 语言：Rust
+- Stars：13,188
+- 主题：accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust
 - Star 趋势：
 
-![Donchitos/Claude-Code-Game-Studios Star History](https://api.star-history.com/svg?repos=Donchitos%2FClaude-Code-Game-Studios&type=Date)
+![vercel-labs/agent-desktop Star History](https://api.star-history.com/svg?repos=vercel-labs%2Fagent-desktop&type=Date)
 
-- 作用 / 解决的问题：Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.
+- 作用 / 解决的问题：Computer use CLI for AI agents
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合需要把外部工具、代码库、数据源接入 AI Agent 的场景，因为 MCP 能把能力封装成标准工具接口。
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-  - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 33,794，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai-agents, ai-assisted-development, anthropic, claude, claude-code, game-design, game-development, gamedev, godot, indie-game-dev, unity, unreal-engine 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 13,188，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Turn a single Claude Code session into a full game development studio.
-  - Building a game solo with AI is powerful — but a single chat session has no structure. No one stops you from hardcoding magic numbers, skipping design docs, or writing spaghetti code. There's no QA pass, no design review, no one asking "does this actually fit ...
-  - Claude Code Game Studios solves this by giving your AI session the structure of a real studio. Instead of one general-purpose assistant, you get 49 specialized agents organized into a studio hierarchy — directors who guard the vision, department leads who own ...
+  - Computer use for AI agents: see and operate desktop apps on macOS, Windows, and Linux through the OS accessibility tree.
+  - Snapshots, clipboard reads, screenshots, command output, and debug artifacts can contain private desktop content. Keep them out of public logs and uploads.
+  - agent-desktop status                # platform, permissions, supported surfaces
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
-    User[用户任务] --> Planner[Agent 任务规划]
-    Planner --> Registry[Skill 注册表]
-    Registry --> Select[能力匹配 / 权限校验]
-    Select --> Skill[可复用 Skill]
-    Skill --> Tool[工具 / API / Prompt]
-    Tool --> Observation[执行结果]
-    Observation --> Planner
-    Planner --> Output[最终交付]
+    User[用户 / AI 编程助手] --> Client[Agent Client]
+    Client --> Protocol[MCP 协议层]
+    Protocol --> Server[vercel-labs/agent-desktop]
+    Server --> Tools[工具接口 / Skills]
+    Server --> Index[代码索引 / 知识图谱]
+    Server --> Data[文件系统 / API / 数据源]
+    Tools --> Result[结构化结果]
+    Index --> Result
+    Data --> Result
+    Result --> Client
+    Client --> Answer[生成回答 / 执行动作]
 ```
 
-## 4. [kornia/kornia](https://github.com/kornia/kornia)
+## 3. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
 
-- 语言：Python
-- Stars：12,193
-- 主题：artificial-intelligence, computer-vision, deep-learning, hacktoberfest, image-processing, machine-learning, neural-network, python, pytorch, robotics, spatial-ai
+- 语言：Rust
+- Stars：10,600
+- 主题：agents, claude-code, codex, developer-tools, git, worktrees
 - Star 趋势：
 
-![kornia/kornia Star History](https://api.star-history.com/svg?repos=kornia%2Fkornia&type=Date)
+![max-sixty/worktrunk Star History](https://api.star-history.com/svg?repos=max-sixty%2Fworktrunk&type=Date)
 
-- 作用 / 解决的问题：🐍 Geometric Computer Vision Library for Spatial AI
+- 作用 / 解决的问题：Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合围绕 artificial-intelligence, computer-vision, deep-learning, hacktoberfest, image-processing, machine-learning, neural-network, python, pytorch, robotics, spatial-ai 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 12,193，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 artificial-intelligence, computer-vision, deep-learning, hacktoberfest, image-processing, machine-learning, neural-network, python, pytorch, robotics, spatial-ai 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 当前 Stars 为 10,600，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 agents, claude-code, codex, developer-tools, git, worktrees 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - 📢 Direction: Kornia is becoming the reference implementation and executable specification for differentiable computer vision and geometry in the PyTorch ecosystem — explicit conventions, conformance tests, and honest benchmarks over API growth. Read the [Roadm...
-  - Kornia pays off where a hand-written version gets long or fragile, or where the alternatives leave the GPU:
-  - Breadth. 1,200+ public operators, most with no torchvision equivalent: camera models and
+  - (renders "CRATES.IO: INVALID"). Tracking: badges/shields#11879. Restore once fixed.
+  - Worktrunk is a CLI for git worktree management, designed for running AI agents in parallel.
+  - Worktrunk's three core commands make worktrees as easy as branches. Plus, Worktrunk has a bunch of quality-of-life features to simplify working with many parallel changes, including hooks to automate local workflows & copy-on-write build caches.
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户目标] --> Planner[任务规划 Agent]
+    Planner --> Memory[上下文记忆]
+    Planner --> Tools[工具调用层]
+    Tools --> APIs[外部 API / 本地工具]
+    APIs --> Observation[观察结果]
+    Observation --> Critic[反思 / 评估]
+    Critic --> Planner
+    Planner --> Deliverable[最终结果]
+```
+
+## 4. [JustVugg/colibri](https://github.com/JustVugg/colibri)
+
+- 语言：C
+- Stars：47,345
+- 主题：未在 GitHub API 中公开 topics
+- Star 趋势：
+
+![JustVugg/colibri Star History](https://api.star-history.com/svg?repos=JustVugg%2Fcolibri&type=Date)
+
+- 作用 / 解决的问题：A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 47,345，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 使用 C 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - English · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.it.md">Italiano</a> · <a href="README.ja.md">日本語</a> · <a href="README.id.md">Bahasa Indonesia</a> · <a href="README.pt-BR.md">Português (Brasil)</a>
+  - Tiny engine, immense model. colibri runs very large open models on the
+  - machine you already have. A mixture-of-experts model of hundreds of billions of
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
@@ -167,7 +165,7 @@ flowchart LR
 ## 5. [mattpocock/skills](https://github.com/mattpocock/skills)
 
 - 语言：Shell
-- Stars：310,429
+- Stars：311,669
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -180,7 +178,7 @@ flowchart LR
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 310,429，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 311,669，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
