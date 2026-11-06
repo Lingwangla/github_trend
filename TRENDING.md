@@ -1,6 +1,6 @@
 # GitHub AI Daily Trending Top 5
 
-更新时间：2026-11-05T04:53:24Z
+更新时间：2026-11-06T04:52:56Z
 
 筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。
 
@@ -9,7 +9,7 @@
 ## 1. [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology)
 
 - 语言：Python
-- Stars：5,518
+- Stars：7,678
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -21,7 +21,7 @@
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 5,518，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 7,678，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
@@ -42,47 +42,10 @@ flowchart LR
     Planner --> Deliverable[最终结果]
 ```
 
-## 2. [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk)
-
-- 语言：Rust
-- Stars：11,149
-- 主题：agents, claude-code, codex, developer-tools, git, worktrees
-- Star 趋势：
-
-![max-sixty/worktrunk Star History](https://api.star-history.com/svg?repos=max-sixty%2Fworktrunk&type=Date)
-
-- 作用 / 解决的问题：Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
-- 适用场景：
-  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
-- 架构思想：
-  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 11,149，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 agents, claude-code, codex, developer-tools, git, worktrees 等 topics 明确了能力边界，更容易被目标用户检索和采用。
-  - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
-  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
-- 原理 / 实现思路：
-  - (renders "CRATES.IO: INVALID"). Tracking: badges/shields#11879. Restore once fixed.
-  - Worktrunk is a CLI for git worktree management, designed for running AI agents in parallel.
-  - Worktrunk's three core commands make worktrees as easy as branches. Plus, Worktrunk has a bunch of quality-of-life features to simplify working with many parallel changes, including hooks to automate local workflows & copy-on-write build caches.
-  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
-
-```mermaid
-flowchart LR
-    User[用户目标] --> Planner[任务规划 Agent]
-    Planner --> Memory[上下文记忆]
-    Planner --> Tools[工具调用层]
-    Tools --> APIs[外部 API / 本地工具]
-    APIs --> Observation[观察结果]
-    Observation --> Critic[反思 / 评估]
-    Critic --> Planner
-    Planner --> Deliverable[最终结果]
-```
-
-## 3. [mattpocock/skills](https://github.com/mattpocock/skills)
+## 2. [mattpocock/skills](https://github.com/mattpocock/skills)
 
 - 语言：Shell
-- Stars：313,606
+- Stars：315,546
 - 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
@@ -95,7 +58,7 @@ flowchart LR
   - 适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 313,606，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 315,546，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
@@ -116,50 +79,87 @@ flowchart LR
     Planner --> Output[最终交付]
 ```
 
-## 4. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+## 3. [garrytan/gstack](https://github.com/garrytan/gstack)
 
 - 语言：TypeScript
-- Stars：113,012
-- 主题：ai, ai-agents, ai-memory, anthropic, artificial-intelligence, chromadb, claude, claude-agent-sdk, claude-agents, claude-code, claude-code-plugin, claude-skills, embeddings, long-term-memory, mem0, memory-engine, openmemory, rag, sqlite, supermemory
+- Stars：140,065
+- 主题：未在 GitHub API 中公开 topics
 - Star 趋势：
 
-![thedotmack/claude-mem Star History](https://api.star-history.com/svg?repos=thedotmack%2Fclaude-mem&type=Date)
+![garrytan/gstack Star History](https://api.star-history.com/svg?repos=garrytan%2Fgstack&type=Date)
 
-- 作用 / 解决的问题：Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More
+- 作用 / 解决的问题：Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA
 - 适用场景：
   - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
-  - 适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。
-  - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
+  - 适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 113,012，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
-  - 相比只提供单一脚本的仓库，它用 ai, ai-agents, ai-memory, anthropic, artificial-intelligence, chromadb, claude, claude-agent-sdk, claude-agents, claude-code, claude-code-plugin, claude-skills, embeddings, long-term-memory, mem0, memory-engine, openmemory, rag, sqlite, supermemory 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 当前 Stars 为 140,065，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
 - 原理 / 实现思路：
-  - Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions. This enables Claude to maintain continuity of knowledge about projects even...
-  - Grok Bot has no host hooks, so we watch the chat log files. Default is CMEM Pro, the hosted memory. Local observer is opt-in: --provider host. Installing this plugin does not install Cursor.
-  - Awareness push pilot (LFG + Orifice): needle observations (decision, bugfix, security_alert, sensitive) are appended as dated - YYYY-MM-DD [awareness] … lines into that bot's memory/log/YYYY-MM.md. Grok Bot already re-reads the log from disk. This does not wri...
+  - gstack turns Claude Code (and other coding agents) into a virtual engineering team: a CEO who rethinks the product, an eng manager who locks architecture, a designer who catches AI slop, a reviewer who finds production bugs, a QA lead who opens a real browser,...
+  - Fork it. Improve it. Make it yours. And if you want to hate on free open source software — you're welcome to, but I'd rather you just try it first.
+  - Founders and CEOs — especially technical ones who still want to ship
   - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
 
 ```mermaid
 flowchart LR
-    User[用户问题] --> Query[查询理解]
-    Query --> Retriever[检索器]
-    Docs[文档 / 知识库] --> Chunk[切分与向量化]
-    Chunk --> Store[向量库 / 索引]
-    Store --> Retriever
-    Retriever --> Context[相关上下文]
-    Context --> LLM[LLM 生成器]
-    Query --> LLM
-    LLM --> Eval[引用校验 / 质量评估]
-    Eval --> Answer[可信答案]
+    User[用户需求] --> Interface[应用入口]
+    Interface --> Orchestrator[AI 编排层]
+    Orchestrator --> Model[LLM / 模型能力]
+    Orchestrator --> Data[领域数据 / 上下文]
+    Orchestrator --> Tools[工具与自动化流程]
+    Model --> Result[候选结果]
+    Data --> Result
+    Tools --> Result
+    Result --> Review[校验 / 观测 / 反馈]
+    Review --> Output[可交付结果]
+```
+
+## 4. [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor)
+
+- 语言：Python
+- Stars：17,788
+- 主题：ai, ai-assistant, ai-tools, automation, gemini, goofish, open-source, openai, playwright, tool, xian-yu, xianyu, xianyu-bot
+- Star 趋势：
+
+![Usagi-org/ai-goofish-monitor Star History](https://api.star-history.com/svg?repos=Usagi-org%2Fai-goofish-monitor&type=Date)
+
+- 作用 / 解决的问题：基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。
+- 适用场景：
+  - 适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。
+  - 适合围绕 ai, ai-assistant, ai-tools, automation, gemini, goofish, open-source, openai, playwright, tool, xian-yu, xianyu, xianyu-bot 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。
+- 架构思想：
+  - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
+  - 当前 Stars 为 17,788，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 相比只提供单一脚本的仓库，它用 ai, ai-assistant, ai-tools, automation, gemini, goofish, open-source, openai, playwright, tool, xian-yu, xianyu, xianyu-bot 等 topics 明确了能力边界，更容易被目标用户检索和采用。
+  - 使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
+  - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。
+- 原理 / 实现思路：
+  - 基于 Playwright 和 AI 的闲鱼多任务实时监控，提供完整的 Web 管理界面。
+  - Web 可视化管理: 任务管理、账号管理、AI 标准编辑、运行日志、结果浏览
+  - AI 驱动: 自然语言创建任务，多模态模型深度分析商品
+  - 以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。
+
+```mermaid
+flowchart LR
+    User[用户需求] --> Interface[应用入口]
+    Interface --> Orchestrator[AI 编排层]
+    Orchestrator --> Model[LLM / 模型能力]
+    Orchestrator --> Data[领域数据 / 上下文]
+    Orchestrator --> Tools[工具与自动化流程]
+    Model --> Result[候选结果]
+    Data --> Result
+    Tools --> Result
+    Result --> Review[校验 / 观测 / 反馈]
+    Review --> Output[可交付结果]
 ```
 
 ## 5. [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)
 
 - 语言：Rust
-- Stars：15,513
+- Stars：17,156
 - 主题：accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust
 - Star 趋势：
 
@@ -172,7 +172,7 @@ flowchart LR
   - 适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。
 - 架构思想：
   - 它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。
-  - 当前 Stars 为 15,513，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
+  - 当前 Stars 为 17,156，说明它不只是概念验证，还积累了可观的社区验证和传播势能。
   - 相比只提供单一脚本的仓库，它用 accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust 等 topics 明确了能力边界，更容易被目标用户检索和采用。
   - 使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。
   - 它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。

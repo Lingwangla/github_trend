@@ -147,7 +147,7 @@
   <main>
     <header>
       <h1>GitHub AI Daily Trending Top 5</h1>
-      <p class="updated">更新时间：2026-11-05T04:53:24Z</p>
+      <p class="updated">更新时间：2026-11-06T04:52:56Z</p>
       <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
     </header>
     <ol class="list">
@@ -158,7 +158,7 @@
         </div>
         <div class="meta">
           <span>语言：Python</span>
-          <span>Stars：5,518</span>
+          <span>Stars：7,678</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
@@ -177,7 +177,7 @@
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 5,518，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 7,678，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -198,55 +198,11 @@ flowchart LR
       <li class="repo">
         <div class="repo-title">
           <span class="rank">#2</span>
-          <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener noreferrer">max-sixty/worktrunk</a>
-        </div>
-        <div class="meta">
-          <span>语言：Rust</span>
-          <span>Stars：11,149</span>
-        </div>
-        <div class="topics"><span class="topic">agents</span><span class="topic">claude-code</span><span class="topic">codex</span><span class="topic">developer-tools</span><span class="topic">git</span><span class="topic">worktrees</span></div>
-        <section class="section">
-          <h2>Star 趋势</h2>
-          <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=max-sixty%2Fworktrunk&amp;type=Date" alt="max-sixty/worktrunk Star History" loading="lazy">
-          </div>
-        </section>
-        <section class="section">
-          <h2>作用 / 解决的问题</h2>
-          <p>Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows</p>
-        </section>
-        <section class="section">
-          <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
-        </section>
-        <section class="section">
-          <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 11,149，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 agents, claude-code, codex, developer-tools, git, worktrees 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
-        </section>
-        <section class="section">
-          <h2>原理 / 实现思路</h2>
-          <ul><li>(renders &#34;CRATES.IO: INVALID&#34;). Tracking: badges/shields#11879. Restore once fixed.</li><li>Worktrunk is a CLI for git worktree management, designed for running AI agents in parallel.</li><li>Worktrunk&#39;s three core commands make worktrees as easy as branches. Plus, Worktrunk has a bunch of quality-of-life features to simplify working with many parallel changes, including hooks to automate local workflows &amp; copy-on-write build caches.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
-          <div class="mermaid">
-flowchart LR
-    User[用户目标] --&gt; Planner[任务规划 Agent]
-    Planner --&gt; Memory[上下文记忆]
-    Planner --&gt; Tools[工具调用层]
-    Tools --&gt; APIs[外部 API / 本地工具]
-    APIs --&gt; Observation[观察结果]
-    Observation --&gt; Critic[反思 / 评估]
-    Critic --&gt; Planner
-    Planner --&gt; Deliverable[最终结果]
-          </div>
-        </section>
-      </li>
-      <li class="repo">
-        <div class="repo-title">
-          <span class="rank">#3</span>
           <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">mattpocock/skills</a>
         </div>
         <div class="meta">
           <span>语言：Shell</span>
-          <span>Stars：313,606</span>
+          <span>Stars：315,546</span>
         </div>
         <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
@@ -265,7 +221,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 313,606，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 315,546，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
@@ -285,47 +241,93 @@ flowchart LR
       </li>
       <li class="repo">
         <div class="repo-title">
-          <span class="rank">#4</span>
-          <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener noreferrer">thedotmack/claude-mem</a>
+          <span class="rank">#3</span>
+          <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener noreferrer">garrytan/gstack</a>
         </div>
         <div class="meta">
           <span>语言：TypeScript</span>
-          <span>Stars：113,012</span>
+          <span>Stars：140,065</span>
         </div>
-        <div class="topics"><span class="topic">ai</span><span class="topic">ai-agents</span><span class="topic">ai-memory</span><span class="topic">anthropic</span><span class="topic">artificial-intelligence</span><span class="topic">chromadb</span><span class="topic">claude</span><span class="topic">claude-agent-sdk</span><span class="topic">claude-agents</span><span class="topic">claude-code</span><span class="topic">claude-code-plugin</span><span class="topic">claude-skills</span><span class="topic">embeddings</span><span class="topic">long-term-memory</span><span class="topic">mem0</span><span class="topic">memory-engine</span><span class="topic">openmemory</span><span class="topic">rag</span><span class="topic">sqlite</span><span class="topic">supermemory</span></div>
+        <div class="topics"><span class="topic">未公开 topics</span></div>
         <section class="section">
           <h2>Star 趋势</h2>
           <div class="star-chart">
-            <img src="https://api.star-history.com/svg?repos=thedotmack%2Fclaude-mem&amp;type=Date" alt="thedotmack/claude-mem Star History" loading="lazy">
+            <img src="https://api.star-history.com/svg?repos=garrytan%2Fgstack&amp;type=Date" alt="garrytan/gstack Star History" loading="lazy">
           </div>
         </section>
         <section class="section">
           <h2>作用 / 解决的问题</h2>
-          <p>Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More</p>
+          <p>Use Garry Tan&#39;s exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA</p>
         </section>
         <section class="section">
           <h2>适用场景</h2>
-          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合知识库问答、文档检索和企业内部搜索场景，因为 RAG 能把私有数据补充进 LLM 上下文。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 未在 GitHub API 中公开 topics 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 113,012，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agents, ai-memory, anthropic, artificial-intelligence, chromadb, claude, claude-agent-sdk, claude-agents, claude-code, claude-code-plugin, claude-skills, embeddings, long-term-memory, mem0, memory-engine, openmemory, rag, sqlite, supermemory 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 140,065，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
-          <ul><li>Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions. This enables Claude to maintain continuity of knowledge about projects even...</li><li>Grok Bot has no host hooks, so we watch the chat log files. Default is CMEM Pro, the hosted memory. Local observer is opt-in: --provider host. Installing this plugin does not install Cursor.</li><li>Awareness push pilot (LFG + Orifice): needle observations (decision, bugfix, security_alert, sensitive) are appended as dated - YYYY-MM-DD [awareness] … lines into that bot&#39;s memory/log/YYYY-MM.md. Grok Bot already re-reads the log from disk. This does not wri...</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <ul><li>gstack turns Claude Code (and other coding agents) into a virtual engineering team: a CEO who rethinks the product, an eng manager who locks architecture, a designer who catches AI slop, a reviewer who finds production bugs, a QA lead who opens a real browser,...</li><li>Fork it. Improve it. Make it yours. And if you want to hate on free open source software — you&#39;re welcome to, but I&#39;d rather you just try it first.</li><li>Founders and CEOs — especially technical ones who still want to ship</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
           <div class="mermaid">
 flowchart LR
-    User[用户问题] --&gt; Query[查询理解]
-    Query --&gt; Retriever[检索器]
-    Docs[文档 / 知识库] --&gt; Chunk[切分与向量化]
-    Chunk --&gt; Store[向量库 / 索引]
-    Store --&gt; Retriever
-    Retriever --&gt; Context[相关上下文]
-    Context --&gt; LLM[LLM 生成器]
-    Query --&gt; LLM
-    LLM --&gt; Eval[引用校验 / 质量评估]
-    Eval --&gt; Answer[可信答案]
+    User[用户需求] --&gt; Interface[应用入口]
+    Interface --&gt; Orchestrator[AI 编排层]
+    Orchestrator --&gt; Model[LLM / 模型能力]
+    Orchestrator --&gt; Data[领域数据 / 上下文]
+    Orchestrator --&gt; Tools[工具与自动化流程]
+    Model --&gt; Result[候选结果]
+    Data --&gt; Result
+    Tools --&gt; Result
+    Result --&gt; Review[校验 / 观测 / 反馈]
+    Review --&gt; Output[可交付结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#4</span>
+          <a href="https://github.com/Usagi-org/ai-goofish-monitor" target="_blank" rel="noopener noreferrer">Usagi-org/ai-goofish-monitor</a>
+        </div>
+        <div class="meta">
+          <span>语言：Python</span>
+          <span>Stars：17,788</span>
+        </div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">ai-assistant</span><span class="topic">ai-tools</span><span class="topic">automation</span><span class="topic">gemini</span><span class="topic">goofish</span><span class="topic">open-source</span><span class="topic">openai</span><span class="topic">playwright</span><span class="topic">tool</span><span class="topic">xian-yu</span><span class="topic">xianyu</span><span class="topic">xianyu-bot</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=Usagi-org%2Fai-goofish-monitor&amp;type=Date" alt="Usagi-org/ai-goofish-monitor Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 ai, ai-assistant, ai-tools, automation, gemini, goofish, open-source, openai, playwright, tool, xian-yu, xianyu, xianyu-bot 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 17,788，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-assistant, ai-tools, automation, gemini, goofish, open-source, openai, playwright, tool, xian-yu, xianyu, xianyu-bot 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>基于 Playwright 和 AI 的闲鱼多任务实时监控，提供完整的 Web 管理界面。</li><li>Web 可视化管理: 任务管理、账号管理、AI 标准编辑、运行日志、结果浏览</li><li>AI 驱动: 自然语言创建任务，多模态模型深度分析商品</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户需求] --&gt; Interface[应用入口]
+    Interface --&gt; Orchestrator[AI 编排层]
+    Orchestrator --&gt; Model[LLM / 模型能力]
+    Orchestrator --&gt; Data[领域数据 / 上下文]
+    Orchestrator --&gt; Tools[工具与自动化流程]
+    Model --&gt; Result[候选结果]
+    Data --&gt; Result
+    Tools --&gt; Result
+    Result --&gt; Review[校验 / 观测 / 反馈]
+    Review --&gt; Output[可交付结果]
           </div>
         </section>
       </li>
@@ -336,7 +338,7 @@ flowchart LR
         </div>
         <div class="meta">
           <span>语言：Rust</span>
-          <span>Stars：15,513</span>
+          <span>Stars：17,156</span>
         </div>
         <div class="topics"><span class="topic">accessibility</span><span class="topic">accessibility-api</span><span class="topic">ai-agents</span><span class="topic">automation</span><span class="topic">cli</span><span class="topic">computer-use</span><span class="topic">computer-use-agent</span><span class="topic">computer-use-agents</span><span class="topic">desktop-automation</span><span class="topic">macos</span><span class="topic">mcp</span><span class="topic">rust</span></div>
         <section class="section">
@@ -355,7 +357,7 @@ flowchart LR
         </section>
         <section class="section">
           <h2>架构思想</h2>
-          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 15,513，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 17,156，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents, desktop-automation, macos, mcp, rust 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Rust 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
         </section>
         <section class="section">
           <h2>原理 / 实现思路</h2>
