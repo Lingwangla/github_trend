@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub AI Daily Trending Top 5</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f8fa;
+      --card: #ffffff;
+      --text: #24292f;
+      --muted: #57606a;
+      --border: #d0d7de;
+      --link: #0969da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --card: #161b22;
+        --text: #c9d1d9;
+        --muted: #8b949e;
+        --border: #30363d;
+        --link: #58a6ff;
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header {
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.1;
+    }
+    .updated {
+      color: var(--muted);
+      margin: 0;
+    }
+    .list {
+      display: grid;
+      gap: 14px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .repo {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .repo-title {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    .rank {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 650;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .description {
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+    .section {
+      margin-top: 14px;
+    }
+    .section h2 {
+      margin: 0 0 6px;
+      font-size: 15px;
+    }
+    .section p {
+      margin: 0;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .topic {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 3px 9px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .star-chart {
+      width: 100%;
+      margin-top: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #ffffff;
+    }
+    .star-chart img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .mermaid {
+      margin-top: 12px;
+      padding: 14px;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>GitHub AI Daily Trending Top 5</h1>
+      <p class="updated">更新时间：2026-11-20T05:30:36Z</p>
+      <p class="updated">筛选范围：仓库名称或描述包含 AI 相关关键词。关键词：ai, agent, agents, agentic, llm, llms, skill, skills, mcp, model context protocol, chatgpt, openai, claude, gemini, copilot, deepseek, rag, embedding, embeddings, transformer, diffusion, machine learning, ml, deep learning, neural, inference, prompt, prompts。</p>
+    </header>
+    <ol class="list">
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#1</span>
+          <a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener noreferrer">elementalsouls/Claude-BugHunter</a>
+        </div>
+        <div class="meta">
+          <span>语言：Python</span>
+          <span>Stars：12,840</span>
+        </div>
+        <div class="topics"><span class="topic">ai-security</span><span class="topic">anthropic</span><span class="topic">application-security</span><span class="topic">bug-bounty</span><span class="topic">bugbounty</span><span class="topic">bugcrowd</span><span class="topic">claude</span><span class="topic">claude-code</span><span class="topic">claude-skills</span><span class="topic">ethical-hacking</span><span class="topic">hackerone</span><span class="topic">offensive-security</span><span class="topic">pentesting</span><span class="topic">red-team</span><span class="topic">security-tools</span><span class="topic">web-security</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=elementalsouls%2FClaude-BugHunter&amp;type=Date" alt="elementalsouls/Claude-BugHunter Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 12,840，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai-security, anthropic, application-security, bug-bounty, bugbounty, bugcrowd, claude, claude-code, claude-skills, ethical-hacking, hackerone, offensive-security, pentesting, red-team, security-tools, web-security 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>A self-contained Claude skill bundle for bug hunting and external red-team work · 83 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited &amp; auditable) across 24 core vulnerability classes · enterprise identity + infrastructure...</li><li>Think — bb-methodology + redteam-mindset: the 5-phase non-linear workflow, critical-thinking framework, and red-team operator discipline.</li><li>Hunt webapps — 58 hunt-* skills curated from 681 disclosed HackerOne reports: per-class detection patterns, payloads, bypass tables, and chain templates.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户任务] --&gt; Planner[Agent 任务规划]
+    Planner --&gt; Registry[Skill 注册表]
+    Registry --&gt; Select[能力匹配 / 权限校验]
+    Select --&gt; Skill[可复用 Skill]
+    Skill --&gt; Tool[工具 / API / Prompt]
+    Tool --&gt; Observation[执行结果]
+    Observation --&gt; Planner
+    Planner --&gt; Output[最终交付]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#2</span>
+          <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener noreferrer">obra/superpowers</a>
+        </div>
+        <div class="meta">
+          <span>语言：Shell</span>
+          <span>Stars：322,241</span>
+        </div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">brainstorming</span><span class="topic">coding</span><span class="topic">obra</span><span class="topic">sdlc</span><span class="topic">skills</span><span class="topic">subagent-driven-development</span><span class="topic">superpowers</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=obra%2Fsuperpowers&amp;type=Date" alt="obra/superpowers Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>An agentic skills framework &amp; software development methodology that works.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li><li>适合团队沉淀可复用 AI 能力的场景，因为 Skill 把提示词、工具和流程封装成可发现、可组合的单元。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 322,241，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, brainstorming, coding, obra, sdlc, skills, subagent-driven-development, superpowers 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Shell 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.</li><li>[When Something Goes Wrong](#when-something-goes-wrong)</li><li>[Visual companion telemetry](#visual-companion-telemetry)</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户任务] --&gt; Planner[Agent 任务规划]
+    Planner --&gt; Registry[Skill 注册表]
+    Registry --&gt; Select[能力匹配 / 权限校验]
+    Select --&gt; Skill[可复用 Skill]
+    Skill --&gt; Tool[工具 / API / Prompt]
+    Tool --&gt; Observation[执行结果]
+    Observation --&gt; Planner
+    Planner --&gt; Output[最终交付]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#3</span>
+          <a href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener noreferrer">HKUDS/CLI-Anything</a>
+        </div>
+        <div class="meta">
+          <span>语言：Python</span>
+          <span>Stars：60,720</span>
+        </div>
+        <div class="topics"><span class="topic">未公开 topics</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=HKUDS%2FCLI-Anything&amp;type=Date" alt="HKUDS/CLI-Anything Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>&#34;CLI-Anything: Making ALL Software Agent-Native&#34; -- CLI-Hub: https://clianything.cc/</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 60,720，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>CLI-Anything: Bridging the Gap Between AI Agents and the World&#39;s Software&lt;/strong&gt;&lt;br&gt;</li><li>🎬 [See Demos](#-real-world-demos): Watch AI agents use generated CLIs plus preview, live preview, and trajectory loops to produce real artifacts — CAD builds, 3D scenes, diagrams, gameplay, subtitles, and more.</li><li>Thanks to all invaluable efforts from the community! More updates continuously on the way everyday..</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#4</span>
+          <a href="https://github.com/jingyaogong/minimind" target="_blank" rel="noopener noreferrer">jingyaogong/minimind</a>
+        </div>
+        <div class="meta">
+          <span>语言：Python</span>
+          <span>Stars：67,100</span>
+        </div>
+        <div class="topics"><span class="topic">artificial-intelligence</span><span class="topic">large-language-model</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=jingyaogong%2Fminimind&amp;type=Date" alt="jingyaogong/minimind Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合围绕 artificial-intelligence, large-language-model 做技术调研、竞品分析或原型验证，因为仓库主题与当前 AI 热点高度相关。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 67,100，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 artificial-intelligence, large-language-model 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 Python 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>此开源项目旨在完全从 0 开始，仅用 3 块钱成本与 2 小时训练时间，即可训练出规模约为 64M 的超小语言模型 MiniMind。</li><li>项目同时开源了大模型的极简结构与完整训练链路，覆盖 MoE、数据清洗、预训练（Pretrain）、监督微调（SFT）、LoRA、RLHF（DPO）、RLAIF（PPO / GRPO / CISPO）、Tool Use、Agentic RL、自适应思考与模型蒸馏等全过程代码。</li><li>项目所有核心算法代码均从 0 使用 PyTorch 原生实现，不依赖第三方库提供的高层抽象接口。</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户需求] --&gt; Interface[应用入口]
+    Interface --&gt; Orchestrator[AI 编排层]
+    Orchestrator --&gt; Model[LLM / 模型能力]
+    Orchestrator --&gt; Data[领域数据 / 上下文]
+    Orchestrator --&gt; Tools[工具与自动化流程]
+    Model --&gt; Result[候选结果]
+    Data --&gt; Result
+    Tools --&gt; Result
+    Result --&gt; Review[校验 / 观测 / 反馈]
+    Review --&gt; Output[可交付结果]
+          </div>
+        </section>
+      </li>
+      <li class="repo">
+        <div class="repo-title">
+          <span class="rank">#5</span>
+          <a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a>
+        </div>
+        <div class="meta">
+          <span>语言：TypeScript</span>
+          <span>Stars：204,457</span>
+        </div>
+        <div class="topics"><span class="topic">ai</span><span class="topic">ai-agents</span><span class="topic">ai-crawler</span><span class="topic">ai-scraping</span><span class="topic">ai-search</span><span class="topic">crawler</span><span class="topic">data-extraction</span><span class="topic">html-to-markdown</span><span class="topic">llm</span><span class="topic">markdown</span><span class="topic">scraper</span><span class="topic">scraping</span><span class="topic">web-crawler</span><span class="topic">web-data</span><span class="topic">web-data-extraction</span><span class="topic">web-scraper</span><span class="topic">web-scraping</span><span class="topic">web-search</span><span class="topic">webscraping</span></div>
+        <section class="section">
+          <h2>Star 趋势</h2>
+          <div class="star-chart">
+            <img src="https://api.star-history.com/svg?repos=firecrawl%2Ffirecrawl&amp;type=Date" alt="firecrawl/firecrawl Star History" loading="lazy">
+          </div>
+        </section>
+        <section class="section">
+          <h2>作用 / 解决的问题</h2>
+          <p>Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.</p>
+        </section>
+        <section class="section">
+          <h2>适用场景</h2>
+          <ul><li>适合快速评估 GitHub AI 热榜中新出现或重新升温的技术方向，因为该仓库已获得短期社区关注。</li><li>适合多步骤自动化、工具调用和复杂任务编排场景，因为 Agent 模式能把规划、执行、观察和修正串起来。</li></ul>
+        </section>
+        <section class="section">
+          <h2>架构思想</h2>
+          <ul><li>它成为热榜的核心原因通常不是单点功能，而是把模型能力、工具、数据和工作流组织成更容易落地的工程结构。</li><li>当前 Stars 为 204,457，说明它不只是概念验证，还积累了可观的社区验证和传播势能。</li><li>相比只提供单一脚本的仓库，它用 ai, ai-agents, ai-crawler, ai-scraping, ai-search, crawler, data-extraction, html-to-markdown, llm, markdown, scraper, scraping, web-crawler, web-data, web-data-extraction, web-scraper, web-scraping, web-search, webscraping 等 topics 明确了能力边界，更容易被目标用户检索和采用。</li><li>使用 TypeScript 作为主要实现语言，降低了对应生态开发者集成、扩展和二次开发的成本。</li><li>它的稀缺性在于把热门 AI 能力包装成可运行、可组合、可观察的工程入口，而不是停留在论文、提示词或孤立 Demo。</li></ul>
+        </section>
+        <section class="section">
+          <h2>原理 / 实现思路</h2>
+          <ul><li>Knowledge infrastructure to make your agents smarter. 🔥 You can use Firecrawl three ways. This repo holds the code for Firecrawl Local and the self-hosted server, along with SDKs that work with all three.</li><li>[Firecrawl Local](#firecrawl-local). Run Firecrawl on your own machine as one binary that turns websites into clean markdown, plugs into your AI agent as an MCP server and serves the Firecrawl API on localhost.</li><li>[Self-hosting](#self-hosting). Deploy the full Firecrawl server from apps/api with its own queues, workers and databases on your own infrastructure.</li><li>以上内容由 GitHub 公开 README 自动摘取和归纳，适合作为快速了解入口，深入实现仍以仓库源码和文档为准。</li></ul>
+          <div class="mermaid">
+flowchart LR
+    User[用户目标] --&gt; Planner[任务规划 Agent]
+    Planner --&gt; Memory[上下文记忆]
+    Planner --&gt; Tools[工具调用层]
+    Tools --&gt; APIs[外部 API / 本地工具]
+    APIs --&gt; Observation[观察结果]
+    Observation --&gt; Critic[反思 / 评估]
+    Critic --&gt; Planner
+    Planner --&gt; Deliverable[最终结果]
+          </div>
+        </section>
+      </li>
+    </ol>
+  </main>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+</body>
+</html>
